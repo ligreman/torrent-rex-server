@@ -15,6 +15,7 @@ app.configure(function () {
 
 //Cargo rutas
 require('./routes/tx')(app);
+require('./routes/cine')(app);
 
 // Si no se "queda" en una de las rutas anteriores, devuelvo un 404 siempre
 app.use(function (req, res) {

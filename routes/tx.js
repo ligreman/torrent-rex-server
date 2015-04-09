@@ -212,7 +212,37 @@ module.exports = function (app) {
         });
     };
 
+    //Descargo un torrent y lo envío al plugin
+    downloadTorrent = function (req, res) {
+        var id = req.params.id;
+        request(
+            {
+                url: 'http://www.txibitsoft.com/bajatorrent.php?id=' + id,
+                encoding: 'binary',
+                timeout: 10000
+            },
+            function (err, resp, body) {
+                if (resp.statusCode !== 200) {
+                    res.writeHead(500, {'Content-Type': 'text/plain'});
+                    res.end(err.message);
+                } else {
+                    var disposition = resp.request.response.headers['content-disposition'];
+                    var torrent = new Buffer(body, 'binary');
+
+                    //Respuesta
+                    res.set({
+                        'Content-Type': 'application/octet-stream; charset=utf-8',
+                        'Content-Disposition': disposition
+                    });
+
+                    res.write(torrent);
+                    res.end();
+                }
+            });
+    };
+
     //Las rutas
+    app.get('/api/tx/download/:id', downloadTorrent);
     app.get('/api/tx/categories', getCategories);
     app.get('/api/tx/torrents/:categoryUrl', getTorrents);
     app.get('/api/tx/search/:term/:pageSearch', getSearch);
