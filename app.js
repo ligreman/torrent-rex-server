@@ -1,3 +1,5 @@
+'use strict';
+
 // Dependencias
 var express = require('express'),
     app = express(),
@@ -9,12 +11,14 @@ var express = require('express'),
 // Configuramos la app para que pueda realizar métodos REST
 app.configure(function () {
     app.use(express.bodyParser()); // JSON parsing
+    app.use(express.compress());
     //app.use(express.methodOverride()); // HTTP PUT and DELETE support
     app.use(app.router); // simple route management
 });
 
 //Cargo rutas
 require('./routes/tx')(app);
+require('./routes/trex')(app);
 require('./routes/cine')(app);
 
 // Si no se "queda" en una de las rutas anteriores, devuelvo un 404 siempre

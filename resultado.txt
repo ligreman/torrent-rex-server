@@ -1,0 +1,1509 @@
+ - - 
+ ------------ Obtengo provincias -------------- 
+ - - 
+ ·Provincia: A Coruña (Id: 0,18,0.html)
+ ·Provincia: Álava (Id: 0,1,0.html)
+ ·Provincia: Albacete (Id: 0,2,0.html)
+ ·Provincia: Alicante (Id: 0,3,0.html)
+ ·Provincia: Almería (Id: 0,4,0.html)
+ ·Provincia: Asturias (Id: 0,5,0.html)
+ ·Provincia: Ávila (Id: 0,6,0.html)
+ ·Provincia: Badajoz (Id: 0,7,0.html)
+ ·Provincia: Baleares (Id: 0,8,0.html)
+ ·Provincia: Barcelona (Id: 0,9,0.html)
+ ·Provincia: Burgos (Id: 0,10,0.html)
+ ·Provincia: Cáceres (Id: 0,11,0.html)
+ ·Provincia: Cádiz (Id: 0,12,0.html)
+ ·Provincia: Cantabria (Id: 0,13,0.html)
+ ·Provincia: Castellón (Id: 0,14,0.html)
+ ·Provincia: Ceuta (Id: 0,15,0.html)
+ ·Provincia: Ciudad Real (Id: 0,16,0.html)
+ ·Provincia: Córdoba (Id: 0,17,0.html)
+ ·Provincia: Cuenca (Id: 0,19,0.html)
+ ·Provincia: Girona (Id: 0,20,0.html)
+ ·Provincia: Granada (Id: 0,21,0.html)
+ ·Provincia: Guadalajara (Id: 0,22,0.html)
+ ·Provincia: Guipúzcoa (Id: 0,23,0.html)
+ ·Provincia: Huelva (Id: 0,24,0.html)
+ ·Provincia: Huesca (Id: 0,25,0.html)
+ ·Provincia: Jaén (Id: 0,26,0.html)
+ ·Provincia: La Rioja (Id: 0,39,0.html)
+ ·Provincia: Las Palmas (Id: 0,37,0.html)
+ ·Provincia: León (Id: 0,27,0.html)
+ ·Provincia: Lleida (Id: 0,28,0.html)
+ ·Provincia: Lugo (Id: 0,29,0.html)
+ ·Provincia: Madrid (Id: 0,30,0.html)
+ ·Provincia: Málaga (Id: 0,31,0.html)
+ ·Provincia: Melilla (Id: 0,32,0.html)
+ ·Provincia: Murcia (Id: 0,33,0.html)
+ ·Provincia: Navarra (Id: 0,34,0.html)
+ ·Provincia: Ourense (Id: 0,35,0.html)
+ ·Provincia: Palencia (Id: 0,36,0.html)
+ ·Provincia: Pontevedra (Id: 0,38,0.html)
+ ·Provincia: S.C. Tenerife (Id: 0,41,0.html)
+ ·Provincia: Salamanca (Id: 0,40,0.html)
+ ·Provincia: Segovia (Id: 0,42,0.html)
+ ·Provincia: Sevilla (Id: 0,43,0.html)
+ ·Provincia: Soria (Id: 0,44,0.html)
+ ·Provincia: Tarragona (Id: 0,45,0.html)
+ ·Provincia: Teruel (Id: 0,46,0.html)
+ ·Provincia: Toledo (Id: 0,47,0.html)
+ ·Provincia: Valencia (Id: 0,48,0.html)
+ ·Provincia: Valladolid (Id: 0,49,0.html)
+ ·Provincia: Vizcaya (Id: 0,50,0.html)
+ ·Provincia: Zamora (Id: 0,51,0.html)
+ ·Provincia: Zaragoza (Id: 0,52,0.html)
+ - - 
+ ------------ Obtengo ciudades y cines -------------- 
+ - - 
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,18,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,1,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,2,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,3,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,4,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,5,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,6,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,7,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,8,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,9,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,10,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,11,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,12,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,13,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,14,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,15,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,16,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,17,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,19,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,20,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,21,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,22,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,23,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,24,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,25,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,26,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,39,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,37,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,27,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,28,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,29,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,30,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,31,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,32,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,33,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,34,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,35,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,36,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,38,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,41,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,40,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,42,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,43,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,44,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,45,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,46,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,47,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,48,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,49,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,50,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,51,0.html
+ -- Miro las ciudades del enlace: http://www.ecartelera.com/cines/0,52,0.html
+   ··Ciudad: Albacete (Id: 0,2,46.html)
+       ··Cine: Yelmo Cines Imaginalia (Id: 180,0,1.html)
+       --IMDB: Yelmo Cines Imaginalia (Id: ci1028768)
+   ··Ciudad: Almansa (Id: 0,2,47.html)
+No encontré de esta provincia: 0
+   ··Ciudad: Almería (Id: 0,4,63.html)
+       ··Cine: Cines Monumental (Id: 215,0,1.html)
+       --IMDB: Cines Monumental (Id: ci1028566)
+   ··Ciudad: Roquetas de Mar (Id: 0,4,297.html)
+       ··Cine: Yelmo Cines Roquetas de Mar (Id: 606,0,1.html)
+       --IMDB: Yelmo Cines Roquetas de Mar (Id: ci1028625)
+No encontré de esta provincia: 0
+   ··Ciudad: Vitoria (Id: 0,1,45.html)
+       ··Cine: Ábaco Boulevard (Id: 166,0,1.html)
+         *** No encontré el cine << Ábaco Boulevard >> de Vitoria (Álava) CODPOSTAL: 01001
+         *** De entre estos: Cines Florida||Yelmo Cines Boulevard||Multicines Gran Arousa||Oñatiko Zinema||Cines Las Cañas||Cines Moderno||Yelmo Cines Berceo||Zornotza Aretoa
+       ··Cine: Cines Florida - Guridi Zinemak (Id: 168,0,1.html)
+       --IMDB: Cines Florida (Id: ci1029161)
+       ··Cine: Guridi Zinemak (Id: 169,0,1.html)
+         *** No encontré el cine << Guridi Zinemak >> de Vitoria (Álava) CODPOSTAL: 01001
+         *** De entre estos: Cines Florida||Yelmo Cines Boulevard||Multicines Gran Arousa||Oñatiko Zinema||Cines Las Cañas||Cines Moderno||Yelmo Cines Berceo||Zornotza Aretoa
+   ··Ciudad: Amurrio (Id: 0,1,292.html)
+       ··Cine: Amurrio Antzokia (Id: 600,0,1.html)
+         *** No encontré el cine << Amurrio Antzokia >> de Amurrio (Álava) CODPOSTAL: 01001
+         *** De entre estos: Cines Florida||Yelmo Cines Boulevard||Multicines Gran Arousa||Oñatiko Zinema||Cines Las Cañas||Cines Moderno||Yelmo Cines Berceo||Zornotza Aretoa
+   ··Ciudad: Zigoitia (Id: 0,1,301.html)
+No encontré de esta provincia: 3
+   ··Ciudad: A Coruña (Id: 0,18,41.html)
+       ··Cine: Yelmo Cines Los Rosales (Id: 160,0,1.html)
+       --IMDB: Yelmo Cines Los Rosales (Id: ci1028973)
+       ··Cine: Filmax A Coruña (Id: 178,0,1.html)
+         *** No encontré el cine << Filmax A Coruña >> de A Coruña (A Coruña) CODPOSTAL: 15001
+         *** De entre estos: Cantones Cines||Casa de las Ciencias Domus Magnavision||Cinesa Marineda City 3D||Forum Metropolitano de A Coruña||Yelmo Cines Espacio Coruña||Yelmo Cines Los Rosales||Dúplex - Ferrol||Multicines Bergantiños||Odeón Multicines Narón
+       ··Cine: Cinesa Marineda City (Id: cinesa-marineda-city/)
+       --IMDB: Cinesa Marineda City 3D (Id: ci17723570)
+   ··Ciudad: Ferrol (Id: 0,18,42.html)
+       ··Cine: Dúplex (Id: 179,0,1.html)
+       --IMDB: Dúplex - Ferrol (Id: ci1028955)
+   ··Ciudad: Narón (Id: 0,18,43.html)
+       ··Cine: Cinebox Narón (Id: 162,0,1.html)
+         *** No encontré el cine << Cinebox Narón >> de Narón (A Coruña) CODPOSTAL: 15001
+         *** De entre estos: Cantones Cines||Casa de las Ciencias Domus Magnavision||Cinesa Marineda City 3D||Forum Metropolitano de A Coruña||Yelmo Cines Espacio Coruña||Yelmo Cines Los Rosales||Dúplex - Ferrol||Multicines Bergantiños||Odeón Multicines Narón
+   ··Ciudad: Santiago (Id: 0,18,44.html)
+       ··Cine: Cinesa As Cancelas (Id: cinesa-as-cancelas/)
+         *** No encontré el cine << Cinesa As Cancelas >> de Santiago (A Coruña) CODPOSTAL: 15001
+         *** De entre estos: Cantones Cines||Casa de las Ciencias Domus Magnavision||Cinesa Marineda City 3D||Forum Metropolitano de A Coruña||Yelmo Cines Espacio Coruña||Yelmo Cines Los Rosales||Dúplex - Ferrol||Multicines Bergantiños||Odeón Multicines Narón
+   ··Ciudad: Carballo (Id: 0,18,295.html)
+       ··Cine: Multicines Bergantiños (Id: 604,0,1.html)
+       --IMDB: Multicines Bergantiños (Id: ci1028963)
+   ··Ciudad: Cee (Id: 0,18,296.html)
+       ··Cine: Xunqueira (Id: 605,0,1.html)
+         *** No encontré el cine << Xunqueira >> de Cee (A Coruña) CODPOSTAL: 15001
+         *** De entre estos: Cantones Cines||Casa de las Ciencias Domus Magnavision||Cinesa Marineda City 3D||Forum Metropolitano de A Coruña||Yelmo Cines Espacio Coruña||Yelmo Cines Los Rosales||Dúplex - Ferrol||Multicines Bergantiños||Odeón Multicines Narón
+   ··Ciudad: Lugar Someso (Id: 0,18,298.html)
+       ··Cine: Yelmo Cines Espacio Coruña (Id: 608,0,1.html)
+       --IMDB: Yelmo Cines Espacio Coruña (Id: ci15433624)
+   ··Ciudad: Santa Eugenia de Ribeira (Id: 0,18,302.html)
+       ··Cine: Multicines Barbanza (Id: multicines-barbanza/)
+         *** No encontré el cine << Multicines Barbanza >> de Santa Eugenia de Ribeira (A Coruña) CODPOSTAL: 15001
+         *** De entre estos: Cantones Cines||Casa de las Ciencias Domus Magnavision||Cinesa Marineda City 3D||Forum Metropolitano de A Coruña||Yelmo Cines Espacio Coruña||Yelmo Cines Los Rosales||Dúplex - Ferrol||Multicines Bergantiños||Odeón Multicines Narón
+No encontré de esta provincia: 5
+   ··Ciudad: Ávila (Id: 0,6,68.html)
+       ··Cine: Cines Estrella Ávila (Id: 223,0,1.html)
+       --IMDB: Cines Estrella - Ávila (Id: ci1028710)
+       ··Cine: Cine Tomás Luis de Victoria (Id: 224,0,1.html)
+       --IMDB: Cine Tomás Luis de Victoria (Id: ci1028700)
+No encontré de esta provincia: 0
+   ··Ciudad: Alicante (Id: 0,3,48.html)
+       ··Cine: aAna Alicante (Id: 181,0,1.html)
+       --IMDB: Cines Aana Alicante (Id: ci1029218)
+       ··Cine: Cinebox Plaza Mar 2 (Id: 184,0,1.html)
+         *** No encontré el cine << Cinebox Plaza Mar 2 >> de Alicante (Alicante) CODPOSTAL: 03001
+         *** De entre estos: Cine Navas Alicante||Cines Aana Alicante||Cines Panoramis||Kinépolis Alicante Plaza Mar 2||Yelmo Cines Puerta de Alicante||Autocine El Sur||Cines Aana San Juan||Megarama Alicante||Cines Axion - Santa Pola||ABC Elx||Colci La Vila||Yelmo Cines Vinalopó||Cine Roma||Cines Axion - Alcoy||Cines Axion - Orihuela||Cines Colci||Cines IMF Finestrat||Cines IMF Torrevieja||CinesMax Petrer||Colci-Rincón
+       ··Cine: Cinesa Panoramis 3D (Id: 186,0,1.html)
+         *** No encontré el cine << Cinesa Panoramis 3D >> de Alicante (Alicante) CODPOSTAL: 03001
+         *** De entre estos: Cine Navas Alicante||Cines Aana Alicante||Cines Panoramis||Kinépolis Alicante Plaza Mar 2||Yelmo Cines Puerta de Alicante||Autocine El Sur||Cines Aana San Juan||Megarama Alicante||Cines Axion - Santa Pola||ABC Elx||Colci La Vila||Yelmo Cines Vinalopó||Cine Roma||Cines Axion - Alcoy||Cines Axion - Orihuela||Cines Colci||Cines IMF Finestrat||Cines IMF Torrevieja||CinesMax Petrer||Colci-Rincón
+       ··Cine: Yelmo Cines Puerta de Alicante (Id: 187,0,1.html)
+       --IMDB: Yelmo Cines Puerta de Alicante (Id: ci1029256)
+   ··Ciudad: Alcoy (Id: 0,3,261.html)
+       ··Cine: ABC Alcoy (Id: 551,0,1.html)
+         *** No encontré el cine << ABC Alcoy >> de Alcoy (Alicante) CODPOSTAL: 03001
+         *** De entre estos: Cine Navas Alicante||Cines Aana Alicante||Cines Panoramis||Kinépolis Alicante Plaza Mar 2||Yelmo Cines Puerta de Alicante||Autocine El Sur||Cines Aana San Juan||Megarama Alicante||Cines Axion - Santa Pola||ABC Elx||Colci La Vila||Yelmo Cines Vinalopó||Cine Roma||Cines Axion - Alcoy||Cines Axion - Orihuela||Cines Colci||Cines IMF Finestrat||Cines IMF Torrevieja||CinesMax Petrer||Colci-Rincón
+   ··Ciudad: Alfas del Pi (Id: 0,3,262.html)
+       ··Cine: Cine Roma (Id: 552,0,1.html)
+       --IMDB: Cine Roma (Id: ci1029208)
+   ··Ciudad: Benidorm (Id: 0,3,263.html)
+       ··Cine: Cines IMF 9 Benidorm (Id: 553,0,1.html)
+         *** No encontré el cine << Cines IMF 9 Benidorm >> de Benidorm (Alicante) CODPOSTAL: 03001
+         *** De entre estos: Cine Navas Alicante||Cines Aana Alicante||Cines Panoramis||Kinépolis Alicante Plaza Mar 2||Yelmo Cines Puerta de Alicante||Autocine El Sur||Cines Aana San Juan||Megarama Alicante||Cines Axion - Santa Pola||ABC Elx||Colci La Vila||Yelmo Cines Vinalopó||Cine Roma||Cines Axion - Alcoy||Cines Axion - Orihuela||Cines Colci||Cines IMF Finestrat||Cines IMF Torrevieja||CinesMax Petrer||Colci-Rincón
+       ··Cine: Colci (Id: 554,0,1.html)
+       --IMDB: Colci La Vila (Id: ci1029234)
+       ··Cine: Colci-Rincón (Id: 555,0,1.html)
+       --IMDB: Colci-Rincón (Id: ci1029236)
+   ··Ciudad: Denia (Id: 0,3,264.html)
+       ··Cine: Auto cine Drive In (Id: 556,0,1.html)
+         *** No encontré el cine << Auto cine Drive In >> de Denia (Alicante) CODPOSTAL: 03001
+         *** De entre estos: Cine Navas Alicante||Cines Aana Alicante||Cines Panoramis||Kinépolis Alicante Plaza Mar 2||Yelmo Cines Puerta de Alicante||Autocine El Sur||Cines Aana San Juan||Megarama Alicante||Cines Axion - Santa Pola||ABC Elx||Colci La Vila||Yelmo Cines Vinalopó||Cine Roma||Cines Axion - Alcoy||Cines Axion - Orihuela||Cines Colci||Cines IMF Finestrat||Cines IMF Torrevieja||CinesMax Petrer||Colci-Rincón
+   ··Ciudad: Elche (Id: 0,3,265.html)
+       ··Cine: ABC Elx (Id: 557,0,1.html)
+       --IMDB: ABC Elx (Id: ci1029190)
+   ··Ciudad: Orihuela (Id: 0,3,266.html)
+   ··Ciudad: Petrer (Id: 0,3,267.html)
+       ··Cine: Yelmo Cines Vinalopó (Id: 559,0,1.html)
+       --IMDB: Yelmo Cines Vinalopó (Id: ci1029257)
+       ··Cine: Cinemax Petrer (Id: 602,0,1.html)
+       --IMDB: CinesMax Petrer (Id: ci1029229)
+   ··Ciudad: San Juan (Id: 0,3,268.html)
+       ··Cine: aAna San Juan (Id: 560,0,1.html)
+       --IMDB: Cines Aana San Juan (Id: ci1029219)
+   ··Ciudad: Torrevieja (Id: 0,3,269.html)
+       ··Cine: IMF 9 Torrevieja (Id: 561,0,1.html)
+       --IMDB: Cines IMF Torrevieja (Id: ci1029225)
+   ··Ciudad: Villajoyosa (Id: 0,3,270.html)
+       ··Cine: Cines La Villa (Id: 562,0,1.html)
+         *** No encontré el cine << Cines La Villa >> de Villajoyosa (Alicante) CODPOSTAL: 03001
+         *** De entre estos: Cine Navas Alicante||Cines Aana Alicante||Cines Panoramis||Kinépolis Alicante Plaza Mar 2||Yelmo Cines Puerta de Alicante||Autocine El Sur||Cines Aana San Juan||Megarama Alicante||Cines Axion - Santa Pola||ABC Elx||Colci La Vila||Yelmo Cines Vinalopó||Cine Roma||Cines Axion - Alcoy||Cines Axion - Orihuela||Cines Colci||Cines IMF Finestrat||Cines IMF Torrevieja||CinesMax Petrer||Colci-Rincón
+   ··Ciudad: Ondara (Id: 0,3,294.html)
+       ··Cine: Cines IMF Ondara (Id: 603,0,1.html)
+         *** No encontré el cine << Cines IMF Ondara >> de Ondara (Alicante) CODPOSTAL: 03001
+         *** De entre estos: Cine Navas Alicante||Cines Aana Alicante||Cines Panoramis||Kinépolis Alicante Plaza Mar 2||Yelmo Cines Puerta de Alicante||Autocine El Sur||Cines Aana San Juan||Megarama Alicante||Cines Axion - Santa Pola||ABC Elx||Colci La Vila||Yelmo Cines Vinalopó||Cine Roma||Cines Axion - Alcoy||Cines Axion - Orihuela||Cines Colci||Cines IMF Finestrat||Cines IMF Torrevieja||CinesMax Petrer||Colci-Rincón
+   ··Ciudad: San Vicente del Raspeig (Id: 0,3,309.html)
+       ··Cine: Abaco San Vicente 3D (Id: 176,0,1.html)
+         *** No encontré el cine << Abaco San Vicente 3D >> de San Vicente del Raspeig (Alicante) CODPOSTAL: 03001
+         *** De entre estos: Cine Navas Alicante||Cines Aana Alicante||Cines Panoramis||Kinépolis Alicante Plaza Mar 2||Yelmo Cines Puerta de Alicante||Autocine El Sur||Cines Aana San Juan||Megarama Alicante||Cines Axion - Santa Pola||ABC Elx||Colci La Vila||Yelmo Cines Vinalopó||Cine Roma||Cines Axion - Alcoy||Cines Axion - Orihuela||Cines Colci||Cines IMF Finestrat||Cines IMF Torrevieja||CinesMax Petrer||Colci-Rincón
+No encontré de esta provincia: 8
+   ··Ciudad: Badajoz (Id: 0,7,69.html)
+       ··Cine: Cinesur Conquistadores (Id: 225,0,1.html)
+       --IMDB: Cinesur Conquistadores (Id: ci1028933)
+   ··Ciudad: Almendralejo (Id: 0,7,70.html)
+       ··Cine: Victoria Centro Comercial 1-5 (Id: 228,0,1.html)
+         *** No encontré el cine << Victoria Centro Comercial 1-5 >> de Almendralejo (Badajoz) CODPOSTAL: 06001
+         *** De entre estos: Cinesur Conquistadores||Cine-Teatro Municipal de Elvas
+   ··Ciudad: Don Benito (Id: 0,7,71.html)
+       ··Cine: Cines Victoria (Id: 229,0,1.html)
+         *** No encontré el cine << Cines Victoria >> de Don Benito (Badajoz) CODPOSTAL: 06001
+         *** De entre estos: Cinesur Conquistadores||Cine-Teatro Municipal de Elvas
+   ··Ciudad: Mérida (Id: 0,7,72.html)
+       ··Cine: Cinesa El Foro 3D (Id: 231,0,1.html)
+         *** No encontré el cine << Cinesa El Foro 3D >> de Mérida (Badajoz) CODPOSTAL: 06001
+         *** De entre estos: Cinesur Conquistadores||Cine-Teatro Municipal de Elvas
+   ··Ciudad: Villanueva de la Serena (Id: 0,7,73.html)
+   ··Ciudad: Zafra (Id: 0,7,74.html)
+       ··Cine: Multicines España (Id: 233,0,1.html)
+         *** No encontré el cine << Multicines España >> de Zafra (Badajoz) CODPOSTAL: 06001
+         *** De entre estos: Cinesur Conquistadores||Cine-Teatro Municipal de Elvas
+No encontré de esta provincia: 4
+   ··Ciudad: Cáceres (Id: 0,11,82.html)
+       ··Cine: Multicines Cáceres (Id: 252,0,1.html)
+       --IMDB: Multicines Cáceres (Id: ci1028937)
+   ··Ciudad: Plasencia (Id: 0,11,83.html)
+       ··Cine: Multicines Alkázar (Id: 254,0,1.html)
+         *** No encontré el cine << Multicines Alkázar >> de Plasencia (Cáceres) CODPOSTAL: 10001
+         *** De entre estos: Multicines Cáceres
+No encontré de esta provincia: 1
+   ··Ciudad: Burgos (Id: 0,10,81.html)
+       ··Cine: Cinebox El Mirador (Id: 249,0,1.html)
+       --IMDB: Cinebox El Mirador (Id: ci1028701)
+       ··Cine: Cines Van Golem Arlanzón (Id: 250,0,1.html)
+       --IMDB: VanGolem Arlanzón (Id: ci1028737)
+No encontré de esta provincia: 0
+   ··Ciudad: Oviedo (Id: 0,5,64.html)
+       ··Cine: Yelmo Cines Los Prados (Id: 217,0,1.html)
+       --IMDB: Yelmo Cines Los Prados (Id: ci1028670)
+   ··Ciudad: Avilés (Id: 0,5,65.html)
+       ··Cine: Cinebox Parque Astur (Id: 218,0,1.html)
+         *** No encontré el cine << Cinebox Parque Astur >> de Avilés (Asturias) CODPOSTAL: 33001
+         *** De entre estos: Cinesa Parque Principado||Yelmo Cines Los Prados||Artesiete Caudalia||Odeón Multicines Parque Astur||Artesiete Nalón||Autocine Gijón||Cines Centro||Yelmo Cines Ocimax
+   ··Ciudad: Gijón (Id: 0,5,66.html)
+       ··Cine: Cines Centro (Id: 220,0,1.html)
+       --IMDB: Cines Centro (Id: ci1028666)
+       ··Cine: Yelmo Cines OciMax (Id: 221,0,1.html)
+       --IMDB: Yelmo Cines Ocimax (Id: ci1028671)
+   ··Ciudad: Siero (Id: 0,5,67.html)
+       ··Cine: Cinesa Parque Principado 3D (Id: 222,0,1.html)
+       --IMDB: Cinesa Parque Principado (Id: ci1028667)
+No encontré de esta provincia: 1
+   ··Ciudad: Palma de Mallorca (Id: 0,8,75.html)
+       ··Cine: Cinesa Festival Park 3D (Id: 234,0,1.html)
+       --IMDB: Cinesa Festival Park 3D - IMAX (Id: ci1029126)
+       ··Cine: Cines Ocimax (Id: 235,0,1.html)
+       --IMDB: Cines Ocimax (Id: ci1029125)
+       ··Cine: CineCiutat (Id: 236,0,1.html)
+         *** No encontré el cine << CineCiutat >> de Palma de Mallorca (Baleares) CODPOSTAL: 07001
+         *** De entre estos: Cines Ocimax||Multicines Augusta||Multicines Porto Pi Terrazas||Multicines Rivoli||Cinesa Festival Park 3D - IMAX||Multicines Manacor
+       ··Cine: Multicines Porto Pi Terrazas (Id: 239,0,1.html)
+       --IMDB: Multicines Porto Pi Terrazas (Id: ci1029134)
+       ··Cine: Multicines Rivoli (Id: 240,0,1.html)
+       --IMDB: Multicines Rivoli (Id: ci1029135)
+       ··Cine: Sala Augusta (Id: 241,0,1.html)
+         *** No encontré el cine << Sala Augusta >> de Palma de Mallorca (Baleares) CODPOSTAL: 07001
+         *** De entre estos: Cines Ocimax||Multicines Augusta||Multicines Porto Pi Terrazas||Multicines Rivoli||Cinesa Festival Park 3D - IMAX||Multicines Manacor
+   ··Ciudad: Manacor (Id: 0,8,76.html)
+       ··Cine: Multicines Manacor (Id: 242,0,1.html)
+       --IMDB: Multicines Manacor (Id: ci1029131)
+   ··Ciudad: Maó (Id: 0,8,77.html)
+       ··Cine: Ocimax Multisalas (Id: 243,0,1.html)
+         *** No encontré el cine << Ocimax Multisalas >> de Maó (Baleares) CODPOSTAL: 07001
+         *** De entre estos: Cines Ocimax||Multicines Augusta||Multicines Porto Pi Terrazas||Multicines Rivoli||Cinesa Festival Park 3D - IMAX||Multicines Manacor
+   ··Ciudad: Alaior (Id: 0,8,78.html)
+   ··Ciudad: Eivissa (Id: 0,8,79.html)
+       ··Cine: Multicines Eivissa (Id: 245,0,1.html)
+         *** No encontré el cine << Multicines Eivissa >> de Eivissa (Baleares) CODPOSTAL: 07001
+         *** De entre estos: Cines Ocimax||Multicines Augusta||Multicines Porto Pi Terrazas||Multicines Rivoli||Cinesa Festival Park 3D - IMAX||Multicines Manacor
+   ··Ciudad: Inca (Id: 0,8,80.html)
+No encontré de esta provincia: 4
+   ··Ciudad: Santander (Id: 0,13,93.html)
+       ··Cine: Cine Los Ángeles (Id: 267,0,1.html)
+       --IMDB: Cine Los Ángeles (Id: ci1028675)
+       ··Cine: Cinesa Bahía de Santander 3D (Id: 268,0,1.html)
+         *** No encontré el cine << Cinesa Bahía de Santander 3D >> de Santander (Cantabria) CODPOSTAL: 39001
+         *** De entre estos: Cine Los Ángeles||Cinesa Bahía Santander||Peñacastillo Cinemas||Cine La Vidriera||Sala Bretón
+       ··Cine: Peñacastillo Cinemas 12 3D UCC (Id: 271,0,1.html)
+       --IMDB: Peñacastillo Cinemas (Id: ci1028683)
+   ··Ciudad: Camargo (Id: 0,13,94.html)
+       ··Cine: Cine La Vidriera (Id: 272,0,1.html)
+       --IMDB: Cine La Vidriera (Id: ci1028674)
+   ··Ciudad: El Astillero (Id: 0,13,95.html)
+   ··Ciudad: Los Corrales de Buelna (Id: 0,13,96.html)
+       ··Cine: Teatro de Los Corrales de Buelna (Id: 275,0,1.html)
+         *** No encontré el cine << Teatro de Los Corrales de Buelna >> de Los Corrales de Buelna (Cantabria) CODPOSTAL: 39001
+         *** De entre estos: Cine Los Ángeles||Cinesa Bahía Santander||Peñacastillo Cinemas||Cine La Vidriera||Sala Bretón
+   ··Ciudad: Noja (Id: 0,13,97.html)
+No encontré de esta provincia: 2
+   ··Ciudad: Cádiz (Id: 0,12,84.html)
+       ··Cine: Cines Bahía de Cádiz (Id: 255,0,1.html)
+       --IMDB: Cinesur Bahía de Cádiz (Id: ci1028572)
+       ··Cine: Multicines El Centro (Id: 256,0,1.html)
+       --IMDB: Multicines El Centro (Id: ci1028606)
+   ··Ciudad: Chiclana (Id: 0,12,85.html)
+       ··Cine: Multicines Las Salinas UCC (Id: 257,0,1.html)
+       --IMDB: Multicines Las Salinas (Id: ci1028611)
+   ··Ciudad: Jerez de la Frontera (Id: 0,12,86.html)
+       ··Cine: Yelmo Cines Área Sur (Id: 607,0,1.html)
+       --IMDB: Yelmo Cines Area Sur (Id: ci1028622)
+   ··Ciudad: La Linea (Id: 0,12,87.html)
+   ··Ciudad: Los Barrios (Id: 0,12,88.html)
+   ··Ciudad: Puerto de Sta. María (Id: 0,12,89.html)
+       ··Cine: Bahía Mar Cinemas 14  3D UCC (Id: 262,0,1.html)
+         *** No encontré el cine << Bahía Mar Cinemas 14  3D UCC >> de Puerto de Sta. María (Cádiz) CODPOSTAL: 11001
+         *** De entre estos: Cinesur Bahía de Cádiz||Multicines El Centro||Multicines Bahía Mar||Cines Plaza San Fernando||Multicines Las Salinas||Al-Andalus Sanlucar 3D||Yelmo Cines Area Sur
+   ··Ciudad: Rota (Id: 0,12,90.html)
+       ··Cine: Portalejo Cinemas (Id: 263,0,1.html)
+         *** No encontré el cine << Portalejo Cinemas >> de Rota (Cádiz) CODPOSTAL: 11001
+         *** De entre estos: Cinesur Bahía de Cádiz||Multicines El Centro||Multicines Bahía Mar||Cines Plaza San Fernando||Multicines Las Salinas||Al-Andalus Sanlucar 3D||Yelmo Cines Area Sur
+   ··Ciudad: San Fernando (Id: 0,12,91.html)
+       ··Cine: Ábaco San Fernando (Id: 264,0,1.html)
+         *** No encontré el cine << Ábaco San Fernando >> de San Fernando (Cádiz) CODPOSTAL: 11001
+         *** De entre estos: Cinesur Bahía de Cádiz||Multicines El Centro||Multicines Bahía Mar||Cines Plaza San Fernando||Multicines Las Salinas||Al-Andalus Sanlucar 3D||Yelmo Cines Area Sur
+   ··Ciudad: Sanlúcar de Barrameda (Id: 0,12,92.html)
+       ··Cine: Al-Ándalus Sánlucar de Barrameda (Id: 266,0,1.html)
+         *** No encontré el cine << Al-Ándalus Sánlucar de Barrameda >> de Sanlúcar de Barrameda (Cádiz) CODPOSTAL: 11001
+         *** De entre estos: Cinesur Bahía de Cádiz||Multicines El Centro||Multicines Bahía Mar||Cines Plaza San Fernando||Multicines Las Salinas||Al-Andalus Sanlucar 3D||Yelmo Cines Area Sur
+No encontré de esta provincia: 4
+   ··Ciudad: Ceuta (Id: 0,15,49.html)
+       ··Cine: Marina Cinemas 7 UCC (Id: 210,0,1.html)
+       --IMDB: Marina Cinemas 7 (Id: ci1028687)
+No encontré de esta provincia: 0
+   ··Ciudad: Castellón (Id: 0,14,98.html)
+       ··Cine: Cinebox Castellón (Id: 277,0,1.html)
+         *** No encontré el cine << Cinebox Castellón >> de Castellón (Castellón) CODPOSTAL: 12001
+         *** De entre estos: Cinesa Salera||Neocine Puerto Azahar||Alucine Sagunto
+       ··Cine: Cinesa La Salera (Id: cinesa-la-salera/)
+       --IMDB: Cinesa Salera (Id: ci1029213)
+   ··Ciudad: Benicarló (Id: 0,14,99.html)
+       ··Cine: Costa Azahar (Id: 278,0,1.html)
+         *** No encontré el cine << Costa Azahar >> de Benicarló (Castellón) CODPOSTAL: 12001
+         *** De entre estos: Cinesa Salera||Neocine Puerto Azahar||Alucine Sagunto
+   ··Ciudad: Grao de Castellón (Id: 0,14,100.html)
+       ··Cine: Puerto Azahar (Id: 279,0,1.html)
+       --IMDB: Neocine Puerto Azahar (Id: ci1029246)
+   ··Ciudad: Vila-Real (Id: 0,14,101.html)
+       ··Cine: Cines Sucre (Id: 280,0,1.html)
+         *** No encontré el cine << Cines Sucre >> de Vila-Real (Castellón) CODPOSTAL: 12001
+         *** De entre estos: Cinesa Salera||Neocine Puerto Azahar||Alucine Sagunto
+No encontré de esta provincia: 3
+   ··Ciudad: Ciudad Real (Id: 0,16,102.html)
+       ··Cine: Parque de Ocio Las Vías (Id: 282,0,1.html)
+       --IMDB: Parque de Ocio Las Vías (Id: ci1028763)
+   ··Ciudad: Alcázar de San Juan (Id: 0,16,103.html)
+       ··Cine: Multicines Cinemancha (Id: 283,0,1.html)
+         *** No encontré el cine << Multicines Cinemancha >> de Alcázar de San Juan (Ciudad Real) CODPOSTAL: 13001
+         *** De entre estos: Parque de Ocio Las Vías
+   ··Ciudad: Puertollano (Id: 0,16,104.html)
+       ··Cine: Multicines Ortega (Id: 284,0,1.html)
+         *** No encontré el cine << Multicines Ortega >> de Puertollano (Ciudad Real) CODPOSTAL: 13001
+         *** De entre estos: Parque de Ocio Las Vías
+   ··Ciudad: Valdepeñas (Id: 0,16,105.html)
+       ··Cine: Multicines Valdepeñas (Id: 285,0,1.html)
+         *** No encontré el cine << Multicines Valdepeñas >> de Valdepeñas (Ciudad Real) CODPOSTAL: 13001
+         *** De entre estos: Parque de Ocio Las Vías
+No encontré de esta provincia: 3
+   ··Ciudad: Córdoba (Id: 0,17,106.html)
+       ··Cine: Cinesur El tablero (Id: 288,0,1.html)
+       --IMDB: Cinesur El Tablero (Id: ci1028575)
+       ··Cine: Guadalquivir Cinemas 10 3D UCC (Id: 290,0,1.html)
+         *** No encontré el cine << Guadalquivir Cinemas 10 3D UCC >> de Córdoba (Córdoba) CODPOSTAL: 14001
+         *** De entre estos: Cinesur El Tablero||Multicines Guadalquivir||Artesiete Écija
+   ··Ciudad: Puente Genil (Id: 0,17,107.html)
+No encontré de esta provincia: 1
+   ··Ciudad: Cuenca (Id: 0,19,108.html)
+       ··Cine: Ábaco Cuenca (Id: 294,0,1.html)
+         *** No encontré el cine << Ábaco Cuenca >> de Cuenca (Cuenca) CODPOSTAL: 16001
+         *** De entre estos: Odeón Multicines Cuenca||Odeón Multicines El Mirador de Cuenca
+No encontré de esta provincia: 1
+   ··Ciudad: Barcelona (Id: 0,9,23.html)
+       ··Cine: Cinesa Diagonal Mar 3D (Id: 89,0,1.html)
+       --IMDB: Cinesa Diagonal (Id: ci1028854)
+       ··Cine: Glòries Multicines (Id: 99,0,1.html)
+       --IMDB: Glòries Multicines (Id: ci1028870)
+       ··Cine: Boliche (Id: 547,0,1.html)
+       --IMDB: Boliche Cinemes (Id: ci1028808)
+       ··Cine: Aribau (Id: 90,0,1.html)
+       --IMDB: Aribau Club (Id: ci1028803)
+       ··Cine: Bosque (Id: 91,0,1.html)
+       --IMDB: Bosque Multicines (Id: ci1028810)
+       ··Cine: Cinesa Diagonal 3D (Id: 92,0,1.html)
+       --IMDB: Cinesa Diagonal (Id: ci1028854)
+       ··Cine: Cinesa Heron City 3D (Id: 93,0,1.html)
+       --IMDB: Cinesa Heron City (Id: ci1028856)
+       ··Cine: Cinesa Maremagnum 3D (Id: 94,0,1.html)
+       --IMDB: Cinesa Maremagnum (Id: ci1028859)
+       ··Cine: Yelmo Cines Icaria (Id: 95,0,1.html)
+       --IMDB: Yelmo Cines Icaria (Id: ci1028925)
+       ··Cine: Aribau Club (Id: 97,0,1.html)
+       --IMDB: Aribau Club (Id: ci1028803)
+       ··Cine: Gran Sarrià Multicines (Id: 100,0,1.html)
+       --IMDB: Gran Sarrià Multicines (Id: ci1028872)
+       ··Cine: Cinemes Texas (Id: cinemes-texas/)
+         *** No encontré el cine << Cinemes Texas >> de Barcelona (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+       ··Cine: Lauren Universitat (Id: 105,0,1.html)
+       --IMDB: Lauren Universitat (Id: ci1028887)
+       ··Cine: Méliès Cinemes (Id: 106,0,1.html)
+       --IMDB: Méliès Cinemes (Id: ci1028902)
+       ··Cine: Palacio Balañá (Id: 108,0,1.html)
+         *** No encontré el cine << Palacio Balañá >> de Barcelona (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+       ··Cine: Comedia (Id: 550,0,1.html)
+       --IMDB: Comèdia (Id: ci1028864)
+       ··Cine: Renoir Floridablanca (Id: 110,0,1.html)
+       --IMDB: Renoir Floridablanca (Id: ci1028914)
+       ··Cine: Verdi (Id: 114,0,1.html)
+       --IMDB: Verdi Barcelona (Id: ci1028922)
+       ··Cine: Verdi Park (Id: 115,0,1.html)
+         *** No encontré el cine << Verdi Park >> de Barcelona (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+       ··Cine: Cinesa La Maquinista 3D (Id: 116,0,1.html)
+       --IMDB: Cinesa La Maquinista 3D (Id: ci1028858)
+       ··Cine: Cinemes Girona (Id: cinemes-girona/)
+       --IMDB: Cinemes Girona (Id: ci1028812)
+       ··Cine: Multicines Arenas de Barcelona (Id: multicines-arenas-de-barcelona/)
+         *** No encontré el cine << Multicines Arenas de Barcelona >> de Barcelona (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+       ··Cine: Cinema Maldà (Id: cinema-malda/)
+         *** No encontré el cine << Cinema Maldà >> de Barcelona (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+       ··Cine: Balmes Multicines (Id: balmes-multicines/)
+       --IMDB: Balmes Multicines (Id: ci50885705)
+       ··Cine: Zumzeig Cinema (Id: zumzeig-cinema/)
+         *** No encontré el cine << Zumzeig Cinema >> de Barcelona (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Sabadell (Id: 0,9,24.html)
+       ··Cine: Cines Imperial (Id: 117,0,1.html)
+       --IMDB: Cines Imperial (Id: ci1028853)
+       ··Cine: Multicines Eix Macià (Id: 118,0,1.html)
+       --IMDB: Multicines Eix Macià (Id: ci1028898)
+   ··Ciudad: Cornellà (Id: 0,9,25.html)
+       ··Cine: Full HD Cinemes Centre Splau (Id: 615,0,1.html)
+         *** No encontré el cine << Full HD Cinemes Centre Splau >> de Cornellà (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Sant Cugat (Id: 0,9,26.html)
+       ··Cine: Cinesa Sant Cugat 3D (Id: 121,0,1.html)
+       --IMDB: Cinesa Sant Cugat (Id: ci1028862)
+       ··Cine: Yelmo Cines Sant Cugat (Id: 122,0,1.html)
+       --IMDB: Yelmo Cines Sant Cugat (Id: ci1028926)
+   ··Ciudad: Manresa (Id: 0,9,27.html)
+       ··Cine: Multicines Bages (Id: 123,0,1.html)
+         *** No encontré el cine << Multicines Bages >> de Manresa (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Abrera (Id: 0,9,30.html)
+       ··Cine: Yelmo Cines Abrera (Id: 132,0,1.html)
+       --IMDB: Yelmo Cines Abrera 3D (Id: ci1028895)
+   ··Ciudad: Arenys de Mar (Id: 0,9,31.html)
+       ··Cine: Cinemes Arenys (Id: 133,0,1.html)
+         *** No encontré el cine << Cinemes Arenys >> de Arenys de Mar (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Badalona (Id: 0,9,32.html)
+       ··Cine: Megacine Badalona (Id: 575,0,1.html)
+         *** No encontré el cine << Megacine Badalona >> de Badalona (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Barberà del Vallès (Id: 0,9,33.html)
+       ··Cine: Yelmo Cines Baricentro (Id: 136,0,1.html)
+       --IMDB: Yelmo Cines Baricentro (Id: ci1028924)
+   ··Ciudad: Berga (Id: 0,9,34.html)
+   ··Ciudad: Calella (Id: 0,9,244.html)
+       ··Cine: Cinema Sala Mozart (Id: 520,0,1.html)
+         *** No encontré el cine << Cinema Sala Mozart >> de Calella (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Castelldefells (Id: 0,9,245.html)
+       ··Cine: Filmax Castelldefels (Id: 521,0,1.html)
+         *** No encontré el cine << Filmax Castelldefels >> de Castelldefells (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Cerdanyola del Vallès (Id: 0,9,246.html)
+       ··Cine: El Punt Multimèdia (Id: 522,0,1.html)
+         *** No encontré el cine << El Punt Multimèdia >> de Cerdanyola del Vallès (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: El Prat de Llobregat (Id: 0,9,247.html)
+       ··Cine: Capri (Id: 523,0,1.html)
+       --IMDB: Cine Capri (Id: ci64284175)
+   ··Ciudad: Gavà (Id: 0,9,248.html)
+       ··Cine: Cinesa Barnasud 3D (Id: 524,0,1.html)
+       --IMDB: Cinesa Barnasud 3D (Id: ci1028890)
+   ··Ciudad: Granollers (Id: 0,9,249.html)
+       ··Cine: OCine Granollers - El Nord (Id: 525,0,1.html)
+         *** No encontré el cine << OCine Granollers - El Nord >> de Granollers (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Igualada (Id: 0,9,250.html)
+   ··Ciudad: L'Hospitalet (Id: 0,9,251.html)
+       ··Cine: Cinesa La Farga 3D (Id: 528,0,1.html)
+       --IMDB: Cinesa La Farga (Id: ci1028857)
+       ··Cine: Filmax Gran Via (Id: 529,0,1.html)
+       --IMDB: Filmax Granvía (Id: ci1028868)
+   ··Ciudad: Mataró (Id: 0,9,252.html)
+       ··Cine: Cinesa Mataró Parc 3D (Id: 532,0,1.html)
+       --IMDB: Cinesa Mataró Parc (Id: ci1028860)
+   ··Ciudad: Mollet (Id: 0,9,253.html)
+   ··Ciudad: Sant Andreu de la Barca (Id: 0,9,254.html)
+       ··Cine: Cines Atrium (Id: 534,0,1.html)
+       --IMDB: Atrium Cines (Id: ci1028807)
+   ··Ciudad: Sant Feliu de Llobregat (Id: 0,9,255.html)
+       ··Cine: cineBaix (Id: 535,0,1.html)
+         *** No encontré el cine << cineBaix >> de Sant Feliu de Llobregat (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Sitges (Id: 0,9,256.html)
+       ··Cine: Cinema Prado (Id: 536,0,1.html)
+       --IMDB: Cinema Prado (Id: ci1028836)
+       ··Cine: Cinema Retiro (Id: 537,0,1.html)
+       --IMDB: Cinema Retiro (Id: ci1028837)
+   ··Ciudad: Terrassa (Id: 0,9,257.html)
+       ··Cine: Cinema Catalunya (Id: 538,0,1.html)
+       --IMDB: Cinema Catalunya (Id: ci1028829)
+       ··Cine: Cinesa Parc Vallès 3D (Id: 539,0,1.html)
+       --IMDB: Cinesa Parc Vallès (Id: ci1028861)
+       ··Cine: Cine Segle XXI (Id: 540,0,1.html)
+         *** No encontré el cine << Cine Segle XXI >> de Terrassa (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+       ··Cine: Club Catalunya (Id: 541,0,1.html)
+         *** No encontré el cine << Club Catalunya >> de Terrassa (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Vic (Id: 0,9,258.html)
+       ··Cine: Multicines Sucre (Id: 542,0,1.html)
+         *** No encontré el cine << Multicines Sucre >> de Vic (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+       ··Cine: Nou (Id: 543,0,1.html)
+         *** No encontré el cine << Nou >> de Vic (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+       ··Cine: Vigatà (Id: 544,0,1.html)
+         *** No encontré el cine << Vigatà >> de Vic (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Viladecans (Id: 0,9,259.html)
+   ··Ciudad: Vilanova i la Geltrú (Id: 0,9,260.html)
+       ··Cine: Lauren Garraf THX (Id: 546,0,1.html)
+         *** No encontré el cine << Lauren Garraf THX >> de Vilanova i la Geltrú (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+   ··Ciudad: Sant Vicenç dels Horts (Id: 0,9,304.html)
+       ··Cine: Multicines La Vailet (Id: multicines-la-vailet/)
+       --IMDB: Multicinemes La Vailet (Id: ci1028894)
+   ··Ciudad: Sant Celoni (Id: 0,9,306.html)
+       ··Cine: OCine Sant Celoni - Altrium (Id: ocine-sant-celoni/)
+         *** No encontré el cine << OCine Sant Celoni - Altrium >> de Sant Celoni (Barcelona) CODPOSTAL: 08001
+         *** De entre estos: Arenas de Barcelona Multicines||Aribau Club||Aribau Multicines||Balmes Multicines||Boliche Cinemes||Bosque Multicines||Cinemes Girona||Cinesa Diagonal||Cinesa Maremagnum||Comèdia||Filmax Granvía||Filmoteca de Catalunya||Glòries Multicines||Gran Sarrià Multicines||Institut Français Barcelone||Lauren Universitat||Méliès Cinemes||Palau Balaña||Renoir Floridablanca||Verdi Barcelona||Yelmo Cines Icaria||Badalona Màgic Megacine||Cine Capri||Cinemes Full HD||Cinesa Diagonal Mar 18||Cinesa Heron City||Cinesa La Farga||Cinesa La Maquinista 3D||Atrium Cines||Cine la Calandria||CineBaix||Cinemes Metropol||Cinemes Montcada||Cines Imperial||Cinesa Barnasud 3D||Cinesa Sant Cugat||El Punt Cerdanyola||Multicinemes La Vailet||Yelmo Cines Baricentro||Yelmo Cines Castelldefels||Yelmo Cines Sant Cugat||Cinema Catalunya||Cinesa Mataró Parc||Cinesa Parc Vallès||Multicines Eix Macià||OCINE Granollers - El Nord||Yelmo Cines Abrera 3D||Cine Alhambra - La Garriga||Cinema Prado||Cinema Retiro
+No encontré de esta provincia: 22
+   ··Ciudad: Huelva (Id: 0,24,50.html)
+       ··Cine: Cinebox Aqualón (Id: 188,0,1.html)
+       --IMDB: Cinebox Aqualón - Huelva (Id: ci1028560)
+   ··Ciudad: Isla Cristina (Id: 0,24,52.html)
+       ··Cine: Multicines La Dehesa - Islantilla (Id: 190,0,1.html)
+         *** No encontré el cine << Multicines La Dehesa - Islantilla >> de Isla Cristina (Huelva) CODPOSTAL: 21001
+         *** De entre estos: Artesiete Holea||Cinebox Aqualón - Huelva||Al-Andalus Punta Umbría 3D||Cine VIP - Lepe||Condado Cinema 7
+   ··Ciudad: Lepe (Id: 0,24,53.html)
+       ··Cine: Cinevip 3D Lepe (Id: 191,0,1.html)
+         *** No encontré el cine << Cinevip 3D Lepe >> de Lepe (Huelva) CODPOSTAL: 21001
+         *** De entre estos: Artesiete Holea||Cinebox Aqualón - Huelva||Al-Andalus Punta Umbría 3D||Cine VIP - Lepe||Condado Cinema 7
+   ··Ciudad: Barbastro (Id: 0,24,132.html)
+   ··Ciudad: La Palma del Condado (Id: 0,24,293.html)
+       ··Cine: El Condado Cinemas 7 UCC (Id: 601,0,1.html)
+         *** No encontré el cine << El Condado Cinemas 7 UCC >> de La Palma del Condado (Huelva) CODPOSTAL: 21001
+         *** De entre estos: Artesiete Holea||Cinebox Aqualón - Huelva||Al-Andalus Punta Umbría 3D||Cine VIP - Lepe||Condado Cinema 7
+No encontré de esta provincia: 3
+   ··Ciudad: Granada (Id: 0,21,118.html)
+       ··Cine: Cinema Andalucia 2000 (Id: 310,0,1.html)
+         *** No encontré el cine << Cinema Andalucia 2000 >> de Granada (Granada) CODPOSTAL: 18001
+         *** De entre estos: Cinema 2000 Neptuno||Cinema 2000 Serrallo Plaza||Kinépolis Granada||Madrigal||Artesiete Alhsur
+       ··Cine: Cine Madrigal (Id: 311,0,1.html)
+       --IMDB: Madrigal (Id: ci1028598)
+   ··Ciudad: Pulianas (Id: 0,21,119.html)
+       ··Cine: Kinépolis Granada (Id: 313,0,1.html)
+       --IMDB: Kinépolis Granada (Id: ci1028596)
+No encontré de esta provincia: 1
+   ··Ciudad: Girona (Id: 0,20,109.html)
+       ··Cine: Albèniz Plaça (Id: 296,0,1.html)
+       --IMDB: Albéniz Plaça (Id: ci1028801)
+       ··Cine: Cinema Truffaut (Id: 297,0,1.html)
+       --IMDB: Cinema Truffaut (Id: ci1028841)
+       ··Cine: Cinemes Albeniz (Id: 298,0,1.html)
+         *** No encontré el cine << Cinemes Albeniz >> de Girona (Girona) CODPOSTAL: 17001
+         *** De entre estos: Albéniz Centre||Albéniz Plaça||Cinema Truffaut||OCINE Girona||Odeón Multicines Girona||Arinco||OCINE Platja d'Aro - Parc d'Aro||Cat Cinemes||Cinema Vigatà||Cinemes Olot||Cinemes Roses||Multicines Sucre - Vic||Multicines Sucre - Villareal||OCINE Blanes||OCINE Sant Celoni
+       ··Cine: Ocine Girona (Id: 299,0,1.html)
+         *** No encontré el cine << Ocine Girona >> de Girona (Girona) CODPOSTAL: 17001
+         *** De entre estos: Albéniz Centre||Albéniz Plaça||Cinema Truffaut||OCINE Girona||Odeón Multicines Girona||Arinco||OCINE Platja d'Aro - Parc d'Aro||Cat Cinemes||Cinema Vigatà||Cinemes Olot||Cinemes Roses||Multicines Sucre - Vic||Multicines Sucre - Villareal||OCINE Blanes||OCINE Sant Celoni
+   ··Ciudad: Blanes (Id: 0,20,110.html)
+       ··Cine: Lauren Costa Brava (Id: 301,0,1.html)
+         *** No encontré el cine << Lauren Costa Brava >> de Blanes (Girona) CODPOSTAL: 17001
+         *** De entre estos: Albéniz Centre||Albéniz Plaça||Cinema Truffaut||OCINE Girona||Odeón Multicines Girona||Arinco||OCINE Platja d'Aro - Parc d'Aro||Cat Cinemes||Cinema Vigatà||Cinemes Olot||Cinemes Roses||Multicines Sucre - Vic||Multicines Sucre - Villareal||OCINE Blanes||OCINE Sant Celoni
+   ··Ciudad: Figueres (Id: 0,20,111.html)
+       ··Cine: Cines Figueres (Id: 302,0,1.html)
+         *** No encontré el cine << Cines Figueres >> de Figueres (Girona) CODPOSTAL: 17001
+         *** De entre estos: Albéniz Centre||Albéniz Plaça||Cinema Truffaut||OCINE Girona||Odeón Multicines Girona||Arinco||OCINE Platja d'Aro - Parc d'Aro||Cat Cinemes||Cinema Vigatà||Cinemes Olot||Cinemes Roses||Multicines Sucre - Vic||Multicines Sucre - Villareal||OCINE Blanes||OCINE Sant Celoni
+   ··Ciudad: Olot (Id: 0,20,112.html)
+       ··Cine: Cinemes Olot (Id: 303,0,1.html)
+       --IMDB: Cinemes Olot (Id: ci1028849)
+   ··Ciudad: Palamós (Id: 0,20,113.html)
+       ··Cine: Arinco (Id: 304,0,1.html)
+       --IMDB: Arinco (Id: ci1028805)
+       ··Cine: Kyton (Id: 305,0,1.html)
+         *** No encontré el cine << Kyton >> de Palamós (Girona) CODPOSTAL: 17001
+         *** De entre estos: Albéniz Centre||Albéniz Plaça||Cinema Truffaut||OCINE Girona||Odeón Multicines Girona||Arinco||OCINE Platja d'Aro - Parc d'Aro||Cat Cinemes||Cinema Vigatà||Cinemes Olot||Cinemes Roses||Multicines Sucre - Vic||Multicines Sucre - Villareal||OCINE Blanes||OCINE Sant Celoni
+   ··Ciudad: Platja d'Aro (Id: 0,20,114.html)
+       ··Cine: OCine Platja D'Aro - Parc D'Aro (Id: 306,0,1.html)
+         *** No encontré el cine << OCine Platja D'Aro - Parc D'Aro >> de Platja d'Aro (Girona) CODPOSTAL: 17001
+         *** De entre estos: Albéniz Centre||Albéniz Plaça||Cinema Truffaut||OCINE Girona||Odeón Multicines Girona||Arinco||OCINE Platja d'Aro - Parc d'Aro||Cat Cinemes||Cinema Vigatà||Cinemes Olot||Cinemes Roses||Multicines Sucre - Vic||Multicines Sucre - Villareal||OCINE Blanes||OCINE Sant Celoni
+   ··Ciudad: Ripoll (Id: 0,20,115.html)
+       ··Cine: Cinema Teatre Comtal (Id: 307,0,1.html)
+         *** No encontré el cine << Cinema Teatre Comtal >> de Ripoll (Girona) CODPOSTAL: 17001
+         *** De entre estos: Albéniz Centre||Albéniz Plaça||Cinema Truffaut||OCINE Girona||Odeón Multicines Girona||Arinco||OCINE Platja d'Aro - Parc d'Aro||Cat Cinemes||Cinema Vigatà||Cinemes Olot||Cinemes Roses||Multicines Sucre - Vic||Multicines Sucre - Villareal||OCINE Blanes||OCINE Sant Celoni
+   ··Ciudad: Roses (Id: 0,20,116.html)
+       ··Cine: Cinemes Roses (Id: 308,0,1.html)
+       --IMDB: Cinemes Roses (Id: ci1028851)
+   ··Ciudad: Salt (Id: 0,20,117.html)
+       ··Cine: Odeón Girona Multicines (Id: 309,0,1.html)
+         *** No encontré el cine << Odeón Girona Multicines >> de Salt (Girona) CODPOSTAL: 17001
+         *** De entre estos: Albéniz Centre||Albéniz Plaça||Cinema Truffaut||OCINE Girona||Odeón Multicines Girona||Arinco||OCINE Platja d'Aro - Parc d'Aro||Cat Cinemes||Cinema Vigatà||Cinemes Olot||Cinemes Roses||Multicines Sucre - Vic||Multicines Sucre - Villareal||OCINE Blanes||OCINE Sant Celoni
+No encontré de esta provincia: 8
+   ··Ciudad: San Sebastián (Id: 0,23,121.html)
+       ··Cine: Cines Antiguo Berri (Id: 315,0,1.html)
+       --IMDB: Cines Antiguo Berri (Id: ci1029158)
+       ··Cine: Ocine la Bretxa (Id: 316,0,1.html)
+         *** No encontré el cine << Ocine la Bretxa >> de San Sebastián (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+       ··Cine: Príncipe (Id: 317,0,1.html)
+       --IMDB: Príncipe (Id: ci1029177)
+       ··Cine: Trueba (Id: 318,0,1.html)
+       --IMDB: Trueba (Id: ci1029181)
+   ··Ciudad: Azkoitia (Id: 0,23,122.html)
+       ··Cine: Baztartxo Antzokia (Id: 319,0,1.html)
+         *** No encontré el cine << Baztartxo Antzokia >> de Azkoitia (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+   ··Ciudad: Beasain (Id: 0,23,123.html)
+       ··Cine: Usurbe Antzokia (Id: 320,0,1.html)
+         *** No encontré el cine << Usurbe Antzokia >> de Beasain (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+   ··Ciudad: Irún (Id: 0,23,124.html)
+       ··Cine: Cinebox Mendibil (Id: 321,0,1.html)
+       --IMDB: Cinebox Mendibil (Id: ci1029156)
+       ··Cine: OCine Txingudi (Id: 582,0,1.html)
+         *** No encontré el cine << OCine Txingudi >> de Irún (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+   ··Ciudad: Oñati (Id: 0,23,125.html)
+       ··Cine: Oñatiko Zinea (Id: 322,0,1.html)
+       --IMDB: Oñatiko Zinema (Id: ci2891454)
+   ··Ciudad: Renteria (Id: 0,23,126.html)
+       ··Cine: Zinemak Niessen (Id: 323,0,1.html)
+         *** No encontré el cine << Zinemak Niessen >> de Renteria (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+   ··Ciudad: Tolosa (Id: 0,23,127.html)
+       ··Cine: Leidor Zinema (Id: 324,0,1.html)
+         *** No encontré el cine << Leidor Zinema >> de Tolosa (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+   ··Ciudad: Usurbil (Id: 0,23,128.html)
+       ··Cine: Cinesa Urbil (Id: 325,0,1.html)
+       --IMDB: Cinesa Urbil (Id: ci1029157)
+   ··Ciudad: Zarauz (Id: 0,23,129.html)
+   ··Ciudad: Zumaia (Id: 0,23,130.html)
+       ··Cine: Aita Mari Zinema (Id: 327,0,1.html)
+         *** No encontré el cine << Aita Mari Zinema >> de Zumaia (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+   ··Ciudad: Ordizia (Id: 0,23,276.html)
+       ··Cine: Herri Antzokia (Id: 583,0,1.html)
+         *** No encontré el cine << Herri Antzokia >> de Ordizia (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+   ··Ciudad: Mondragón-Arrasate (Id: 0,23,289.html)
+       ··Cine: Amaia Udal Antzokia (Id: 597,0,1.html)
+         *** No encontré el cine << Amaia Udal Antzokia >> de Mondragón-Arrasate (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+   ··Ciudad: Villabona (Id: 0,23,290.html)
+       ··Cine: Gurea (Id: 598,0,1.html)
+         *** No encontré el cine << Gurea >> de Villabona (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+   ··Ciudad: Andoain (Id: 0,23,291.html)
+       ··Cine: Bastero Kulturgunea (Id: 599,0,1.html)
+         *** No encontré el cine << Bastero Kulturgunea >> de Andoain (Guipúzcoa) CODPOSTAL: 20001
+         *** De entre estos: Cines Antiguo Berri||Príncipe||Trueba||Cine Niessen||Cinesa Urbil||Cinebox Mendibil||Cinéma les Variétés - Salle Paul Grimault||OCINE Irún - Txingudi||CGR MEGA Bayonne||CGR MEGA Tarnos||Cinéma l'Aiglon - Cambo les Bains||L'Atalante - Bayonne||L'Autre Cinéma||Le Royal - Biarritz||Oscar Cinémas||Oñatiko Zinema
+No encontré de esta provincia: 11
+   ··Ciudad: Guadalajara (Id: 0,22,120.html)
+       ··Cine: Multicines Guadalajara (Id: 314,0,1.html)
+       --IMDB: Multicines Guadalajara (Id: ci1028765)
+No encontré de esta provincia: 0
+   ··Ciudad: Jaén (Id: 0,26,141.html)
+       ··Cine: La Loma Cinemas 7 3D UCC (Id: 340,0,1.html)
+         *** No encontré el cine << La Loma Cinemas 7 3D UCC >> de Jaén (Jaén) CODPOSTAL: 23001
+         *** De entre estos: Multicines La Loma||Bowling Linares||Multicines Úbeda||París Multicines
+       ··Cine: Cine de Verano Jaén (Id: 614,0,1.html)
+         *** No encontré el cine << Cine de Verano Jaén >> de Jaén (Jaén) CODPOSTAL: 23001
+         *** De entre estos: Multicines La Loma||Bowling Linares||Multicines Úbeda||París Multicines
+   ··Ciudad: Andújar (Id: 0,26,142.html)
+       ··Cine: Europa Cinemas 8  3D UCC (Id: 341,0,1.html)
+         *** No encontré el cine << Europa Cinemas 8  3D UCC >> de Andújar (Jaén) CODPOSTAL: 23001
+         *** De entre estos: Multicines La Loma||Bowling Linares||Multicines Úbeda||París Multicines
+   ··Ciudad: Linares (Id: 0,26,143.html)
+       ··Cine: Multicines Bowling (Id: 342,0,1.html)
+         *** No encontré el cine << Multicines Bowling >> de Linares (Jaén) CODPOSTAL: 23001
+         *** De entre estos: Multicines La Loma||Bowling Linares||Multicines Úbeda||París Multicines
+   ··Ciudad: Úbeda (Id: 0,26,144.html)
+       ··Cine: Multicines Úbeda (Id: 344,0,1.html)
+       --IMDB: Multicines Úbeda (Id: ci1028615)
+No encontré de esta provincia: 4
+   ··Ciudad: Huesca (Id: 0,25,131.html)
+       ··Cine: Multicines Cinemundo (Id: 328,0,1.html)
+         *** No encontré el cine << Multicines Cinemundo >> de Huesca (Huesca) CODPOSTAL: 22001
+         *** De entre estos: Multicines CineMundo Huesca||Auditorio La Colina||Cine Cortés||Teatro El Molino
+   ··Ciudad: Barbastro (Id: 0,25,133.html)
+       ··Cine: Cine Cortés (Id: 330,0,1.html)
+       --IMDB: Cine Cortés (Id: ci1028637)
+   ··Ciudad: Fraga (Id: 0,25,134.html)
+   ··Ciudad: Graus (Id: 0,25,135.html)
+       ··Cine: Cine Salamero (Id: 332,0,1.html)
+         *** No encontré el cine << Cine Salamero >> de Graus (Huesca) CODPOSTAL: 22001
+         *** De entre estos: Multicines CineMundo Huesca||Auditorio La Colina||Cine Cortés||Teatro El Molino
+   ··Ciudad: Jaca (Id: 0,25,136.html)
+   ··Ciudad: Mequinenza (Id: 0,25,137.html)
+       ··Cine: Sala Goya (Id: 334,0,1.html)
+         *** No encontré el cine << Sala Goya >> de Mequinenza (Huesca) CODPOSTAL: 22001
+         *** De entre estos: Multicines CineMundo Huesca||Auditorio La Colina||Cine Cortés||Teatro El Molino
+   ··Ciudad: Monzón (Id: 0,25,138.html)
+       ··Cine: Cine Teatro Victoria (Id: 335,0,1.html)
+         *** No encontré el cine << Cine Teatro Victoria >> de Monzón (Huesca) CODPOSTAL: 22001
+         *** De entre estos: Multicines CineMundo Huesca||Auditorio La Colina||Cine Cortés||Teatro El Molino
+   ··Ciudad: Sabiñánigo (Id: 0,25,139.html)
+       ··Cine: Auditorio La Colina (Id: 336,0,1.html)
+       --IMDB: Auditorio La Colina (Id: ci1028633)
+   ··Ciudad: Tamarite de Litera (Id: 0,25,140.html)
+       ··Cine: Cine Paseo (Id: 337,0,1.html)
+         *** No encontré el cine << Cine Paseo >> de Tamarite de Litera (Huesca) CODPOSTAL: 22001
+         *** De entre estos: Multicines CineMundo Huesca||Auditorio La Colina||Cine Cortés||Teatro El Molino
+No encontré de esta provincia: 5
+   ··Ciudad: Logroño (Id: 0,39,145.html)
+       ··Cine: Yelmo Cines Berceo (Id: 346,0,1.html)
+       --IMDB: Yelmo Cines Berceo (Id: ci1028983)
+       ··Cine: Cines Moderno (Id: 348,0,1.html)
+       --IMDB: Cines Moderno (Id: ci1028981)
+   ··Ciudad: Calahorra (Id: 0,39,146.html)
+       ··Cine: Cines Arcca (Id: 349,0,1.html)
+       --IMDB: Cines Arcca (Id: ci1028979)
+No encontré de esta provincia: 0
+   ··Ciudad: León (Id: 0,27,61.html)
+       ··Cine: Cinebox Espacio León (Id: 211,0,1.html)
+         *** No encontré el cine << Cinebox Espacio León >> de León (León) CODPOSTAL: 24001
+         *** De entre estos: Cines Van Gogh||Odeón Multicines León
+       ··Cine: Van Gogh (Id: 212,0,1.html)
+       --IMDB: Cines Van Gogh (Id: ci1028718)
+   ··Ciudad: Ponferrada (Id: 0,27,62.html)
+       ··Cine: La Dehesa Ponferrada (Id: 214,0,1.html)
+         *** No encontré el cine << La Dehesa Ponferrada >> de Ponferrada (León) CODPOSTAL: 24001
+         *** De entre estos: Cines Van Gogh||Odeón Multicines León
+   ··Ciudad: Astorga (Id: 0,27,152.html)
+       ··Cine: Cine Velasco (Id: 363,0,1.html)
+         *** No encontré el cine << Cine Velasco >> de Astorga (León) CODPOSTAL: 24001
+         *** De entre estos: Cines Van Gogh||Odeón Multicines León
+No encontré de esta provincia: 3
+   ··Ciudad: Las Palmas de Gran Canaria (Id: 0,37,148.html)
+       ··Cine: Cinesa El Muelle 3D (Id: 352,0,1.html)
+       --IMDB: Cinesa El Muelle (Id: ci1028779)
+       ··Cine: Cinesa Siete Palmas (Id: 353,0,1.html)
+       --IMDB: Cinesa Siete Palmas 3D (Id: ci1028780)
+       ··Cine: Yelmo Cine Las Arenas (Id: 355,0,1.html)
+       --IMDB: Yelmo Cines Las Arenas (Id: ci15433453)
+       ··Cine: Multicine Monopol (Id: 356,0,1.html)
+       --IMDB: Multicines Monopol (Id: ci1028784)
+   ··Ciudad: Fuerteventura (Id: 0,37,149.html)
+       ··Cine: Yelmo Cines Fuerteventura (Id: 359,0,1.html)
+         *** No encontré el cine << Yelmo Cines Fuerteventura >> de Fuerteventura (Las Palmas) CODPOSTAL: 35001
+         *** De entre estos: Cinesa El Muelle||Cinesa Siete Palmas 3D||Multicines Monopol||Museo Elder de la Ciencia y la Tecnologia Cinemax 70||Yelmo Cines Las Arenas||Yelmo Cines Vecindario
+   ··Ciudad: Lanzarote (Id: 0,37,150.html)
+       ··Cine: Multicine Atlántida (Id: 360,0,1.html)
+         *** No encontré el cine << Multicine Atlántida >> de Lanzarote (Las Palmas) CODPOSTAL: 35001
+         *** De entre estos: Cinesa El Muelle||Cinesa Siete Palmas 3D||Multicines Monopol||Museo Elder de la Ciencia y la Tecnologia Cinemax 70||Yelmo Cines Las Arenas||Yelmo Cines Vecindario
+       ··Cine: Multicine Deiland (Id: 361,0,1.html)
+         *** No encontré el cine << Multicine Deiland >> de Lanzarote (Las Palmas) CODPOSTAL: 35001
+         *** De entre estos: Cinesa El Muelle||Cinesa Siete Palmas 3D||Multicines Monopol||Museo Elder de la Ciencia y la Tecnologia Cinemax 70||Yelmo Cines Las Arenas||Yelmo Cines Vecindario
+   ··Ciudad: Santa Lucía (Id: 0,37,151.html)
+       ··Cine: Yelmo Cines Vecindario (Id: 362,0,1.html)
+       --IMDB: Yelmo Cines Vecindario (Id: ci1028799)
+No encontré de esta provincia: 3
+   ··Ciudad: Lugo (Id: 0,29,168.html)
+       ··Cine: As Termas (Id: 382,0,1.html)
+       --IMDB: Cines As Termas (Id: ci1028953)
+   ··Ciudad: Monforte de Lemos (Id: 0,29,169.html)
+       ··Cine: Multicines Hollywood (Id: 385,0,1.html)
+         *** No encontré el cine << Multicines Hollywood >> de Monforte de Lemos (Lugo) CODPOSTAL: 27001
+         *** De entre estos: Cines As Termas
+No encontré de esta provincia: 1
+   ··Ciudad: Lleida (Id: 0,28,153.html)
+       ··Cine: Espai Funatic (Id: 364,0,1.html)
+       --IMDB: Espai Funatic (Id: ci1028866)
+       ··Cine: Lauren Lleida (Id: 365,0,1.html)
+       --IMDB: Lauren Lleida (Lérida) (Id: ci1028884)
+       ··Cine: Principal (Id: 366,0,1.html)
+       --IMDB: Teatre Principal - Lleida (Id: ci1028912)
+       ··Cine: Rambla (Id: 367,0,1.html)
+       --IMDB: JCA Cinemes Rambla (Id: ci1028850)
+   ··Ciudad: Agramunt (Id: 0,28,154.html)
+       ··Cine: Cinema Casal (Id: 368,0,1.html)
+       --IMDB: Cinema Casal (Id: ci1028827)
+   ··Ciudad: Alfarràs (Id: 0,28,155.html)
+   ··Ciudad: Balaguer (Id: 0,28,156.html)
+   ··Ciudad: Bellpuig (Id: 0,28,157.html)
+       ··Cine: Cinema Armengol (Id: 371,0,1.html)
+       --IMDB: Cinema Armengol (Id: ci1028826)
+   ··Ciudad: Cervera (Id: 0,28,158.html)
+       ··Cine: Cine Casal (Id: 372,0,1.html)
+       --IMDB: Cine Paseo (Id: ci1028641)
+   ··Ciudad: La Pobla de Segur (Id: 0,28,159.html)
+       ··Cine: Cine Avinguda (Id: 373,0,1.html)
+         *** No encontré el cine << Cine Avinguda >> de La Pobla de Segur (Lleida) CODPOSTAL: 25001
+         *** De entre estos: Espai Funatic||JCA Cinemes Rambla||Lauren Lleida (Lérida)||Teatre Principal - Lleida||JCA Alpicat||Cinema Armengol||Cine Paseo||Cinema Casal||Cinema Casal Montblanquí||Cinemes Majestic||Goya Mequinenza
+   ··Ciudad: La Seu d'Urgell (Id: 0,28,160.html)
+       ··Cine: Cinemes Guiu (Id: 374,0,1.html)
+         *** No encontré el cine << Cinemes Guiu >> de La Seu d'Urgell (Lleida) CODPOSTAL: 25001
+         *** De entre estos: Espai Funatic||JCA Cinemes Rambla||Lauren Lleida (Lérida)||Teatre Principal - Lleida||JCA Alpicat||Cinema Armengol||Cine Paseo||Cinema Casal||Cinema Casal Montblanquí||Cinemes Majestic||Goya Mequinenza
+   ··Ciudad: Linyola (Id: 0,28,161.html)
+       ··Cine: Cinema Planell (Id: 375,0,1.html)
+         *** No encontré el cine << Cinema Planell >> de Linyola (Lleida) CODPOSTAL: 25001
+         *** De entre estos: Espai Funatic||JCA Cinemes Rambla||Lauren Lleida (Lérida)||Teatre Principal - Lleida||JCA Alpicat||Cinema Armengol||Cine Paseo||Cinema Casal||Cinema Casal Montblanquí||Cinemes Majestic||Goya Mequinenza
+   ··Ciudad: Mollerussa (Id: 0,28,162.html)
+   ··Ciudad: Pont de suert (Id: 0,28,163.html)
+       ··Cine: Cinema Ribagorza (Id: 377,0,1.html)
+         *** No encontré el cine << Cinema Ribagorza >> de Pont de suert (Lleida) CODPOSTAL: 25001
+         *** De entre estos: Espai Funatic||JCA Cinemes Rambla||Lauren Lleida (Lérida)||Teatre Principal - Lleida||JCA Alpicat||Cinema Armengol||Cine Paseo||Cinema Casal||Cinema Casal Montblanquí||Cinemes Majestic||Goya Mequinenza
+   ··Ciudad: Solsona (Id: 0,28,164.html)
+       ··Cine: Cinema Paris (Id: 378,0,1.html)
+         *** No encontré el cine << Cinema Paris >> de Solsona (Lleida) CODPOSTAL: 25001
+         *** De entre estos: Espai Funatic||JCA Cinemes Rambla||Lauren Lleida (Lérida)||Teatre Principal - Lleida||JCA Alpicat||Cinema Armengol||Cine Paseo||Cinema Casal||Cinema Casal Montblanquí||Cinemes Majestic||Goya Mequinenza
+   ··Ciudad: Sort (Id: 0,28,165.html)
+   ··Ciudad: Tàrrega (Id: 0,28,166.html)
+       ··Cine: Cinemes Majestic (Id: 380,0,1.html)
+       --IMDB: Cinemes Majestic (Id: ci1028846)
+   ··Ciudad: Vielha (Id: 0,28,167.html)
+       ··Cine: Cine Agrupació (Id: 381,0,1.html)
+         *** No encontré el cine << Cine Agrupació >> de Vielha (Lleida) CODPOSTAL: 25001
+         *** De entre estos: Espai Funatic||JCA Cinemes Rambla||Lauren Lleida (Lérida)||Teatre Principal - Lleida||JCA Alpicat||Cinema Armengol||Cine Paseo||Cinema Casal||Cinema Casal Montblanquí||Cinemes Majestic||Goya Mequinenza
+No encontré de esta provincia: 6
+   ··Ciudad: Melilla (Id: 0,32,177.html)
+No encontré de esta provincia: 0
+   ··Ciudad: Ourense (Id: 0,35,184.html)
+       ··Cine: Cinebox Ourense (Id: 415,0,1.html)
+         *** No encontré el cine << Cinebox Ourense >> de Ourense (Ourense) CODPOSTAL: 32001
+         *** De entre estos: Multicines Ponte Vella||NovoCine Leiro 3D||Multicines Hollywood
+No encontré de esta provincia: 1
+   ··Ciudad: Málaga (Id: 0,31,170.html)
+       ··Cine: Albéniz Multicines (Id: 386,0,1.html)
+         *** No encontré el cine << Albéniz Multicines >> de Málaga (Málaga) CODPOSTAL: 29001
+         *** De entre estos: Cine Albéniz||Multicines Rosaleda||Yelmo Cines Vialia Malaga||Cinesur Málaga Nostrum||Yelmo Cines Plaza Mayor||Yelmo Cines Rincon de la Victoria||Cinesur El Ingenio||Cinesur Miramar||Multicines Alfil - Fuengirola||Cine Pixel||Cines La Verónica||Cinesa La Cañada
+       ··Cine: Cinesur Málaga Nostrum (Id: 387,0,1.html)
+       --IMDB: Cinesur Málaga Nostrum (Id: ci1028580)
+       ··Cine: Yelmo Cines Vialia Málaga (Id: 388,0,1.html)
+       --IMDB: Yelmo Cines Vialia Malaga (Id: ci1028626)
+       ··Cine: Rosaleda Cinemas 12 UCC (Id: 390,0,1.html)
+         *** No encontré el cine << Rosaleda Cinemas 12 UCC >> de Málaga (Málaga) CODPOSTAL: 29001
+         *** De entre estos: Cine Albéniz||Multicines Rosaleda||Yelmo Cines Vialia Malaga||Cinesur Málaga Nostrum||Yelmo Cines Plaza Mayor||Yelmo Cines Rincon de la Victoria||Cinesur El Ingenio||Cinesur Miramar||Multicines Alfil - Fuengirola||Cine Pixel||Cines La Verónica||Cinesa La Cañada
+       ··Cine: Yelmo Cines Plaza Mayor (Id: 391,0,1.html)
+       --IMDB: Yelmo Cines Plaza Mayor (Id: ci1028623)
+       ··Cine: Alameda Multicines (Id: 577,0,1.html)
+         *** No encontré el cine << Alameda Multicines >> de Málaga (Málaga) CODPOSTAL: 29001
+         *** De entre estos: Cine Albéniz||Multicines Rosaleda||Yelmo Cines Vialia Malaga||Cinesur Málaga Nostrum||Yelmo Cines Plaza Mayor||Yelmo Cines Rincon de la Victoria||Cinesur El Ingenio||Cinesur Miramar||Multicines Alfil - Fuengirola||Cine Pixel||Cines La Verónica||Cinesa La Cañada
+   ··Ciudad: Antequera (Id: 0,31,171.html)
+       ··Cine: Cinesur La Verónica (Id: 392,0,1.html)
+       --IMDB: Cines La Verónica (Id: ci1028576)
+   ··Ciudad: Cala del Moral (Id: 0,31,172.html)
+       ··Cine: Yelmo Cines Rincón de la Victoria (Id: 393,0,1.html)
+       --IMDB: Yelmo Cines Rincon de la Victoria (Id: ci1028624)
+   ··Ciudad: Fuengirola (Id: 0,31,173.html)
+       ··Cine: Cinesur MIRAMAR (Id: 394,0,1.html)
+         *** No encontré el cine << Cinesur MIRAMAR >> de Fuengirola (Málaga) CODPOSTAL: 29001
+         *** De entre estos: Cine Albéniz||Multicines Rosaleda||Yelmo Cines Vialia Malaga||Cinesur Málaga Nostrum||Yelmo Cines Plaza Mayor||Yelmo Cines Rincon de la Victoria||Cinesur El Ingenio||Cinesur Miramar||Multicines Alfil - Fuengirola||Cine Pixel||Cines La Verónica||Cinesa La Cañada
+       ··Cine: Multicines Alfil - Fuengirola (Id: 395,0,1.html)
+       --IMDB: Multicines Alfil - Fuengirola (Id: ci1028601)
+   ··Ciudad: Marbella (Id: 0,31,174.html)
+       ··Cine: Cinesa La Cañada 3D (Id: 396,0,1.html)
+       --IMDB: Cinesa La Cañada (Id: ci1028568)
+       ··Cine: Complejo Gran Marbella (Id: 398,0,1.html)
+         *** No encontré el cine << Complejo Gran Marbella >> de Marbella (Málaga) CODPOSTAL: 29001
+         *** De entre estos: Cine Albéniz||Multicines Rosaleda||Yelmo Cines Vialia Malaga||Cinesur Málaga Nostrum||Yelmo Cines Plaza Mayor||Yelmo Cines Rincon de la Victoria||Cinesur El Ingenio||Cinesur Miramar||Multicines Alfil - Fuengirola||Cine Pixel||Cines La Verónica||Cinesa La Cañada
+   ··Ciudad: Ronda (Id: 0,31,175.html)
+       ··Cine: Multicines Ronda (Id: 399,0,1.html)
+         *** No encontré el cine << Multicines Ronda >> de Ronda (Málaga) CODPOSTAL: 29001
+         *** De entre estos: Cine Albéniz||Multicines Rosaleda||Yelmo Cines Vialia Malaga||Cinesur Málaga Nostrum||Yelmo Cines Plaza Mayor||Yelmo Cines Rincon de la Victoria||Cinesur El Ingenio||Cinesur Miramar||Multicines Alfil - Fuengirola||Cine Pixel||Cines La Verónica||Cinesa La Cañada
+   ··Ciudad: Vélez (Id: 0,31,176.html)
+       ··Cine: Cinesur El Ingenio (Id: 400,0,1.html)
+       --IMDB: Cinesur El Ingenio (Id: ci1028574)
+No encontré de esta provincia: 6
+   ··Ciudad: Pamplona (Id: 0,34,54.html)
+       ··Cine: Saide Carlos III (Id: 192,0,1.html)
+       --IMDB: Saide Carlos III (Id: ci1029108)
+       ··Cine: Golem Baiona (Id: 193,0,1.html)
+       --IMDB: Golem Baiona (Id: ci1029102)
+       ··Cine: Golem La Morea (Id: 194,0,1.html)
+       --IMDB: Golem La Morea (Id: ci1029103)
+       ··Cine: Golem Yamaguchi (Id: 195,0,1.html)
+       --IMDB: Golem Yamaguchi (Id: ci1029105)
+   ··Ciudad: Estella (Id: 0,34,55.html)
+       ··Cine: Golem Los Llanos (Id: 198,0,1.html)
+       --IMDB: Golem Los Llanos (Id: ci1029104)
+   ··Ciudad: Huarte (Id: 0,34,56.html)
+       ··Cine: Cines Itaroa (Id: 199,0,1.html)
+       --IMDB: Cines Itaroa (Id: ci1029100)
+   ··Ciudad: Tudela (Id: 0,34,57.html)
+       ··Cine: Ocine Tudela (Id: 200,0,1.html)
+         *** No encontré el cine << Ocine Tudela >> de Tudela (Navarra) CODPOSTAL: 31001
+         *** De entre estos: Cines Itaroa||Golem Baiona||Golem La Morea||Golem Yamaguchi||Saide Carlos III||Golem Los Llanos
+   ··Ciudad: Viana (Id: 0,34,147.html)
+       ··Cine: Cines Viana Las Cañas (Id: 350,0,1.html)
+         *** No encontré el cine << Cines Viana Las Cañas >> de Viana (Navarra) CODPOSTAL: 31001
+         *** De entre estos: Cines Itaroa||Golem Baiona||Golem La Morea||Golem Yamaguchi||Saide Carlos III||Golem Los Llanos
+No encontré de esta provincia: 2
+   ··Ciudad: Murcia (Id: 0,33,178.html)
+       ··Cine: Neocine Centrofama (Id: 402,0,1.html)
+         *** No encontré el cine << Neocine Centrofama >> de Murcia (Murcia) CODPOSTAL: 30001
+         *** De entre estos: Filmoteca Regional Francisco Rabal||Neocine HD Digital El Tiro||Neocine Rex||Neocine Thader||Cinesa Nueva Condomina||Cines Axion - Orihuela||Cine Archena Parque||ABC Elx||Cines IMF Torrevieja||Las Velas||Neocine Dos Mares||Neocine Espacio Mediterráneo||Neocine Mandarache
+       ··Cine: Cinesa Nueva Condomina 3D (Id: 404,0,1.html)
+       --IMDB: Cinesa Nueva Condomina (Id: ci1029085)
+       ··Cine: Neocine Thader (Id: 407,0,1.html)
+       --IMDB: Neocine Thader (Id: ci1029096)
+       ··Cine: Rex (Id: 408,0,1.html)
+       --IMDB: Neocine Rex (Id: ci1029095)
+   ··Ciudad: Águilas (Id: 0,33,179.html)
+       ··Cine: Multicines el Hornillo (Id: 409,0,1.html)
+         *** No encontré el cine << Multicines el Hornillo >> de Águilas (Murcia) CODPOSTAL: 30001
+         *** De entre estos: Filmoteca Regional Francisco Rabal||Neocine HD Digital El Tiro||Neocine Rex||Neocine Thader||Cinesa Nueva Condomina||Cines Axion - Orihuela||Cine Archena Parque||ABC Elx||Cines IMF Torrevieja||Las Velas||Neocine Dos Mares||Neocine Espacio Mediterráneo||Neocine Mandarache
+   ··Ciudad: Cartagena (Id: 0,33,180.html)
+       ··Cine: Neocine Mandarache (Id: 411,0,1.html)
+       --IMDB: Neocine Mandarache (Id: ci1029094)
+   ··Ciudad: Lorca (Id: 0,33,181.html)
+   ··Ciudad: Los Alcázares (Id: 0,33,182.html)
+       ··Cine: Las Velas (Id: 413,0,1.html)
+       --IMDB: Las Velas (Id: ci1029089)
+   ··Ciudad: San Javier (Id: 0,33,183.html)
+       ··Cine: Neocine Dos Mares (Id: 414,0,1.html)
+       --IMDB: Neocine Dos Mares (Id: ci1029092)
+   ··Ciudad: Molina de Segura (Id: 0,33,299.html)
+No encontré de esta provincia: 2
+   ··Ciudad: Pontevedra (Id: 0,38,39.html)
+       ··Cine: Cinebox Vialia (Id: 154,0,1.html)
+         *** No encontré el cine << Cinebox Vialia >> de Pontevedra (Pontevedra) CODPOSTAL: 36001
+         *** De entre estos: Multicines Cinexpo||Gran Vía Cines||Multicines Norte||Multicines Plaza Elíptica||Yelmo Cines Vigo||Cine Imperial - Nigrán||Multicines Barbanza||NovoCine Leiro 3D||Starcine Ramallosa
+   ··Ciudad: Lalín (Id: 0,38,187.html)
+   ··Ciudad: Ponteareas (Id: 0,38,188.html)
+   ··Ciudad: Villagarcía de Arosa (Id: 0,38,189.html)
+       ··Cine: Multicines Gran Arousa (Id: 426,0,1.html)
+         *** No encontré el cine << Multicines Gran Arousa >> de Villagarcía de Arosa (Pontevedra) CODPOSTAL: 36001
+         *** De entre estos: Multicines Cinexpo||Gran Vía Cines||Multicines Norte||Multicines Plaza Elíptica||Yelmo Cines Vigo||Cine Imperial - Nigrán||Multicines Barbanza||NovoCine Leiro 3D||Starcine Ramallosa
+   ··Ciudad: Vigo (Id: 0,38,190.html)
+       ··Cine: Cines Plaza Elíptica (Id: 427,0,1.html)
+         *** No encontré el cine << Cines Plaza Elíptica >> de Vigo (Pontevedra) CODPOSTAL: 36001
+         *** De entre estos: Multicines Cinexpo||Gran Vía Cines||Multicines Norte||Multicines Plaza Elíptica||Yelmo Cines Vigo||Cine Imperial - Nigrán||Multicines Barbanza||NovoCine Leiro 3D||Starcine Ramallosa
+       ··Cine: Gran Vía Cines (Id: 428,0,1.html)
+       --IMDB: Gran Vía Cines (Id: ci1028960)
+       ··Cine: Multicines Norte (Id: 429,0,1.html)
+       --IMDB: Multicines Norte (Id: ci1028969)
+       ··Cine: Cine Teatro Salesianos (Id: 430,0,1.html)
+         *** No encontré el cine << Cine Teatro Salesianos >> de Vigo (Pontevedra) CODPOSTAL: 36001
+         *** De entre estos: Multicines Cinexpo||Gran Vía Cines||Multicines Norte||Multicines Plaza Elíptica||Yelmo Cines Vigo||Cine Imperial - Nigrán||Multicines Barbanza||NovoCine Leiro 3D||Starcine Ramallosa
+       ··Cine: Yelmo Cines Vigo (Id: 431,0,1.html)
+       --IMDB: Yelmo Cines Vigo (Id: ci1028974)
+No encontré de esta provincia: 4
+   ··Ciudad: Palencia (Id: 0,36,185.html)
+       ··Cine: Cines Avenida (Id: 419,0,1.html)
+       --IMDB: Cines Avenida (Id: ci1028707)
+       ··Cine: Cines Ortega (Id: 420,0,1.html)
+       --IMDB: Cine Ortega (Id: ci1028696)
+   ··Ciudad: Aguilar de Campoo (Id: 0,36,186.html)
+No encontré de esta provincia: 0
+   ··Ciudad: Santa Cruz de Tenerife (Id: 0,41,29.html)
+       ··Cine: Yelmo Cines Meridiano (Id: 156,0,1.html)
+       --IMDB: Yelmo Cines Meridiano (Id: ci1028798)
+   ··Ciudad: Candelaria (Id: 0,41,38.html)
+   ··Ciudad: La Laguna (Id: 0,41,40.html)
+       ··Cine: Multicines Tenerife (Id: 157,0,1.html)
+       --IMDB: Multicines Tenerife (Id: ci1028776)
+       ··Cine: Multicines La Laguna (Id: 442,0,1.html)
+         *** No encontré el cine << Multicines La Laguna >> de La Laguna (S.C. Tenerife) CODPOSTAL: 38001
+         *** De entre estos: Cine Victor||Yelmo Cines Meridiano||Multicines Tenerife||Multicines Puntalarga||Yelmo Cines La Villa-Orotava
+   ··Ciudad: Frontera (Isla del Hierro) (Id: 0,41,195.html)
+   ··Ciudad: Playa de las Américas (Id: 0,41,196.html)
+       ··Cine: Multicines Zentral Center (Id: 443,0,1.html)
+         *** No encontré el cine << Multicines Zentral Center >> de Playa de las Américas (S.C. Tenerife) CODPOSTAL: 38001
+         *** De entre estos: Cine Victor||Yelmo Cines Meridiano||Multicines Tenerife||Multicines Puntalarga||Yelmo Cines La Villa-Orotava
+   ··Ciudad: Villa de la Orotava (Id: 0,41,197.html)
+       ··Cine: Yelmo Cines La Villa - Orotava (Id: 444,0,1.html)
+       --IMDB: Yelmo Cines La Villa-Orotava (Id: ci1028797)
+No encontré de esta provincia: 2
+   ··Ciudad: Soria (Id: 0,44,206.html)
+       ··Cine: Cines Lara (Id: 457,0,1.html)
+       --IMDB: Cines Lara (Id: ci1028711)
+No encontré de esta provincia: 0
+   ··Ciudad: Segovia (Id: 0,42,198.html)
+       ··Cine: Cinebox Luz de Castilla (Id: 445,0,1.html)
+       --IMDB: Cines Luz de Castilla (Id: ci1028703)
+       ··Cine: Artesiete Segovia (Id: 609,0,1.html)
+       --IMDB: Artesiete Segovia (Id: ci1028688)
+No encontré de esta provincia: 0
+   ··Ciudad: Salamanca (Id: 0,40,191.html)
+       ··Cine: Cinebox Vialia Salamanca (Id: 432,0,1.html)
+         *** No encontré el cine << Cinebox Vialia Salamanca >> de Salamanca (Salamanca) CODPOSTAL: 37001
+         *** De entre estos: Cines Van Dyck||Cines Van Dyck Joven||Cines Van Dyck Tormes||Megarama Salamanca
+       ··Cine: Cines Van Dyck Tormes (Id: 434,0,1.html)
+       --IMDB: Cines Van Dyck (Id: ci1028715)
+       ··Cine: Van Dyck (Id: 435,0,1.html)
+       --IMDB: Cines Van Dyck (Id: ci1028715)
+       ··Cine: Van Dyck Joven (Id: 436,0,1.html)
+       --IMDB: Cines Van Dyck Joven (Id: ci1028716)
+   ··Ciudad: Béjar (Id: 0,40,192.html)
+       ··Cine: Multicines Béjar (Id: 437,0,1.html)
+         *** No encontré el cine << Multicines Béjar >> de Béjar (Salamanca) CODPOSTAL: 37001
+         *** De entre estos: Cines Van Dyck||Cines Van Dyck Joven||Cines Van Dyck Tormes||Megarama Salamanca
+   ··Ciudad: Ciudad Rodrigo (Id: 0,40,193.html)
+       ··Cine: Cine Juventud (Id: 438,0,1.html)
+         *** No encontré el cine << Cine Juventud >> de Ciudad Rodrigo (Salamanca) CODPOSTAL: 37001
+         *** De entre estos: Cines Van Dyck||Cines Van Dyck Joven||Cines Van Dyck Tormes||Megarama Salamanca
+   ··Ciudad: Peñaranda de bracamonte (Id: 0,40,194.html)
+       ··Cine: Cine Calderón (Id: 439,0,1.html)
+         *** No encontré el cine << Cine Calderón >> de Peñaranda de bracamonte (Salamanca) CODPOSTAL: 37001
+         *** De entre estos: Cines Van Dyck||Cines Van Dyck Joven||Cines Van Dyck Tormes||Megarama Salamanca
+No encontré de esta provincia: 4
+   ··Ciudad: Teruel (Id: 0,46,216.html)
+       ··Cine: Maravillas (Id: 469,0,1.html)
+       --IMDB: Maravillas (Id: ci1028651)
+   ··Ciudad: Alcorisa (Id: 0,46,217.html)
+No encontré de esta provincia: 0
+   ··Ciudad: Sevilla (Id: 0,43,37.html)
+       ··Cine: Alameda Multicines UCC (Id: 147,0,1.html)
+       --IMDB: Alameda Multicines (Id: ci1028540)
+       ··Cine: Arcos Cinemas 12  3D UCC (Id: 148,0,1.html)
+         *** No encontré el cine << Arcos Cinemas 12  3D UCC >> de Sevilla (Sevilla) CODPOSTAL: 41001
+         *** De entre estos: Alameda Multicines||Arcos Multicines||Avenida 5 Cines||Cine Cervantes - Sevilla||Cine de Verano de Tomares||Cinesa Camas 3D||Cinesa Plaza de Armas||Cinesur Nervión Plaza||Al Andalus Bormujos||Cinezona||Metromar Cinemas 12||Cineapolis Dos Hermanas||Cinesur Los Alcores||Condado Cinema 7
+       ··Cine: Avenida 5 cines V.O. UCC (Id: 149,0,1.html)
+         *** No encontré el cine << Avenida 5 cines V.O. UCC >> de Sevilla (Sevilla) CODPOSTAL: 41001
+         *** De entre estos: Alameda Multicines||Arcos Multicines||Avenida 5 Cines||Cine Cervantes - Sevilla||Cine de Verano de Tomares||Cinesa Camas 3D||Cinesa Plaza de Armas||Cinesur Nervión Plaza||Al Andalus Bormujos||Cinezona||Metromar Cinemas 12||Cineapolis Dos Hermanas||Cinesur Los Alcores||Condado Cinema 7
+       ··Cine: Cervantes UCC (Id: 150,0,1.html)
+         *** No encontré el cine << Cervantes UCC >> de Sevilla (Sevilla) CODPOSTAL: 41001
+         *** De entre estos: Alameda Multicines||Arcos Multicines||Avenida 5 Cines||Cine Cervantes - Sevilla||Cine de Verano de Tomares||Cinesa Camas 3D||Cinesa Plaza de Armas||Cinesur Nervión Plaza||Al Andalus Bormujos||Cinezona||Metromar Cinemas 12||Cineapolis Dos Hermanas||Cinesur Los Alcores||Condado Cinema 7
+       ··Cine: Cinesa Plaza de Armas 3D (Id: 152,0,1.html)
+       --IMDB: Cinesa Plaza de Armas (Id: ci1028569)
+       ··Cine: Cinesur Nervión (Id: 446,0,1.html)
+       --IMDB: Cinesur Nervión Plaza (Id: ci1028581)
+       ··Cine: CineZona 3D Zona Este (Id: 447,0,1.html)
+         *** No encontré el cine << CineZona 3D Zona Este >> de Sevilla (Sevilla) CODPOSTAL: 41001
+         *** De entre estos: Alameda Multicines||Arcos Multicines||Avenida 5 Cines||Cine Cervantes - Sevilla||Cine de Verano de Tomares||Cinesa Camas 3D||Cinesa Plaza de Armas||Cinesur Nervión Plaza||Al Andalus Bormujos||Cinezona||Metromar Cinemas 12||Cineapolis Dos Hermanas||Cinesur Los Alcores||Condado Cinema 7
+   ··Ciudad: Alcalá de Guadaira (Id: 0,43,199.html)
+       ··Cine: Cinesur Los Alcores (Id: 448,0,1.html)
+       --IMDB: Cinesur Los Alcores (Id: ci1028578)
+   ··Ciudad: Bormujos (Id: 0,43,200.html)
+       ··Cine: Al-Andalus Bormujos (Id: 449,0,1.html)
+       --IMDB: Al Andalus Bormujos (Id: ci1028534)
+   ··Ciudad: Camas (Id: 0,43,201.html)
+       ··Cine: Ábaco Cines Camas (Id: 450,0,1.html)
+         *** No encontré el cine << Ábaco Cines Camas >> de Camas (Sevilla) CODPOSTAL: 41001
+         *** De entre estos: Alameda Multicines||Arcos Multicines||Avenida 5 Cines||Cine Cervantes - Sevilla||Cine de Verano de Tomares||Cinesa Camas 3D||Cinesa Plaza de Armas||Cinesur Nervión Plaza||Al Andalus Bormujos||Cinezona||Metromar Cinemas 12||Cineapolis Dos Hermanas||Cinesur Los Alcores||Condado Cinema 7
+   ··Ciudad: Dos Hermanas (Id: 0,43,202.html)
+       ··Cine: Cineapolis Multicines (Id: 452,0,1.html)
+         *** No encontré el cine << Cineapolis Multicines >> de Dos Hermanas (Sevilla) CODPOSTAL: 41001
+         *** De entre estos: Alameda Multicines||Arcos Multicines||Avenida 5 Cines||Cine Cervantes - Sevilla||Cine de Verano de Tomares||Cinesa Camas 3D||Cinesa Plaza de Armas||Cinesur Nervión Plaza||Al Andalus Bormujos||Cinezona||Metromar Cinemas 12||Cineapolis Dos Hermanas||Cinesur Los Alcores||Condado Cinema 7
+   ··Ciudad: Écija (Id: 0,43,203.html)
+       ··Cine: Artesiete Écija (Id: 565,0,1.html)
+         *** No encontré el cine << Artesiete Écija >> de Écija (Sevilla) CODPOSTAL: 41001
+         *** De entre estos: Alameda Multicines||Arcos Multicines||Avenida 5 Cines||Cine Cervantes - Sevilla||Cine de Verano de Tomares||Cinesa Camas 3D||Cinesa Plaza de Armas||Cinesur Nervión Plaza||Al Andalus Bormujos||Cinezona||Metromar Cinemas 12||Cineapolis Dos Hermanas||Cinesur Los Alcores||Condado Cinema 7
+   ··Ciudad: Tomares (Id: 0,43,204.html)
+       ··Cine: Cinema Tomares (Id: 455,0,1.html)
+         *** No encontré el cine << Cinema Tomares >> de Tomares (Sevilla) CODPOSTAL: 41001
+         *** De entre estos: Alameda Multicines||Arcos Multicines||Avenida 5 Cines||Cine Cervantes - Sevilla||Cine de Verano de Tomares||Cinesa Camas 3D||Cinesa Plaza de Armas||Cinesur Nervión Plaza||Al Andalus Bormujos||Cinezona||Metromar Cinemas 12||Cineapolis Dos Hermanas||Cinesur Los Alcores||Condado Cinema 7
+   ··Ciudad: Utrera (Id: 0,43,205.html)
+   ··Ciudad: Mairena de Aljarafe (Id: 0,43,300.html)
+       ··Cine: Metromar Cinemas 12  3D UCC (Id: 576,0,1.html)
+       --IMDB: Metromar Cinemas 12 (Id: ci1028599)
+No encontré de esta provincia: 8
+   ··Ciudad: Toledo (Id: 0,47,219.html)
+       ··Cine: Cinesur Luz de Tajo (Id: 471,0,1.html)
+       --IMDB: Cinesur Luz del Tajo (Id: ci1028753)
+   ··Ciudad: Olias del Rey (Id: 0,47,220.html)
+       ··Cine: Real Cinema de Olías (Id: 472,0,1.html)
+       --IMDB: Real Cinema de Olías (Id: ci1028764)
+   ··Ciudad: Torrijos (Id: 0,47,221.html)
+       ··Cine: Cines Redux Torrijos (Id: 473,0,1.html)
+         *** No encontré el cine << Cines Redux Torrijos >> de Torrijos (Toledo) CODPOSTAL: 45001
+         *** De entre estos: Cinesur Luz del Tajo||Cine de Verano Valdemoro||Cinesa Xanadú||Real Cinema de Olías||Restón Cinema
+   ··Ciudad: Villacañas (Id: 0,47,222.html)
+No encontré de esta provincia: 1
+   ··Ciudad: Tarragona (Id: 0,45,207.html)
+       ··Cine: OCine Tarragona Les Gavarres (Id: 459,0,1.html)
+         *** No encontré el cine << OCine Tarragona Les Gavarres >> de Tarragona (Tarragona) CODPOSTAL: 43001
+         *** De entre estos: OCINE Tarragona - Les Gavarres||Yelmo Cines Parc Central 3D||OCINE Vila-Seca||JCA Cinemes Valls||Reus Palace||Cinema Casal Montblanquí||OCINE El Vendrell - Les Mates||Cinema Prado||Cinema Retiro||Kubrick||Lauren Garraf||MCB Cinema Calafell
+   ··Ciudad: Altafulla (Id: 0,45,208.html)
+   ··Ciudad: Amposta (Id: 0,45,209.html)
+       ··Cine: Amposta Cinemes 11 UCC (Id: 461,0,1.html)
+         *** No encontré el cine << Amposta Cinemes 11 UCC >> de Amposta (Tarragona) CODPOSTAL: 43001
+         *** De entre estos: OCINE Tarragona - Les Gavarres||Yelmo Cines Parc Central 3D||OCINE Vila-Seca||JCA Cinemes Valls||Reus Palace||Cinema Casal Montblanquí||OCINE El Vendrell - Les Mates||Cinema Prado||Cinema Retiro||Kubrick||Lauren Garraf||MCB Cinema Calafell
+   ··Ciudad: Comarruga (Id: 0,45,210.html)
+   ··Ciudad: Cubelles (Id: 0,45,211.html)
+   ··Ciudad: El Vendrell (Id: 0,45,212.html)
+       ··Cine: OCine Vendrell - Les Mates (Id: 464,0,1.html)
+         *** No encontré el cine << OCine Vendrell - Les Mates >> de El Vendrell (Tarragona) CODPOSTAL: 43001
+         *** De entre estos: OCINE Tarragona - Les Gavarres||Yelmo Cines Parc Central 3D||OCINE Vila-Seca||JCA Cinemes Valls||Reus Palace||Cinema Casal Montblanquí||OCINE El Vendrell - Les Mates||Cinema Prado||Cinema Retiro||Kubrick||Lauren Garraf||MCB Cinema Calafell
+   ··Ciudad: Montblanc (Id: 0,45,213.html)
+       ··Cine: Cinema Casal Montblanquí (Id: 465,0,1.html)
+       --IMDB: Cinema Casal Montblanquí (Id: ci1028828)
+   ··Ciudad: Reus (Id: 0,45,214.html)
+       ··Cine: Lauren Reus Multicinemes (Id: 466,0,1.html)
+         *** No encontré el cine << Lauren Reus Multicinemes >> de Reus (Tarragona) CODPOSTAL: 43001
+         *** De entre estos: OCINE Tarragona - Les Gavarres||Yelmo Cines Parc Central 3D||OCINE Vila-Seca||JCA Cinemes Valls||Reus Palace||Cinema Casal Montblanquí||OCINE El Vendrell - Les Mates||Cinema Prado||Cinema Retiro||Kubrick||Lauren Garraf||MCB Cinema Calafell
+       ··Cine: Reus Palace (Id: 467,0,1.html)
+       --IMDB: Reus Palace (Id: ci1028916)
+   ··Ciudad: Roquetes (Id: 0,45,215.html)
+       ··Cine: OCine Roquetes (Id: 468,0,1.html)
+         *** No encontré el cine << OCine Roquetes >> de Roquetes (Tarragona) CODPOSTAL: 43001
+         *** De entre estos: OCINE Tarragona - Les Gavarres||Yelmo Cines Parc Central 3D||OCINE Vila-Seca||JCA Cinemes Valls||Reus Palace||Cinema Casal Montblanquí||OCINE El Vendrell - Les Mates||Cinema Prado||Cinema Retiro||Kubrick||Lauren Garraf||MCB Cinema Calafell
+   ··Ciudad: Tarragona (Id: 0,45,218.html)
+   ··Ciudad: Vila-Seca (Id: 0,45,305.html)
+       ··Cine: OCine Port Halley - Vila Seca (Id: ocine-port-halley-vila-seca/)
+         *** No encontré el cine << OCine Port Halley - Vila Seca >> de Vila-Seca (Tarragona) CODPOSTAL: 43001
+         *** De entre estos: OCINE Tarragona - Les Gavarres||Yelmo Cines Parc Central 3D||OCINE Vila-Seca||JCA Cinemes Valls||Reus Palace||Cinema Casal Montblanquí||OCINE El Vendrell - Les Mates||Cinema Prado||Cinema Retiro||Kubrick||Lauren Garraf||MCB Cinema Calafell
+No encontré de esta provincia: 6
+   ··Ciudad: Valladolid (Id: 0,49,232.html)
+       ··Cine: Cinebox Vallsur (Id: 493,0,1.html)
+         *** No encontré el cine << Cinebox Vallsur >> de Valladolid (Valladolid) CODPOSTAL: 47001
+         *** De entre estos: Casablanca||Cine Manhattan||Cines Broadway||Cinesa Zaratán||Megarama Valladolid||OCINE Valladolid - Río Shopping||Cine Ortega||Cines Avenida||Multicines Coliseo
+       ··Cine: Cine Casablanca (Id: 495,0,1.html)
+       --IMDB: Casablanca (Id: ci1028690)
+       ··Cine: Cines Broadway (Id: 497,0,1.html)
+       --IMDB: Cines Broadway (Id: ci1028708)
+       ··Cine: Cines Manhattan (Id: 498,0,1.html)
+       --IMDB: Cine Manhattan (Id: ci1028693)
+       ··Cine: Parquesol Plaza (Id: 499,0,1.html)
+         *** No encontré el cine << Parquesol Plaza >> de Valladolid (Valladolid) CODPOSTAL: 47001
+         *** De entre estos: Casablanca||Cine Manhattan||Cines Broadway||Cinesa Zaratán||Megarama Valladolid||OCINE Valladolid - Río Shopping||Cine Ortega||Cines Avenida||Multicines Coliseo
+   ··Ciudad: Medina del Campo (Id: 0,49,233.html)
+   ··Ciudad: Medina de Rio Seco (Id: 0,49,234.html)
+       ··Cine: Teatro Principal (Id: 502,0,1.html)
+         *** No encontré el cine << Teatro Principal >> de Medina de Rio Seco (Valladolid) CODPOSTAL: 47001
+         *** De entre estos: Casablanca||Cine Manhattan||Cines Broadway||Cinesa Zaratán||Megarama Valladolid||OCINE Valladolid - Río Shopping||Cine Ortega||Cines Avenida||Multicines Coliseo
+   ··Ciudad: Pedrajas de San Esteban (Id: 0,49,235.html)
+       ··Cine: Cine Avenida (Id: 503,0,1.html)
+       --IMDB: Cines Avenida (Id: ci1028707)
+   ··Ciudad: Peñafiel (Id: 0,49,236.html)
+   ··Ciudad: Zaratán (Id: 0,49,237.html)
+       ··Cine: Cinesa Zaratán (Id: 505,0,1.html)
+       --IMDB: Cinesa Zaratán (Id: ci1028736)
+   ··Ciudad: Arroyo de la Encomienda (Id: 0,49,308.html)
+       ··Cine: OCine Río Shopping - Valladolid (Id: ocine-rio-shopping-valladolid/)
+         *** No encontré el cine << OCine Río Shopping - Valladolid >> de Arroyo de la Encomienda (Valladolid) CODPOSTAL: 47001
+         *** De entre estos: Casablanca||Cine Manhattan||Cines Broadway||Cinesa Zaratán||Megarama Valladolid||OCINE Valladolid - Río Shopping||Cine Ortega||Cines Avenida||Multicines Coliseo
+No encontré de esta provincia: 4
+   ··Ciudad: Madrid (Id: 0,30,1.html)
+       ··Cine: Dreams Cinema Palacio de Hielo (Id: dreams-cinema-palacio-hielo/)
+         *** No encontré el cine << Dreams Cinema Palacio de Hielo >> de Madrid (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+       ··Cine: Acteón (Id: 2,0,1.html)
+       --IMDB: Acteón (Id: ci1028985)
+       ··Cine: Cines Golem (Id: 4,0,1.html)
+         *** No encontré el cine << Cines Golem >> de Madrid (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+       ··Cine: Renoir Plaza de España (Id: 44,0,1.html)
+       --IMDB: Renoir Plaza de España (Id: ci1029053)
+       ··Cine: Artesiete Alcalá (Id: 11,0,1.html)
+       --IMDB: Artesiete Alcalá Full HD (Id: ci11874538)
+       ··Cine: Cine Estudio (Círculo de Bellas Artes) (Id: 567,0,1.html)
+       --IMDB: Círculo de Bellas Artes (Id: ci1028992)
+       ··Cine: Cinesa Capitol 3D (Id: 9,0,1.html)
+         *** No encontré el cine << Cinesa Capitol 3D >> de Madrid (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+       ··Cine: Callao (Id: 8,0,1.html)
+       --IMDB: Callao (Id: ci1028988)
+       ··Cine: Palacio de la Prensa (Id: 38,0,1.html)
+       --IMDB: Palacio de la Prensa (Id: ci1029045)
+       ··Cine: Verdi (Id: 51,0,1.html)
+       --IMDB: Verdi Madrid (Id: ci1029013)
+       ··Cine: Cinesa Las Rosas 3D (Id: 16,0,1.html)
+       --IMDB: Cinesa Las Rosas (Id: ci1029018)
+       ··Cine: Cinesa Proyecciones 3D (Id: 17,0,1.html)
+       --IMDB: Cinesa Proyecciones (Id: ci1029022)
+       ··Cine: Paz (Id: 40,0,1.html)
+       --IMDB: Paz (Id: ci1029047)
+       ··Cine: Conde Duque Goya (Id: 19,0,1.html)
+       --IMDB: Conde Duque Goya (Id: ci1029027)
+       ··Cine: Cines Princesa (Id: 20,0,1.html)
+       --IMDB: Renoir Cines Princesa (Id: ci1029050)
+       ··Cine: Renoir Princesa (Id: 45,0,1.html)
+       --IMDB: Renoir Cines Princesa (Id: ci1029050)
+       ··Cine: Conde Duque Alberto Aguilera (Id: 22,0,1.html)
+       --IMDB: Conde Duque Alberto Aguilera (Id: ci1029026)
+       ··Cine: Cine Conde Duque Santa Engracia (Id: 23,0,1.html)
+       --IMDB: Conde Duque Santa Engracia (Id: ci1029028)
+       ··Cine: La Vaguada (Id: 30,0,1.html)
+         *** No encontré el cine << La Vaguada >> de Madrid (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+       ··Cine: Palafox (Id: 39,0,1.html)
+       --IMDB: Palafox - Madrid (Id: ci1029046)
+       ··Cine: Pequeño Cine Estudio (Id: 41,0,1.html)
+         *** No encontré el cine << Pequeño Cine Estudio >> de Madrid (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+       ··Cine: Renoir Retiro (Id: 46,0,1.html)
+       --IMDB: Renoir Retiro (Id: ci1029055)
+       ··Cine: Cine Cité Méndez Álvaro (Id: 50,0,1.html)
+         *** No encontré el cine << Cine Cité Méndez Álvaro >> de Madrid (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+       ··Cine: Victoria (Id: 52,0,1.html)
+       --IMDB: Victoria (Id: ci1029062)
+       ··Cine: Cinesa Príncipe Pío 3D (Id: 53,0,1.html)
+       --IMDB: Cinesa Príncipe Pío (Id: ci1029023)
+       ··Cine: Yelmo Cines Ideal (Id: 54,0,1.html)
+       --IMDB: Yelmo Cines Ideal (Id: ci1029064)
+       ··Cine: Cine Cité Manoteras (Id: 515,0,1.html)
+         *** No encontré el cine << Cine Cité Manoteras >> de Madrid (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+       ··Cine: Yelmo Cines Plenilunio (Id: 517,0,1.html)
+       --IMDB: Yelmo Cines Plenilunio (Id: ci1029068)
+       ··Cine: Yelmo Cines Islazul (Id: 566,0,1.html)
+       --IMDB: Yelmo Cines Islazul (Id: ci1029065)
+       ··Cine: Cine Iberia (Casa de América) (Id: 568,0,1.html)
+       --IMDB: Casa de América (Id: ci1029057)
+       ··Cine: Cinesa La Gavia 3D (Id: 570,0,1.html)
+       --IMDB: Cinesa La Gavia (Id: ci1029016)
+       ··Cine: Fescinal Parque de la Bombilla (Id: 571,0,1.html)
+         *** No encontré el cine << Fescinal Parque de la Bombilla >> de Madrid (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+       ··Cine: Cine de verano - Parque Calero (Id: 613,0,1.html)
+         *** No encontré el cine << Cine de verano - Parque Calero >> de Madrid (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: Pozuelo de Alarcón (Id: 0,30,2.html)
+       ··Cine: Kinepolis Madrid (Id: 56,0,1.html)
+         *** No encontré el cine << Kinepolis Madrid >> de Pozuelo de Alarcón (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: Arroyomolinos (Id: 0,30,3.html)
+       ··Cine: Cinesa Xanadú 3D (Id: 57,0,1.html)
+       --IMDB: Cinesa Xanadú (Id: ci1029024)
+   ··Ciudad: Alcalá de Henares (Id: 0,30,4.html)
+       ··Cine: La Dehesa Cuadernillos (Id: 518,0,1.html)
+         *** No encontré el cine << La Dehesa Cuadernillos >> de Alcalá de Henares (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: Alcobendas (Id: 0,30,5.html)
+       ··Cine: Ábaco Alcobendas (Id: 61,0,1.html)
+         *** No encontré el cine << Ábaco Alcobendas >> de Alcobendas (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+       ··Cine: Cinesa La Moraleja 3D (Id: 62,0,1.html)
+       --IMDB: Cinesa La Moraleja (Id: ci1029017)
+   ··Ciudad: Alcorcón (Id: 0,30,6.html)
+       ··Cine: Yelmo Cines TresAguas (Id: 63,0,1.html)
+       --IMDB: Yelmo Cines TresAguas (Id: ci1029070)
+   ··Ciudad: Aranjuez (Id: 0,30,7.html)
+   ··Ciudad: Boadilla del Monte (Id: 0,30,8.html)
+       ··Cine: Minicines Olympo (Id: 67,0,1.html)
+         *** No encontré el cine << Minicines Olympo >> de Boadilla del Monte (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: Collado Villalba (Id: 0,30,9.html)
+       ··Cine: Yelmo Cines Planetocio (Id: 68,0,1.html)
+         *** No encontré el cine << Yelmo Cines Planetocio >> de Collado Villalba (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: Coslada (Id: 0,30,10.html)
+       ··Cine: La Rambla (Id: 70,0,1.html)
+       --IMDB: Cines La Rambla (Id: ci1029012)
+   ··Ciudad: Fuenlabrada (Id: 0,30,11.html)
+       ··Cine: Cinesa Loranca 3D (Id: 71,0,1.html)
+         *** No encontré el cine << Cinesa Loranca 3D >> de Fuenlabrada (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: Getafe (Id: 0,30,12.html)
+       ··Cine: Ciné Cité Getafe (Id: 73,0,1.html)
+         *** No encontré el cine << Ciné Cité Getafe >> de Getafe (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: Las Rozas (Id: 0,30,13.html)
+       ··Cine: Cinesa Heron City Las Rozas 3D (Id: 74,0,1.html)
+         *** No encontré el cine << Cinesa Heron City Las Rozas 3D >> de Las Rozas (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: Leganés (Id: 0,30,14.html)
+       ··Cine: Cinesa Parquesur 3D (Id: 75,0,1.html)
+       --IMDB: Cinesa Parquesur 3D - IMAX (Id: ci1029021)
+   ··Ciudad: Majadahonda (Id: 0,30,15.html)
+       ··Cine: Cines Zoco Majadahonda (Id: 77,0,1.html)
+         *** No encontré el cine << Cines Zoco Majadahonda >> de Majadahonda (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+       ··Cine: Cinesa Equinocio 3D (Id: 78,0,1.html)
+         *** No encontré el cine << Cinesa Equinocio 3D >> de Majadahonda (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: Parla (Id: 0,30,16.html)
+   ··Ciudad: Rivas Vaciamadrid (Id: 0,30,17.html)
+       ··Cine: Yelmo Cines Rivas Futura (Id: 519,0,1.html)
+       --IMDB: Yelmo Cines Rivas Futura (Id: ci1029069)
+   ··Ciudad: San Lorenzo de El Escorial (Id: 0,30,18.html)
+   ··Ciudad: Torrejón de Ardoz (Id: 0,30,19.html)
+       ··Cine: Cinebox Parque Corredor (Id: 82,0,1.html)
+       --IMDB: Cinesa Parque Corredor (Id: ci1029009)
+   ··Ciudad: Torrelodones (Id: 0,30,20.html)
+   ··Ciudad: Tres Cantos (Id: 0,30,21.html)
+       ··Cine: Odeón Multicines 3 Cantos (Id: 85,0,1.html)
+       --IMDB: Odeón Multicines 3 Cantos (Id: ci1029007)
+   ··Ciudad: Valdemoro (Id: 0,30,22.html)
+       ··Cine: Restón Cinema (Id: 86,0,1.html)
+       --IMDB: Restón Cinema (Id: ci1029056)
+   ··Ciudad: San Sebastián de los Reyes (Id: 0,30,51.html)
+       ··Cine: Cinebox Plaza Norte 2 (Id: 189,0,1.html)
+         *** No encontré el cine << Cinebox Plaza Norte 2 >> de San Sebastián de los Reyes (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: Los Molinos (Id: 0,30,271.html)
+   ··Ciudad: Pinto (Id: 0,30,272.html)
+       ··Cine: Cinesur Plaza Éboli (Id: 573,0,1.html)
+         *** No encontré el cine << Cinesur Plaza Éboli >> de Pinto (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+   ··Ciudad: San Martín de Valdeiglesias (Id: 0,30,273.html)
+       ··Cine: Cine-Teatro Gustavo Pérez Puig (Id: 574,0,1.html)
+         *** No encontré el cine << Cine-Teatro Gustavo Pérez Puig >> de San Martín de Valdeiglesias (Madrid) CODPOSTAL: 28001
+         *** De entre estos: Acteón||Artesiete Alcalá Full HD||Artistic Metropol||Callao||Casa de América||Cine Doré||Cinesa Méndez Álvaro||Cinesa Proyecciones||Cinesa Príncipe Pío||Conde Duque Alberto Aguilera||Conde Duque Goya||Conde Duque Santa Engracia||Círculo de Bellas Artes||Golem Madrid||Institut Français Madrid||Palacio de la Prensa||Palafox - Madrid||Paz||Renoir Cines Princesa||Renoir Plaza de España||Renoir Retiro||Verdi Madrid||Victoria||Yelmo Cines Ideal||Cines Dreams Palacio de Hielo||Cinesa La Gavia||Cinesa Las Rosas||Cinesa Manoteras||Yelmo Cines Islazul||Yelmo Cines Plenilunio||Cines La Rambla||Cinesa Equinoccio||Cinesa La Moraleja||Cinesa Nassica||Cinesa Parque Corredor||Cinesa Parquesur 3D - IMAX||Cinesa Plaza Loranca 2||Kinépolis Madrid Ciudad de la Imagen||Kinépolis Madrid Diversia||Odeón Multicines 3 Cantos||Yelmo Cines Plaza Norte 2||Yelmo Cines Rivas Futura||Yelmo Cines TresAguas||Cine de Verano Valdemoro||Cinesa Las Rozas - Heron City||Cinesa Xanadú||Los Cines de Pinto||Restón Cinema||La Dehesa Parque de Ocio Cuadernillos||Real Cinema de Olías
+No encontré de esta provincia: 22
+   ··Ciudad: Bilbao (Id: 0,50,28.html)
+       ··Cine: Cinesa Zubiarte (Id: 127,0,1.html)
+       --IMDB: Cinesa Zubiarte 3D (Id: ci1029164)
+       ··Cine: Multicines 8 (Id: 128,0,1.html)
+         *** No encontré el cine << Multicines 8 >> de Bilbao (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+       ··Cine: Golem Alhóndiga (Id: 611,0,1.html)
+       --IMDB: Golem Alhóndiga (Id: ci14606665)
+   ··Ciudad: Barakaldo (Id: 0,50,238.html)
+       ··Cine: Coliseo Max Ocio (Id: 506,0,1.html)
+         *** No encontré el cine << Coliseo Max Ocio >> de Barakaldo (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+       ··Cine: Yelmo Cines Megapark (Id: 507,0,1.html)
+       --IMDB: Yelmo Cines Megapark (Id: ci1029184)
+   ··Ciudad: Basauri (Id: 0,50,239.html)
+       ··Cine: Teatro Social (Id: 584,0,1.html)
+         *** No encontré el cine << Teatro Social >> de Basauri (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+       ··Cine: Ibaigane Zinekluba (Id: 612,0,1.html)
+         *** No encontré el cine << Ibaigane Zinekluba >> de Basauri (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Leioa (Id: 0,50,240.html)
+       ··Cine: Cinesa Artea 3D (Id: 509,0,1.html)
+       --IMDB: Cinesa Artea (Id: ci1029162)
+   ··Ciudad: Ondarroa (Id: 0,50,241.html)
+       ··Cine: Bide-Onera (Id: 510,0,1.html)
+         *** No encontré el cine << Bide-Onera >> de Ondarroa (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Santurce (Id: 0,50,242.html)
+       ··Cine: Serantes Kultur Aretoa (Id: 511,0,1.html)
+       --IMDB: Serantes Kultur Aretoa (Id: ci1029180)
+   ··Ciudad: Getxo (Id: 0,50,274.html)
+       ··Cine: Getxo Zinemak (Id: 580,0,1.html)
+       --IMDB: Getxo Zinemak (Id: ci1029168)
+   ··Ciudad: Portugalete (Id: 0,50,275.html)
+       ··Cine: Cines Ballonti (Id: 581,0,1.html)
+         *** No encontré el cine << Cines Ballonti >> de Portugalete (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Amorebieta (Id: 0,50,277.html)
+       ··Cine: Zornotza Aretoa (Id: 585,0,1.html)
+       --IMDB: Zornotza Aretoa (Id: ci61097830)
+   ··Ciudad: Elorrio (Id: 0,50,278.html)
+       ··Cine: Arriola Kultur Aretoa (Id: 586,0,1.html)
+         *** No encontré el cine << Arriola Kultur Aretoa >> de Elorrio (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Derio (Id: 0,50,279.html)
+       ··Cine: Gurea Aretoa (Id: 587,0,1.html)
+         *** No encontré el cine << Gurea Aretoa >> de Derio (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Ermua (Id: 0,50,280.html)
+       ··Cine: Lobiano Kultur Gunea (Id: 588,0,1.html)
+         *** No encontré el cine << Lobiano Kultur Gunea >> de Ermua (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Galdakao (Id: 0,50,281.html)
+       ··Cine: Torrezabal Kultur Etxea (Id: 589,0,1.html)
+         *** No encontré el cine << Torrezabal Kultur Etxea >> de Galdakao (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Durango (Id: 0,50,282.html)
+       ··Cine: Cine Zugaza (Id: 590,0,1.html)
+         *** No encontré el cine << Cine Zugaza >> de Durango (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Bermeo (Id: 0,50,283.html)
+       ··Cine: Nestor Basterretxea Aretoa (Id: 591,0,1.html)
+         *** No encontré el cine << Nestor Basterretxea Aretoa >> de Bermeo (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Igorre (Id: 0,50,284.html)
+       ··Cine: Lasarte Aretoa (Id: 592,0,1.html)
+         *** No encontré el cine << Lasarte Aretoa >> de Igorre (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Muskiz (Id: 0,50,285.html)
+       ··Cine: Meatzari Aretoa (Id: 593,0,1.html)
+         *** No encontré el cine << Meatzari Aretoa >> de Muskiz (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Lekeitio (Id: 0,50,286.html)
+       ··Cine: Cine Ikusgarri (Id: 594,0,1.html)
+         *** No encontré el cine << Cine Ikusgarri >> de Lekeitio (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Mungia (Id: 0,50,287.html)
+       ··Cine: Cine Torrebillela (Id: 595,0,1.html)
+         *** No encontré el cine << Cine Torrebillela >> de Mungia (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+   ··Ciudad: Guernika (Id: 0,50,288.html)
+       ··Cine: Teatro Liceo (Id: 596,0,1.html)
+         *** No encontré el cine << Teatro Liceo >> de Guernika (Vizcaya) CODPOSTAL: 48001
+         *** De entre estos: Cinesa Zubiarte 3D||Golem Alhóndiga||Multicines Bilbao||Cinesa Max Ocio 3D||Dock Cine||Yelmo Cines Megapark||Cinesa Artea||Getxo Zinemak||Serantes Kultur Aretoa||Zine Antzokia||Zornotza Aretoa||Multicines Gran Arousa||Oñatiko Zinema||Yelmo Cines Boulevard
+No encontré de esta provincia: 17
+   ··Ciudad: Valencia (Id: 0,48,35.html)
+       ··Cine: ABC El Saler (Id: 138,0,1.html)
+       --IMDB: ABC El Saler (Id: ci1029188)
+       ··Cine: ABC Park (Id: 139,0,1.html)
+       --IMDB: ABC Park (Id: ci1029189)
+       ··Cine: Babel (Id: 143,0,1.html)
+       --IMDB: Cines Babel (Id: ci1029200)
+       ··Cine: Lys (Id: 144,0,1.html)
+       --IMDB: Cines Lys (Id: ci1029226)
+       ··Cine: Yelmo Cines Valencia (Id: 145,0,1.html)
+       --IMDB: Yelmo Cines Valencia 3D (Id: ci20002066)
+       ··Cine: Cinestudio D'or (Id: 475,0,1.html)
+       --IMDB: Cinestudio D'or (Id: ci1029232)
+       ··Cine: Ocine Aqua (Id: 476,0,1.html)
+         *** No encontré el cine << Ocine Aqua >> de Valencia (Valencia) CODPOSTAL: 46001
+         *** De entre estos: ABC El Saler||ABC Gran Turia||ABC Park||Cines Babel||Cines Lys||Cinestudio D'or||IVAC - La Filmoteca||L'Hemisfèric||OCINE Valencia - Aqua||Terraza Lumiere||Yelmo Cines Valencia 3D||Autocine Star||Cines MN4||Cinesa Bonaire||Kinépolis Valencia||Alucine Sagunto||El Punt Alzira
+   ··Ciudad: Paterna (Id: 0,48,36.html)
+       ··Cine: Kinépolis Valencia (Id: 146,0,1.html)
+       --IMDB: Kinépolis Valencia (Id: ci1029240)
+   ··Ciudad: Aldaya (Id: 0,48,223.html)
+       ··Cine: Cinesa Bonaire 3D (Id: 477,0,1.html)
+       --IMDB: Cinesa Bonaire (Id: ci1029230)
+   ··Ciudad: Alfafar (Id: 0,48,224.html)
+       ··Cine: Cines MN-4 (Id: 479,0,1.html)
+       --IMDB: Cines MN4 (Id: ci1029215)
+   ··Ciudad: Alzira (Id: 0,48,225.html)
+       ··Cine: El Punt de la Ribera (Id: 482,0,1.html)
+         *** No encontré el cine << El Punt de la Ribera >> de Alzira (Valencia) CODPOSTAL: 46001
+         *** De entre estos: ABC El Saler||ABC Gran Turia||ABC Park||Cines Babel||Cines Lys||Cinestudio D'or||IVAC - La Filmoteca||L'Hemisfèric||OCINE Valencia - Aqua||Terraza Lumiere||Yelmo Cines Valencia 3D||Autocine Star||Cines MN4||Cinesa Bonaire||Kinépolis Valencia||Alucine Sagunto||El Punt Alzira
+   ··Ciudad: Carcaixent (Id: 0,48,226.html)
+   ··Ciudad: Cullera (Id: 0,48,227.html)
+   ··Ciudad: Gandía (Id: 0,48,228.html)
+       ··Cine: ABC Gandía (Id: 485,0,1.html)
+         *** No encontré el cine << ABC Gandía >> de Gandía (Valencia) CODPOSTAL: 46001
+         *** De entre estos: ABC El Saler||ABC Gran Turia||ABC Park||Cines Babel||Cines Lys||Cinestudio D'or||IVAC - La Filmoteca||L'Hemisfèric||OCINE Valencia - Aqua||Terraza Lumiere||Yelmo Cines Valencia 3D||Autocine Star||Cines MN4||Cinesa Bonaire||Kinépolis Valencia||Alucine Sagunto||El Punt Alzira
+   ··Ciudad: Onteniente (Id: 0,48,229.html)
+       ··Cine: Cineapolis El Teler (Id: 489,0,1.html)
+         *** No encontré el cine << Cineapolis El Teler >> de Onteniente (Valencia) CODPOSTAL: 46001
+         *** De entre estos: ABC El Saler||ABC Gran Turia||ABC Park||Cines Babel||Cines Lys||Cinestudio D'or||IVAC - La Filmoteca||L'Hemisfèric||OCINE Valencia - Aqua||Terraza Lumiere||Yelmo Cines Valencia 3D||Autocine Star||Cines MN4||Cinesa Bonaire||Kinépolis Valencia||Alucine Sagunto||El Punt Alzira
+   ··Ciudad: Sagunt (Id: 0,48,230.html)
+       ··Cine: Alucine (Id: 490,0,1.html)
+       --IMDB: Alucine Sagunto (Id: ci1029193)
+   ··Ciudad: Xirivella (Id: 0,48,231.html)
+       ··Cine: ABC Gran Turia (Id: 182,0,1.html)
+       --IMDB: ABC Gran Turia (Id: ci1029192)
+       ··Cine: ABC Gran Turia (Id: 491,0,1.html)
+       --IMDB: ABC Gran Turia (Id: ci1029192)
+   ··Ciudad: Xàtiva (Id: 0,48,307.html)
+       ··Cine: OCine Plaza Mayor (Id: ocine-plaza-mayor/)
+         *** No encontré el cine << OCine Plaza Mayor >> de Xàtiva (Valencia) CODPOSTAL: 46001
+         *** De entre estos: ABC El Saler||ABC Gran Turia||ABC Park||Cines Babel||Cines Lys||Cinestudio D'or||IVAC - La Filmoteca||L'Hemisfèric||OCINE Valencia - Aqua||Terraza Lumiere||Yelmo Cines Valencia 3D||Autocine Star||Cines MN4||Cinesa Bonaire||Kinépolis Valencia||Alucine Sagunto||El Punt Alzira
+No encontré de esta provincia: 5
+   ··Ciudad: Zamora (Id: 0,51,243.html)
+       ··Cine: Multicines Zamora (Id: 513,0,1.html)
+       --IMDB: Multicines Zamora (Id: ci1028731)
+       ··Cine: Multisalas Valderaduey (Id: 514,0,1.html)
+         *** No encontré el cine << Multisalas Valderaduey >> de Zamora (Zamora) CODPOSTAL: 49001
+         *** De entre estos: Multicines Zamora
+No encontré de esta provincia: 1
+   ··Ciudad: Zaragoza (Id: 0,52,58.html)
+       ··Cine: Cervantes (Id: 201,0,1.html)
+       --IMDB: Cine Cervantes - Zaragoza (Id: ci1028636)
+       ··Cine: Cinema Elíseos (Id: 202,0,1.html)
+         *** No encontré el cine << Cinema Elíseos >> de Zaragoza (Zaragoza) CODPOSTAL: 50001
+         *** De entre estos: Cine Cervantes - Zaragoza||Cine Palafox Independencia||Cinesa Grancasa 3D||Cinesa Puerto Venecia||Filmoteca Zaragoza||Yelmo Cines Imperial
+       ··Cine: Palafox Independencia (Id: 203,0,1.html)
+       --IMDB: Cine Palafox Independencia (Id: ci1028640)
+       ··Cine: Cinesa Grancasa 3D (Id: 205,0,1.html)
+       --IMDB: Cinesa Grancasa 3D (Id: ci1028648)
+       ··Cine: Aragonia (Id: 578,0,1.html)
+         *** No encontré el cine << Aragonia >> de Zaragoza (Zaragoza) CODPOSTAL: 50001
+         *** De entre estos: Cine Cervantes - Zaragoza||Cine Palafox Independencia||Cinesa Grancasa 3D||Cinesa Puerto Venecia||Filmoteca Zaragoza||Yelmo Cines Imperial
+       ··Cine: Yelmo Cines Plaza Imperial (Id: 616,0,1.html)
+         *** No encontré el cine << Yelmo Cines Plaza Imperial >> de Zaragoza (Zaragoza) CODPOSTAL: 50001
+         *** De entre estos: Cine Cervantes - Zaragoza||Cine Palafox Independencia||Cinesa Grancasa 3D||Cinesa Puerto Venecia||Filmoteca Zaragoza||Yelmo Cines Imperial
+   ··Ciudad: Calatayud (Id: 0,52,59.html)
+       ··Cine: Teatro Principal (Id: 208,0,1.html)
+         *** No encontré el cine << Teatro Principal >> de Calatayud (Zaragoza) CODPOSTAL: 50001
+         *** De entre estos: Cine Cervantes - Zaragoza||Cine Palafox Independencia||Cinesa Grancasa 3D||Cinesa Puerto Venecia||Filmoteca Zaragoza||Yelmo Cines Imperial
+No encontré de esta provincia: 4
+    Mongo - He metido 52 provincias
+    Mongo - He metido 420 cines
+Finalizado
+No encontré: 196

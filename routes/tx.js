@@ -1,9 +1,41 @@
+'use strict';
+
 module.exports = function (app) {
     var request = require('request'),
-        cheerio = require('cheerio');
+        cheerio = require('cheerio'),
+        events = require('events');
+
+    var eventEmitter = new events.EventEmitter();
+
+    /*************************************************************************/
+    /********************* LISTENER EVENTOS **********************************/
+    /*************************************************************************/
+
+    //Envío una respuesta JSON
+    eventEmitter.on('sendResponse', function (responseObject, responseJSON) {
+        responseObject.set({
+            'Content-Type': 'application/json; charset=utf-8'
+        }).json(responseJSON);
+    });
+
+    //Envío un torrent como respuesta
+    eventEmitter.on('sendTorrent', function (responseObject, disposition, responseTorrent) {
+        responseObject.set({
+            'Content-Type': 'application/octet-stream; charset=utf-8',
+            'Content-Disposition': disposition
+        });
+
+        responseObject.write(responseTorrent);
+        responseObject.end();
+    });
+
+
+    /*************************************************************************/
+    /*************** MÉTODOS DEL WEBSERVICE **********************************/
+    /*************************************************************************/
 
     //GET - Obtiene las categorías (series, etc)
-    getCategories = function (req, res) {
+    var getCategories = function (req, res) {
         var url = 'http://www.txibitsoft.com/categorias.php', response = {};
 
         request(url, function (err, resp, body) {
@@ -17,7 +49,7 @@ module.exports = function (app) {
                 throw err;
             }
 
-            $ = cheerio.load(body);
+            var $ = cheerio.load(body);
 
             //Cojo las listas
             var innerElements, innerCategories = [];
@@ -43,15 +75,16 @@ module.exports = function (app) {
             };
 
             //Respuesta
-            res.set({
-                'Content-Type': 'application/json; charset=utf-8'
-            }).json(response);
+            /*res.set({
+             'Content-Type': 'application/json; charset=utf-8'
+             }).json(response);*/
+            eventEmitter.emit('sendResponse', res, response);
         });
     };
 
     //GET - Obtiene los torrent de una categoría
-    getTorrents = function (req, res) {
-        var url = req.params.categoryUrl;
+    var getTorrents = function (req, res) {
+        var url = req.params.categoryUrl, response = {};
         url = new Buffer(url, 'base64').toString('ascii');  //utf8
         url = 'http://www.txibitsoft.com/' + url;
 
@@ -66,7 +99,7 @@ module.exports = function (app) {
                 throw err;
             }
 
-            $ = cheerio.load(body);
+            var $ = cheerio.load(body);
 
             //Cojo la lista torrents
             var innerTorrents = [];
@@ -110,16 +143,17 @@ module.exports = function (app) {
             };
 
             //Respuesta
-            res.set({
-                'Content-Type': 'application/json; charset=utf-8'
-            }).json(response);
+            /*res.set({
+             'Content-Type': 'application/json; charset=utf-8'
+             }).json(response);*/
+            eventEmitter.emit('sendResponse', res, response);
         });
     };
 
 
     //GET - Obtiene los torrent de una búsqueda
-    getSearch = function (req, res) {
-        var url = req.params.term;
+    var getSearch = function (req, res) {
+        var url = req.params.term, response = {};
         url = new Buffer(url, 'base64').toString('ascii');  //utf8
         url = 'http://www.txibitsoft.com/torrents.php?procesar=1&texto=' + encodeURI(url) + '&categorias=%27Cine%20Alta%20Definicion%20HD%27,%27Peliculas%27,%27Peliculas%20Castellano%27';
 
@@ -137,7 +171,7 @@ module.exports = function (app) {
                 throw err;
             }
 
-            $ = cheerio.load(body);
+            var $ = cheerio.load(body);
 
             //Cojo la lista torrents
             var innerTorrents = [];
@@ -206,14 +240,15 @@ module.exports = function (app) {
             };
 
             //Respuesta
-            res.set({
-                'Content-Type': 'application/json; charset=utf-8'
-            }).json(response);
+            /*res.set({
+             'Content-Type': 'application/json; charset=utf-8'
+             }).json(response);*/
+            eventEmitter.emit('sendResponse', res, response);
         });
     };
 
     //Descargo un torrent y lo envío al plugin
-    downloadTorrent = function (req, res) {
+    var downloadTorrent = function (req, res) {
         var id = req.params.id;
         request(
             {
@@ -230,16 +265,18 @@ module.exports = function (app) {
                     var torrent = new Buffer(body, 'binary');
 
                     //Respuesta
-                    res.set({
-                        'Content-Type': 'application/octet-stream; charset=utf-8',
-                        'Content-Disposition': disposition
-                    });
+                    /*res.set({
+                     'Content-Type': 'application/octet-stream; charset=utf-8',
+                     'Content-Disposition': disposition
+                     });
 
-                    res.write(torrent);
-                    res.end();
+                     res.write(torrent);
+                     res.end();*/
+                    events.emit('sendTorrent', res, disposition, torrent);
                 }
             });
     };
+
 
     //Las rutas
     app.get('/api/tx/download/:id', downloadTorrent);

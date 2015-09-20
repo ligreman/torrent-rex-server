@@ -1,0 +1,1 @@
+node $OPENSHIFT_REPO_DIR/getLocations.js

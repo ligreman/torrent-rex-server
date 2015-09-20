@@ -66,15 +66,44 @@ module.exports = function (grunt) {
                 dir: 'coverage/reports',
                 print: 'detail'
             }
+        },
+        shell: {
+            target: {
+                command: [
+                    'git update-index --chmod=+x .openshift/action_hooks/post_deploy',
+                    'git push'
+                ].join('&&')
+            }
+        },
+        replace: {
+            pro: {
+                src: ['routes/*.js', 'utils/*.js'],
+                overwrite: true,                 // overwrite matched source files
+                replacements: [{
+                    from: 'console.log',
+                    to: '//console.log'
+                }]
+            },
+            dev: {
+                src: ['routes/*.js', 'utils/*.js'],
+                overwrite: true,                 // overwrite matched source files
+                replacements: [{
+                    from: '//console.log',
+                    to: 'console.log'
+                }]
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-jscs-checker');
+    grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-text-replace');
 
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
+
     grunt.loadNpmTasks('grunt-istanbul');
     grunt.loadNpmTasks('grunt-istanbul-coverage');
 
@@ -87,6 +116,11 @@ module.exports = function (grunt) {
     );
 
     grunt.registerTask('test', ['check']);
+
+    grunt.registerTask('consoleOff', ['replace:pro']);
+    grunt.registerTask('consoleOn', ['replace:dev']);
+
+    grunt.registerTask('push', ['shell']);
 
     grunt.registerTask('default', []);
 };

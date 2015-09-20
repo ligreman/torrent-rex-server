@@ -69,6 +69,7 @@ function downloadImage(url) {
             }
 
             var imageType = imageResponse.headers['content-type'];
+            var size = imageResponse.headers['content-length'];
             var base64 = new Buffer(imageBody, 'binary').toString('base64');
             var dataURI = 'data:' + imageType + ';base64,' + base64;
             var jsonString = JSON.stringify({

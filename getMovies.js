@@ -1,15 +1,23 @@
+'use strict';
+
 var request = require('request'),
     cheerio = require('cheerio'),
     mongoose = require('mongoose'),
-    md5 = require('MD5'),
+    md5 = require('md5'),
     async = require('async'),
-    Q = require('q'),
-    http = require('http');
+    events = require('events'),
+//fs = require('fs'),
+    Q = require('q');
 
-var url = 'http://www.sensacine.com/peliculas/en-cartelera/cines',
-    params = '/?page=', pages = [], numPages = 0, urls = [],
-    retries = 2, moviesAlreadyInserted = [], countMoviesInserted = 0, countMoviesDupped = 0,
-    moviesInWeb = [], moviesNews = [];
+var urlBase = 'http://www.ecartelera.com/peliculas/',
+    urlIMDB = 'http://www.imdb.com/find?s=tt&q=',
+    moviesAlreadyInserted = [], countMoviesInserted = 0, countMoviesDupped = 0, moviesDupped = [],
+    imageFileSizeLimit = 100000,
+    searchWithAnno = true,
+    noMovieDefaultImage = 'data:image/png;base64,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';
+
+//Gestor de eventos
+var eventEmitter = new events.EventEmitter();
 
 //Conecto a mongo
 mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME || 'mongodb://localhost/cine', {
@@ -21,313 +29,156 @@ mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_AP
 //Cargo los modelos
 var modelos = require('./models/models.js');
 
-//Cojo la primera página e inicio el proceso
-request(url, function (err, resp, body) {
-    if (err || resp.statusCode !== 200) {
-        console.log('Se produjo un error');
 
-        throw err;
-    }
-
-    //Añado el body actual
-    pages.push(body);
-
-    //Saco las páginas que tiene
-    var $ = cheerio.load(body);
-    numPages = $('div.pager ul li').last().children('a').text();
-
-    //Genero las urls de las páginas
-    for (var i = 2; i <= numPages; i++) {
-        urls.push(url + params + i);
-    }
-
-    //Inicio la obtención de las páginas
-    iteratePages();
-});
-
-/***********************************************************************************/
-/********************** OBTENCIÓN DE LAS PÁGINAS ***********************************/
-/***********************************************************************************/
-
-//Iterador que va lanzando los retries para obtener las páginas
-function iteratePages() {
-    //Saco los body de cada página
-    getPagesBodies(urls, function (resultado) {
-        if (resultado === null) {
-            console.log("Ha fallado una url en el iterador");
-            //Ha fallado algo, reintento
-            if (retries > 0) {
-                retries--;
-                setTimeout(iteratePages, 3000);
-            } else {
-                returnError('No se pudo obtener todas las páginas tras los reintentos.');
-            }
-        } else {
-            console.log("Iterador correcto");
-            //Todo OK
-            resultado.forEach(function (cuerpo) {
-                pages.push(cuerpo);
-            });
-            processPagesBodies(pages);
-
-            //Ahora tengo en moviesInWeb los JSON de las películas
-            compareMoviesWithMongo()
-                .then(convertImagesToBase64).delay(2000)
-                .then(obtainSinopsisAndCountry)
-                .done(function () {
-                    console.log("Películas nuevas encontradas en la web: " + moviesNews.length);
-                    console.log("Películas insertadas en Mongo: " + countMoviesInserted);
-                    console.log("Películas duplicadas: " + countMoviesDupped);
-                    mongoose.disconnect();
-                    console.log("Se terminó");
-                    //Finalizo
-                    process.exit();
-
-                    //Elimino duplicados
-
-                    //Guardo en base de datos
-                    /*modelos.Pelicula.collection.insert(moviesNews, function (err, docs) {
-                     if (err) {
-                     console.error(err);
-                     } else {
-                     console.log("He insertado: " + docs.length);
-                     }
-
-                     mongoose.disconnect();
-                     console.log("Se terminó");
-                     //Finalizo
-                     process.exit();
-                     });*/
-
-                    /*async.map(moviesNews, saveMovie, function (err, results) {
-                     if (err) {
-                     console.error(err);
-                     } else {
-                     console.log("");
-                     }
-
-                     mongoose.disconnect();
-                     console.log("Se terminó");
-                     //Finalizo
-                     process.exit();
-                     });*/
-
-                    /*modelos.Pelicula.create(moviesNews, function (err) {
-                     if (err) {
-                     console.error(err);
-                     }
-
-                     mongoose.disconnect();
-                     console.log("Se terminó");
-                     //Finalizo
-                     process.exit();
-                     });*/
-                });
-        }
-    });
-}
-
-var saveMovie = function (movie, callback) {
-    var peli = new modelos.Pelicula(movie);
-
-    peli.save(function (err) {
-        if (err) {
-            callback(err);
-        } else {
-            callback(null, results); // results[2] -> 'file3' body
-        }
-    });
-};
-
-//Map que va lanzando cada petición de obtención de cuerpo y responde cuando todas han terminado
-function getPagesBodies(urls, callback) {
-    //Voy sacando el body de cada página
-    async.map(urls, getBody, function (err, results) {
-        if (err) {
-            callback(null);
-        } else {
-            callback(results); // results[2] -> 'file3' body
-        }
-    });
-}
-
-//Obtiene el cuerpo de una página concreta
-var getBody = function (urlSource, callback) {
-    request.get(urlSource, function (err, response, body) {
-        if (err) {
-            callback(err);
-        } else {
-            callback(null, body); // First param indicates error, null=> no error
-        }
-    });
-};
-
-/*
- var request = require('request').defaults({ encoding: null });
-
- request.get('http://tinypng.org/images/example-shrunk-8cadd4c7.png', function (error, response, body) {
- if (!error && response.statusCode == 200) {
- data = "data:" + response.headers["content-type"] + ";base64," + new Buffer(body).toString('base64');
- console.log(data);
- }
- });
- */
-
-/***********************************************************************************/
-/*************** PROCESAMIENTO DE LOS BODIES ***************************************/
-/***********************************************************************************/
-
-//Procesa el HTML de los cuerpos para extraer información
-function processPagesBodies(paginas) {
-    var movies = [];
-
-    var o = 1;
-    paginas.forEach(function (pagina) {
-        console.info("Pagina " + o);
-        movies.push(parsePageBody(pagina));
-        o++;
-    });
-}
-
-
-//Parseador del body. Obtiene la información de cada película
-function parsePageBody(body) {
-    var ids = [];
-
-    var $ = cheerio.load(body);
-    $('div.data_box').each(function (i, elem) {
-        var movie = {};
-
-        var img = $(this).children('div').children('span').children('img');
-
-        movie.titulo = img.attr('title');
-        movie.imagen = img.attr('src');
-
-        var content = $(this).children('div').children('div.content');
-
-        movie.duracion = 0;
-        movie.peliculaId = parseMovieId(content.children('div').children('h2').children('a').attr('href'));
-        //Calculo el id
-        movie._id = md5(movie.peliculaId);
-
-        //Si consigo obtener el id continuo haciendo cosas
-        if (movie.peliculaId !== null) {
-            content.children('ul').find('li').each(function () {
-                var span = $(this).children('span');
-                var li = $(this);
-
-                var elemento = span.text();
-                elemento = elemento.trim();
-
-                switch (elemento) {
-                    case 'Estreno':
-                        var estreno = span.next('div').text().replace(/\n/g, '');
-                        estreno = parseEstrenoDate(estreno);
-                        movie.estreno = estreno.fecha;
-                        movie.duracion = estreno.duracion;
-                        movie.anno = estreno.anno;
-                        break;
-                    case 'Director':
-                        var directors = [];
-                        span.next('div').find('span').each(function () {
-                            directors.push($(this).text());
-                        });
-                        movie.director = directors;
-                        break;
-                    case 'Reparto':
-                        var reparto = [];
-                        span.next('div').find('span').each(function () {
-                            reparto.push($(this).text());
-                        });
-                        movie.reparto = reparto;
-                        break;
-                    case 'Género':
-                        var genero = [];
-                        li.find('span[itemprop="genre"]').each(function () {
-                            genero.push($(this).text());
-                        });
-                        movie.genero = genero;
-                        break;
-                }
-            });
-        }
-
-        //console.log(movie);
-        moviesInWeb.push(movie);
-    });
-}
-
-//Me guardo los objetos de las películas de Mongo para saber cuál tengo que guardar
-function compareMoviesWithMongo() {
-    var ids = [];
-    console.log("comparo");
-    //Cojo las peliculas de base de datos
-    var defer = Q.defer();
-    modelos.Pelicula.find().select('_id').exec(function (err, peliculas) {
-        if (err) {
-            defer.reject(new Error(err));
-        }
-        console.log("ya tengo mongo");
-
+//Saco las pelis que tengo en mongo
+modelos.Pelicula.find().exec(function (err, peliculas) {
+    if (err) {
+        console.log("Error en mongo: " + err);
+        mongoose.disconnect();
+        process.exit();
+    } else {
+        var ids = [];
+        //Saco los ids de las pelis que ya tengo en mongo
         peliculas.forEach(function (pelicula) {
             //moviesInMongo.push(pelicula._id);
             ids.push(pelicula._id);
         });
-        console.log(ids);
+        eventEmitter.emit('checkNewMovies', ids);
+    }
+});
 
-        //Comparo con las que encontré en la web para saber las nuevas
-        var peli;
-        for (index in moviesInWeb) {
-            if (moviesInWeb.hasOwnProperty(index)) {
-                peli = moviesInWeb[index];
-                //Si no está la peli en mongo es nueva
-                if (ids.indexOf(peli._id) === -1) {
-                    moviesNews.push(peli);
-                }
-            }
+//Cojo las pelis de la web y comparo con mongo para guardar las nuevas
+eventEmitter.on('checkNewMovies', function (idsMoviesInMongo) {
+    //Cojo la página de las películas
+    request(urlBase, function (err, resp, body) {
+        if (err || resp.statusCode !== 200) {
+            console.log('Se produjo un error');
+            throw err;
         }
-        //console.log("nuevas movies: " + moviesInWeb.length);
 
-        defer.resolve('');
+        //Saco el cuerpo
+        var $ = cheerio.load(body), newMovies = [];
+
+        //Saco las pelis
+        $('a.item-block').each(function () {
+            var thumb = $(this).find('img').attr('src');
+            var idPelicula = extractIdPelicula($(this).attr('href'));
+            var md5Id = md5(idPelicula);
+
+            console.log('  -- Busco si tengo ya este md5: ' + md5Id + ' correspondiente a ' + idPelicula);
+
+            //Busco en mongo este id y si no está lo marco como nueva peli
+            if (idsMoviesInMongo.indexOf(md5Id) === -1) {
+                console.log('  -- No lo tengo');
+                newMovies.push({
+                    _id: md5Id,
+                    peliculaId: idPelicula,
+                    imagen: thumb
+                });
+            }
+        });
+
+        //Obtengo las películas nuevas
+        if (newMovies.length > 0) {
+            eventEmitter.emit('getNewMovies', newMovies);
+        } else {
+            eventEmitter.emit('checkMongoMovies');
+        }
+    });
+});
+
+
+//Obtengo las películas nuevas
+eventEmitter.on('getNewMovies', function (newMovies) {
+    console.log('Películas nuevas en la web: ' + newMovies.length);
+
+    //Cojo su thumbnail y datos
+    downloadThumbnails(newMovies).delay(2000)
+        .then(getAndSaveMoviesInformation)
+        .catch(function (error) {
+            console.log(error);
+            throw error;
+        })
+        .done(function (movies) {
+            console.log("Películas nuevas encontradas en la web: " + movies.length);
+            console.log("Películas insertadas en Mongo: " + countMoviesInserted);
+            console.log("Películas duplicadas: " + countMoviesDupped + ". Son:");
+            console.log(moviesDupped);
+
+            //buscar el imdb de las pelis que ya tengo en mongo y tienen ese campo null
+            eventEmitter.emit('checkMongoMovies');
+        });
+});
+
+eventEmitter.on('checkMongoMovies', function () {
+    //Saco de mongo las pelis que tienen imdb null
+    modelos.Pelicula.find({"imdbId": null}).exec(function (err, peliculas) {
+        if (err) {
+            console.log("Error al sacar las pelis de Mongo: " + err);
+        } else {
+            console.log("Busco los id de IMDb que me faltan en Mongo: " + peliculas.length);
+            async.map(peliculas, getAndSaveImdbId, function (err, results) {
+                if (err) {
+                    console.log("Error al obtener el imdb de una peli: " + err);
+                }
+
+                eventEmitter.emit('checkMongoMoviesWithoutAnno');
+            });
+        }
     });
 
-    return defer.promise;
-}
+});
 
-function convertImagesToBase64() {
+eventEmitter.on('checkMongoMoviesWithoutAnno', function () {
+    searchWithAnno = false;
+    //Saco de mongo las pelis que tienen imdb null
+    modelos.Pelicula.find({"imdbId": null}).exec(function (err, peliculas) {
+        if (err) {
+            console.log("Error al sacar las pelis de Mongo: " + err);
+        } else {
+            console.log("Busco los id de IMDb que me faltan en Mongo, ahora sin el año: " + peliculas.length);
+            async.map(peliculas, getAndSaveImdbId, function (err, results) {
+                if (err) {
+                    console.log("Error al obtener el imdb de una peli: " + err);
+                }
+
+                eventEmitter.emit('finalize');
+            });
+        }
+    });
+
+});
+
+eventEmitter.on('finalize', function () {
+    mongoose.disconnect();
+    console.log("Se terminó");
+    //Finalizo
+    process.exit();
+});
+
+/*************************************************************/
+/*************** FUNCIONES *********************************/
+/*************************************************************/
+//Descarga los thumnails de las pelis
+var downloadThumbnails = function (newMovies) {
     var def = Q.defer();
-    //Crea una cadena de descargas de imagenes
-    //Por cada movie nuevo llamo al deferred
-    //Voy sacando el body de cada página
-    /*var prueba = [];
-     prueba.push(moviesNews.pop());
-     prueba.push(moviesNews.pop());
-     prueba.push(moviesNews.pop());
-     moviesNews = prueba;*/
-    /*
-     console.log("--------");
-     console.log("--------");
-     console.log(moviesInWeb);
-     console.log("--------");
-     console.log("--------");*/
 
-    async.map(moviesNews, downloadImageAsBase64, function (err, results) {
+    async.map(newMovies, downloadImageAsBase64, function (err, results) {
         if (err) {
             def.reject(err);
-            //throw err;
         } else {
-            console.log("fin iterador");
-            moviesNews = results;
-            //console.log(moviesInWeb);
-            def.resolve();
+            console.log("Fin de obtención de thumbnails");
+            //moviesNews = results;
+            def.resolve(results);
         }
     });
 
     return def.promise;
-}
+};
 
-function downloadImageAsBase64(movie, callback) {
-    console.log("Descargo imagen");
+//Descarga una imagen como base64
+var downloadImageAsBase64 = function (movie, callback) {
+    console.log("Descargo thumb");
     request(
         {url: movie.imagen, encoding: 'binary'},
         function onImageResponse(error, imageResponse, imageBody) {
@@ -336,126 +187,260 @@ function downloadImageAsBase64(movie, callback) {
                 //throw error;
             }
 
-            var imageType = imageResponse.headers['content-type'];
-            var base64 = new Buffer(imageBody, 'binary').toString('base64');
-            movie.imagen = 'data:' + imageType + ';base64,' + base64;
+            var imageType = imageResponse.headers['content-type'],
+                size = imageResponse.headers['content-length'];
 
-            //Devuelvo el objeto movie con la imagen en base 64
-            callback(null, movie); // First param indicates error, null=> no error
-        }
-    );
-}
-
-function obtainSinopsisAndCountry() {
-    var defer = Q.defer();
-
-    async.mapSeries(moviesNews, getSinopsisAndCountry, function (err, results) {
-        if (err) {
-            defer.reject(err);
-            //throw err;
-        } else {
-            console.log("fin iterador");
-            moviesNews = results;
-            //console.log(moviesInWeb);
-            defer.resolve();
-        }
-    });
-
-    return defer.promise;
-}
-
-var getSinopsisAndCountry = function (movie, callback) {
-    console.log("Pillo peli: " + movie.titulo + " (" + md5(movie.peliculaId) + ")");
-    //Accedo a la página de la peli para sacar sus datos
-    var urlBase = 'http://www.sensacine.com/peliculas/pelicula-';
-    request(urlBase + movie.peliculaId, function (error, response, body) {
-            if (error) {
-                callback(error);
-                //throw error;
-            }
-
-            var $ = cheerio.load(body),
-                paises = [];
-
-            $('span.lighten').each(function () {
-                var texto = $(this).text();
-                texto = texto.trim();
-
-                if (texto == 'País') {
-                    $(this).parent('th').next('td').find('span').each(function () {
-                        //console.log($(this).text());
-                        paises.push($(this).text().replace(/\n/g, ''));
-                    });
-                }
-            });
-
-            movie.sinopsis = $('h2#synopsys_details').parent('div').next('div').find('p').text().replace(/\n/g, '').replace(/"/g, "'");
-            movie.pais = paises;
-
-            //console.log(movie);
-
-            //Guardo en Mongo si no lo metí ya
-            if (moviesAlreadyInserted.indexOf(movie._id) === -1) {
-                var peli = new modelos.Pelicula(movie);
-                peli.save(function (err) {
-                    if (err) {
-                        callback(err);
-                        //throw err;
-                    } else {
-                        moviesAlreadyInserted.push(movie._id);
-                        countMoviesInserted++;
-                        callback(null, movie); // results[2] -> 'file3' body
-                    }
-                });
+            //Compruebo que la imagen no sobrepasa los límites
+            if (size > imageFileSizeLimit) {
+                callback(null, noMovieDefaultImage);
             } else {
-                countMoviesDupped++;
-                callback(null, movie);
-            }
+                var base64 = new Buffer(imageBody, 'binary').toString('base64');
+                movie.imagen = 'data:' + imageType + ';base64,' + base64;
 
-            //Devuelvo el objeto movie
-            //callback(null, movie); // First param indicates error, null=> no error
+                //Devuelvo el objeto movie con la imagen en base 64
+                callback(null, movie); // First param indicates error, null=> no error
+            }
         }
     );
 };
 
-/*************************************************************/
-/*************** PARSEADORES *********************************/
-/*************************************************************/
-function parseMovieId(enlace) {
-    var patron = /[0-9]+/;
-    var resultado = patron.exec(enlace);
-    return resultado[0];
-}
+//Obtengo la información de cada película
+var getAndSaveMoviesInformation = function (newMovies) {
+//function obtainSinopsisAndCountry() {
+    var defer = Q.defer();
 
-function parseEstrenoDate(estreno) {
-    //console.log(estreno);
-    var patron = /([0-9]{2}\/[0-9]{2}\/)([0-9]{4})[ ]*(\(([0-9]*)h([0-9]*)min\))?/;
-    var resultado = patron.exec(estreno);
-    //["02/03/2015(1h45min)", "02/03/", "2015", "(1h45min)", "1", "45"]
-    return {
-        fecha: resultado[1] + resultado[2],
-        anno: resultado[2],
-        duracion: aMinutos(resultado[4], resultado[5])
-    };
-}
+    async.mapSeries(newMovies, downloadMovie, function (err, movies) {
+        if (err) {
+            defer.reject(err);
+            //throw err;
+        } else {
+            console.log("Fin de obtención de información de las películas");
+            //moviesNews = results;
+            //console.log(moviesInWeb);
+            defer.resolve(movies);
+        }
+    });
 
-//Convierte una cadena 2h45min a minutos
-function aMinutos(horas, minutos) {
-    if (horas === undefined || horas === null) {
-        return 0;
+    return defer.promise;
+};
+
+//Descarga la información de una película y la guarda en Mongo
+var downloadMovie = function (movie, callback) {
+    console.log("Pillo peli: " + movie._id + " (" + movie.peliculaId + ")");
+
+    //Accedo a la página de la peli para sacar sus datos
+    request(urlBase + movie.peliculaId, function (error, response, body) {
+            if (error) {
+                callback(error);
+            }
+
+            var $ = cheerio.load(body),
+                texto = '',
+                patrones = {
+                    tituloOriginal: /Título original/,
+                    anno: /Año/,
+                    pais: /País/,
+                    duracion: /Duración/,
+                    genero: /Género/,
+                    estudio: /Estudios/,
+                    estreno: /España/
+                };
+
+            //Título
+            movie.titulo = $('h1 span[itemprop="name"]').text();
+
+            //Ficha de la peli
+            $('div.infoc2 p').each(function () {
+                var aux = '';
+                //Cojo el contenido de la línea
+                texto = $(this).text();
+
+                if (patrones.tituloOriginal.test(texto)) {
+                    movie.tituloOriginal = texto.replace(/Título original: /i, '');
+                }
+                else if (patrones.anno.test(texto)) {
+                    movie.anno = parseInt(texto.replace(/Año: /i, ''));
+                }
+                else if (patrones.pais.test(texto)) {
+                    aux = texto.replace(/País: /i, '');
+                    movie.pais = toTrimArray(aux);
+                }
+                else if (patrones.duracion.test(texto)) {
+                    aux = texto.replace(/Duración: /i, '');
+                    aux = aux.replace(/minutos/i, '');
+                    movie.duracion = parseInt(aux);
+                }
+                else if (patrones.genero.test(texto)) {
+                    aux = texto.replace(/Género: /i, '');
+                    movie.genero = toTrimArray(aux);
+                }
+                else if (patrones.estudio.test(texto)) {
+                    aux = texto.replace(/Estudios: /i, '');
+                    movie.estudio = toTrimArray(aux);
+                }
+            });
+
+            //Estreno
+            $('div.cnt-dob p').each(function () {
+                texto = $(this).text();
+
+                if (patrones.estreno.test(texto)) {
+                    movie.estreno = texto.replace(/España: /i, '');
+                }
+            });
+
+
+            //Sinopsis
+            var sinopsis = $('p[itemprop="description"]').text();
+            sinopsis = sinopsis.replace(/["]/g, "'");
+            //sinopsis = sinopsis.replace(/((Ocultar sinopsis completa...)|(Mostrar sinopsis completa))/, '');
+            sinopsis = sinopsis.replace(/Ocultar sinopsis completa.../, '');
+            sinopsis = sinopsis.replace(/Mostrar sinopsis completa/, '');
+            movie.sinopsis = sinopsis.trim();
+
+            //Director
+            movie.director = [];
+            $('div[itemprop="director"]').each(function () {
+                movie.director.push($(this).text().trim());
+            });
+
+            //Reparto
+            movie.reparto = [];
+            movie.repartoExtendido = [];
+            $('div[itemprop="actor"]').each(function () {
+                var actorName = $(this).find('p.colstart').text().trim();
+                movie.reparto.push(actorName);
+
+                var actorRole = $(this).find('p.colstarr').text().trim();
+                if (actorRole != '') {
+                    actorName += ' (' + actorRole + ')';
+                }
+                movie.repartoExtendido.push(actorName);
+            });
+
+            //Cojo de IMDB el id si lo encuentro
+            request(urlIMDB + encodeURIComponent(movie.titulo), function (error2, response, body2) {
+                if (!error2) {
+                    //Saco el id de IMDB
+                    var $2 = cheerio.load(body2);
+                    //Cojo el primer resultado
+                    var enlace = $2('table.findList').find('tr').first().find('td.result_text').find('a');
+                    if (enlace != null) {
+                        movie.imdbId = extractIdIMDB(enlace.attr('href'));
+                        console.log('        Imdb ID: ' + movie.imdbId);
+                    }
+                } else {
+                    console.log('        Error al extraer el ID de Imdb: ' + error2);
+                }
+
+                //Guardo en Mongo si no lo metí ya
+                if (moviesAlreadyInserted.indexOf(movie._id) === -1) {
+                    var peli = new modelos.Pelicula(movie);
+                    peli.save(function (err) {
+                        if (err) {
+                            callback(err);
+                            //throw err;
+                        } else {
+                            moviesAlreadyInserted.push(movie._id);
+                            countMoviesInserted++;
+                            callback(null, movie); // results[2] -> 'file3' body
+                        }
+                    });
+                } else {
+                    countMoviesDupped++;
+                    moviesDupped.push(movie.titulo);
+                    callback(null, movie);
+                }
+            });
+        }
+    );
+};
+
+
+//Obtiene el id de imdb de una peli
+function getAndSaveImdbId(pelicula, callback) {
+    var cadena = pelicula.titulo;
+
+    if (searchWithAnno && pelicula.anno !== null) {
+        cadena = cadena + ' ' + pelicula.anno;
     }
 
-    horas = parseInt(horas);
-    minutos = parseInt(minutos);
+    request(urlIMDB + encodeURIComponent(cadena), function (error, response, body) {
+        if (!error) {
+            //Saco el id de IMDB
+            var $2 = cheerio.load(body);
 
-    minutos += horas * 60;
-    return minutos;
+            //Cojo el primer resultado
+            var enlace = $2('table.findList').find('tr').first().find('td.result_text').find('a'),
+                imdbId = null;
+
+            var temp = $2('table.findList').find('tr').first();
+            //console.log(temp.html());
+
+            if (enlace !== null) {
+                //console.log('    Enlace no vacío: ' + enlace.attr('href'));
+                imdbId = extractIdIMDB(enlace.attr('href'));
+                //console.log('    extraido: ' + imdbId);
+            }
+
+            if (imdbId !== null) {
+                pelicula.imdbId = imdbId;
+                console.log('  Encontrado ID de IMDB de: ' + pelicula.titulo + ' (' + pelicula.imdbId + ')');
+                //console.log(urlIMDB + encodeURIComponent(pelicula.titulo));
+                //fs.writeFileSync(pelicula._id + ".txt", body);
+            } else {
+                console.log('  No encontré el id IMDB de: ' + pelicula.titulo);
+                console.log('  ' + urlIMDB + encodeURIComponent(pelicula.titulo));
+            }
+
+            //Salvo en mongo
+            modelos.Pelicula.collection.update({'_id': pelicula._id}, {$set: {'imdbId': pelicula.imdbId}});
+
+            callback(null, pelicula);
+        } else {
+            console.log('Error al buscar el id IMDB de: ' + pelicula.titulo);
+            callback(error);
+        }
+    });
 }
 
+
 /*************************************************************/
-/*************** OTROS ***************************************/
+/*************** UTILES ***************************************/
 /*************************************************************/
 
-function returnError(error) {
-    console.error(error);
+//Coge una cadena separada por comas y la convierte a array trimeado
+function toTrimArray(cadena) {
+    var resultado = [];
+    cadena = cadena.split(',');
+
+    cadena.forEach(function (elemento) {
+        resultado.push(elemento.trim());
+    });
+    return resultado;
+}
+
+//Extrae el id de la peli de un enlace http://www.ecartelera.com/peliculas/the-water-diviner/ que es the-water-diviner
+function extractIdPelicula(href) {
+    var patt = /(\/peliculas\/)(.+)(\/)/;
+
+    var res = patt.exec(href);
+
+    if (res !== null) {
+        return res[2];
+    } else {
+        return null;
+    }
+}
+
+function extractIdIMDB(href) {
+    var patt = /(.*\/)(tt[0-9]*)(\/.*)/;
+
+    var res = patt.exec(href);
+
+    if (res !== null) {
+        return res[2];
+    } else {
+        return null;
+    }
 }
