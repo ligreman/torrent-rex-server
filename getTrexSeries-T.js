@@ -6,6 +6,8 @@ var DEBUG = false,
 var request = require('request'),
     cheerio = require('cheerio'),
     async = require('async'),
+    mongoose = require('mongoose'),
+    modelos = require('./models/trex-models.js'),
     md5 = require('md5'),
     events = require('events'),
     fs = require('fs');
@@ -24,6 +26,23 @@ var urls = {
 
 //Gestor de eventos
 var eventEmitter = new events.EventEmitter();
+
+mongoose.set('debug', true);
+
+//Inicio conexión de mongo
+var dbTrex = mongoose.createConnection(process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME || 'mongodb://localhost/trex', {
+    db: {safe: true}
+});
+
+//Modo debug
+dbTrex.on('error', console.error.bind(console, 'Error conectando a MongoDB:'));
+dbTrex.on("connected", console.log.bind(console, 'Conectado a MongoDB: Trex'));
+
+//Modelos
+var Serie = dbTrex.model('Serie', modelos.serieDetailSchema),
+    SerieExtract = dbTrex.model('SerieExtract', modelos.serieExtractSchema),
+    SeriesT = dbTrex.model('SeriesT', modelos.seriesTSchema),
+    SeriesN = dbTrex.model('SeriesN', modelos.seriesNSchema);
 
 console.log('Comienzo proceso');
 
@@ -68,6 +87,7 @@ eventEmitter.on('getSeriesTxbitsoft', function () {
                 var $id = md5('T' + $category + urlRaw);
 
                 innerElements.push({
+                    //_id: $id,
                     id: $id,
                     name: $(this).text(),
                     url: urlEncoded,
@@ -108,7 +128,8 @@ eventEmitter.on('getSeriesTxbitsoft', function () {
             }
         });
 
-        eventEmitter.emit('saveJSONSeries', series_txibitsoft, series_txibitsoft_short);
+        //eventEmitter.emit('saveJSONSeries', series_txibitsoft, series_txibitsoft_short);
+        eventEmitter.emit('saveMongoSeries', series_txibitsoft, series_txibitsoft_short);
     });
 });
 
@@ -141,6 +162,79 @@ eventEmitter.on('saveJSONSeries', function (data, data_short) {
     });
 });
 
+eventEmitter.on('saveMongoSeries', function (data, data_short) {
+    var cuantos = data['sd'].length, cuenta = 0;
+
+    SeriesT.update({"_id": "1234"}, data_short, {upsert: true}, function (err) {
+        if (err) {
+            console.error(err);
+        }
+
+        console.log('    Mongo - He guardado la parte corta de las series T');
+        console.log('Guardo Mongo de T-1');
+
+        data['sd'].forEach(function (element) {
+            Serie.update({"_id": element.id}, element, {upsert: true}, function (err) {
+                if (err) {
+                    console.error(err);
+                }
+
+                cuenta++;
+
+                if (cuenta >= cuantos) {
+                    eventEmitter.emit('saveMongoSeries2', data);
+                }
+            });
+        });
+    });
+
+});
+
+eventEmitter.on('saveMongoSeries2', function (data) {
+    console.log('Guardo Mongo de T-2');
+
+    var cuantos = data['hd'].length, cuenta = 0;
+
+    data['hd'].forEach(function (element2) {
+        Serie.update({"_id": element2.id}, element2, {upsert: true}, function (err) {
+            if (err) {
+                console.error(err);
+            }
+            cuenta++;
+
+            if (cuenta >= cuantos) {
+                eventEmitter.emit('saveMongoSeries3', data);
+            }
+        });
+    });
+});
+
+eventEmitter.on('saveMongoSeries3', function (data) {
+    console.log('Guardo Mongo de T-3');
+    var cuantos = data['vo'].length, cuenta = 0;
+
+    data['vo'].forEach(function (element3) {
+        Serie.update({"_id": element3.id}, element3, {upsert: true}, function (err) {
+            if (err) {
+                console.error(err);
+            }
+            cuenta++;
+
+            if (cuenta >= cuantos) {
+                eventEmitter.emit('finalize', data);
+            }
+        });
+    });
+});
+
+//Listener del evento de terminar
+eventEmitter.on('finalize', function () {
+    mongoose.disconnect();
+    console.log('Finalizado');
+
+    //Finalizo
+    process.exit();
+});
 
 /*************** MAIN ******************/
 

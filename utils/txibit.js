@@ -3,7 +3,7 @@
 var extractTxibitChapters = function (pagina, callback) {
     //innerElements.push({name: $(this).text(), url: urlEncoded});
     console.log("Pido pagina");
-    //console.log(pagina);
+    console.log(pagina);
     pagina.request(pagina.url, function (err, resp, body) {
         console.log("Paginita");
         if (err) {
@@ -120,7 +120,7 @@ var extractTxibitsoftMetadata = function (torrentTitle) {
     var temporada = null, capitulo = null, formato = null, idioma = null;
 
     //La temporada
-    var aux = torrentTitle.match(/Temporada [0-9]{1,2}/gi);
+    var aux = torrentTitle.match(/(Temporada|Temp.) [0-9]{1,2}/gi);
     console.log("A");
     console.log(aux);
     if (aux !== undefined && aux !== null && aux !== '') {
@@ -202,6 +202,14 @@ var extractTxibitsoftMetadata = function (torrentTitle) {
     if (temporada === null || capitulo === null) {
         return null;
     } else {
+        if (tt) {
+            tt = tt.replace('�', 'ñ');
+        }
+
+        if (idioma) {
+            idioma = idioma.replace('�', 'ñ');
+        }
+
         return {
             temporada: temporada,
             capitulo: capitulo,
@@ -240,6 +248,10 @@ var extractTxibitsoftMetadata2 = function (torrentTitle) {
     if (temporada === null || capitulo === null) {
         return null;
     } else {
+        if (title) {
+            title = title.replace('�', 'ñ');
+        }
+
         return {
             temporada: temporada,
             capitulo: capitulo,
@@ -249,7 +261,7 @@ var extractTxibitsoftMetadata2 = function (torrentTitle) {
         }
     }
 };
-
+//http://trex-lovehinaesp.rhcloud.com/api/trex/series/3c45e683beb577b173523bca1dded9ad/low
 var generateTxibitSeriePage = function (url) {
 //http://www.txibitsoft.com/torrents.php?procesar=1&categorias=%27Series%27&subcategoria=The%20Flash&pagina=2
 //http://www.txibitsoft.com/torrents.php?procesar=1&categorias=%27Series%27&subcategoria=The%20Flash

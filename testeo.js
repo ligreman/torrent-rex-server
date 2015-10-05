@@ -1,9 +1,28 @@
 var Q = require('q'),
     http = require('http'),
     util = require('util'),
+    mongoose = require('mongoose'),
+    modelos = require('./models/trex-models.js'),
     request = require('request');
 
 console.log("inicio");
+
+mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME || 'mongodb://localhost/trex', {
+    db: {safe: true}
+});
+
+modelos.SeriesT.find({}, function (err, docs) {
+    if (err) {
+        response = {servers: null, error: "Se produjo un error"};
+        res.send(response);
+        throw "Error: 500";
+    }
+    console.log("Encuentro:");
+    console.log(docs);
+
+
+});
+
 
 /*Q.when(a('http://es.web.img3.acsta.net/cx_160_213/b_1_d6d6d6/pictures/15/02/06/14/05/242395.jpg'), function () {
  console.log("yessooo");
@@ -50,9 +69,11 @@ var url = 'http://es.web.img3.acsta.net/cx_160_213/b_1_d6d6d6/pictures/15/02/06/
  }
  );*/
 
-downloadImage(url).then(function (imagen) {
-    console.log(imagen);
-});
+/*
+ downloadImage(url).then(function (imagen) {
+ console.log(imagen);
+ });
+ */
 
 console.log("esperando");
 console.log("end");

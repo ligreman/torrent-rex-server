@@ -70,19 +70,25 @@ var cineCorrelationSchema = new Schema({
     imdbId: String
 });
 
-/*
 
- module.exports = mongoose.model('Pelicula', movieSchema);
- module.exports = mongoose.model('Cine', provinciaSchema);
- module.exports = mongoose.model('Pelis', peliSchema);*/
+/*
+ module.exports = {
+ Pelicula: dbCine.model('Pelicula', peliculaSchema),
+
+ Provincia: dbCine.model('Provincia', provinciaSchema),
+ Ciudad: dbCine.model('Ciudad', ciudadSchema),
+
+ Cine: dbCine.model('Cine', cineSchema),
+ Sesion: dbCine.model('Sesion', sesionSchema),
+ Correlation: dbCine.model('Correlation', cineCorrelationSchema)
+ };
+ */
 
 module.exports = {
-    Pelicula: mongoose.model('Pelicula', peliculaSchema),
-
-    Provincia: mongoose.model('Provincia', provinciaSchema),
-    Ciudad: mongoose.model('Ciudad', ciudadSchema),
-
-    Cine: mongoose.model('Cine', cineSchema),
-    Sesion: mongoose.model('Sesion', sesionSchema),
-    Correlation: mongoose.model('Correlation', cineCorrelationSchema)
+    peliculaSchema: peliculaSchema,
+    provinciaSchema: provinciaSchema,
+    ciudadSchema: ciudadSchema,
+    cineSchema: cineSchema,
+    sesionSchema: sesionSchema,
+    cineCorrelationSchema: cineCorrelationSchema
 };

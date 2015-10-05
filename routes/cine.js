@@ -2,6 +2,7 @@
 var request = require('request'),
     cheerio = require('cheerio'),
     mongoose = require('mongoose'),
+    modelos = require('../models/models.js'),
     md5 = require('md5'),
     async = require('async'),
     Q = require('q');
@@ -18,24 +19,31 @@ var KEY_HEADER = 'X-QEC-KEY',
     correctKey = 'D4m3L4sF0t0s';
 
 //Cargo los modelos
-var modelos = require('../models/models.js'),
-    urls = {
-        base: 'http://www.ecartelera.com',
-        cinesCiudad: 'http://www.sensacine.com/cines/cines-en-',
-        cine: 'http://www.ecartelera.com/cines/',
-        cineIMDb: 'http://www.imdb.com/showtimes/cinema/ES/',
-        pelicula: 'http://www.ecartelera.com/peliculas/'
-    };
+var urls = {
+    base: 'http://www.ecartelera.com',
+    cinesCiudad: 'http://www.sensacine.com/cines/cines-en-',
+    cine: 'http://www.ecartelera.com/cines/',
+    cineIMDb: 'http://www.imdb.com/showtimes/cinema/ES/',
+    pelicula: 'http://www.ecartelera.com/peliculas/'
+};
 
-//Conecto a mongo
-mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME || 'mongodb://localhost/cine', {
-    db: {
-        safe: true
-    }
+
+//Inicio conexión de mongo
+var dbCine = mongoose.createConnection(process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME || 'mongodb://localhost/cine', {
+    db: {safe: true}
 });
 
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'Error conectando a MongoDB:'));
+//Modo debug
+dbCine.on('error', console.error.bind(console, 'Error conectando a MongoDB:'));
+dbCine.on("connected", console.log.bind(console, 'Conectado a MongoDB: Cine'));
+
+//Modelos
+var Pelicula = dbCine.model('Pelicula', modelos.peliculaSchema),
+    Provincia = dbCine.model('Provincia', modelos.provinciaSchema),
+    Ciudad = dbCine.model('Ciudad', modelos.ciudadSchema),
+    Cine = dbCine.model('Cine', modelos.cineSchema),
+    Sesion = dbCine.model('Sesion', modelos.sesionSchema),
+    Correlation = dbCine.model('Correlation', modelos.cineCorrelationSchema);
 
 module.exports = function (app) {
 
@@ -291,27 +299,11 @@ module.exports = function (app) {
     app.get('/api/cine/peliculas/:peliculaSourceId', getPelicula);  //Película
     //app.get('/api/cine/peliculas/:ciudadId', getPeliculasCiudad); //Películas y sesiones de toda la ciudad
 
-    //Controlamos el cierre para desconectar mongo
-    process.stdin.resume();//so the program will not close instantly
-
-    function exitHandler(options, err) {
-        if (options.exit) {
-            mongoose.disconnect();
-            process.exit();
-        }
-    }
-
-    //do something when app is closing
-    process.on('exit', exitHandler.bind(null, {exit: true}));
-    //catches ctrl+c event
-    process.on('SIGINT', exitHandler.bind(null, {exit: true}));
-
-
     /** HELPERS **/
     var mongo = {
         //Obtengo el listado de provincias y ciudades
         getProvincias: function (callback) {
-            modelos.Provincia
+            Provincia
                 .find()
                 .select('-sortfield')
                 .sort('sortfield')
@@ -328,7 +320,7 @@ module.exports = function (app) {
 
         //Obtengo la ciudad
         getCiudad: function (idCiudad, callback) {
-            modelos.Provincia
+            Provincia
                 //.find({ciudades: {_id: idCiudad}})
                 .aggregate([
                     {$unwind: "$ciudades"},
@@ -348,7 +340,7 @@ module.exports = function (app) {
 
         //Obtengo el cine
         getCine: function (idCine, callback) {
-            modelos.Cine
+            Cine
                 .findOne({_id: idCine})
                 .exec(function (err, cine) {
                     if (err) {
@@ -363,7 +355,7 @@ module.exports = function (app) {
 
         //Obtengo las pelis
         getPeliculas: function (callback) {
-            modelos.Pelicula
+            Pelicula
                 .find()
                 .select('titulo peliculaId -_id')
                 .sort('titulo')
@@ -381,7 +373,7 @@ module.exports = function (app) {
         //Obtengo la película
         getPelicula: function (idPelicula, callback) {
             console.log(idPelicula);
-            modelos.Pelicula
+            Pelicula
                 .findOne({_id: idPelicula})
                 .exec(function (err, pelicula) {
                     if (err) {
@@ -498,7 +490,7 @@ module.exports = function (app) {
                             callback(error);
                         } else {
                             //Ya tengo todo así que salvo en mongo
-                            var peli = new modelos.Pelicula(movie);
+                            var peli = new Pelicula(movie);
                             peli.save();
 
                             console.log('    Ya tengo todo de la peli, callback');
@@ -523,8 +515,8 @@ module.exports = function (app) {
                     mongo.updatePelicula({_id: sesion._idPelicula, peliculaId: sesion.peliculaId},
                         function (error, updatedMovie) {
                             console.log('    Ya he actualizado la peli de la sesión');
-                            //console.log(sesion);
-                            //console.log(updatedMovie);
+                            console.log(sesion);
+                            console.log(updatedMovie);
                             if (error) {
                                 callback(error);
                             } else if (updatedMovie === null) {
@@ -542,7 +534,7 @@ module.exports = function (app) {
 
         //Lista de cines de una ciudad
         getCinesCiudad: function (idCiudad, callback) {
-            modelos.Cine
+            Cine
                 .aggregate([
                     {$match: {"_idCiudad": idCiudad}}
                 ])
@@ -613,19 +605,19 @@ module.exports = function (app) {
                                     sesionesPartial = [];
 
                                 console.log('Consulto: ' + urls.cineIMDb + cine.imdbId + '/ES/' + cine.codigoPostal);
-                                //console.log(body2);
+                                console.log(body2);
 
                                 //Saco las sesiones de la web de IMDB
                                 $2('div[itemtype="http://schema.org/Movie"]').each(function (indx, sesionIMDB) {
                                     console.log('Una sesión.');
-                                    //console.log($(sesionIMDB).html());
+                                    console.log($(sesionIMDB).html());
 
                                     var showtime = $2(sesionIMDB).find('div.info').find('div.showtimes'),
                                         titIMDb = $2(sesionIMDB).find('div.info').find('h3').find('a[itemprop="url"]'),
                                         horas = [];
 
                                     showtime.each(function (ix, elem) {
-                                        //console.log('elemento: ' + $2(elem).text());
+                                        console.log('elemento: ' + $2(elem).text());
                                         var auxHoras = $2(elem).text();
                                         auxHoras = auxHoras.split('|');
 
@@ -690,17 +682,17 @@ module.exports = function (app) {
                             var multiplesessions = $(this).find('p[itemprop="startDate"]'),
                                 horas = [];
 
-                            //console.log("Sesiones que hay: " + multiplesessions.length);
-                            //console.log(multiplesessions);
+                            console.log("Sesiones que hay: " + multiplesessions.length);
+                            console.log(multiplesessions);
                             multiplesessions.each(function (index, element) {
-                                //console.log("Una sesion " + index);
+                                console.log("Una sesion " + index);
                                 var hors = $(element).text();
 
 
                                 hors = hors.split('|');
 
                                 hors.forEach(function (hora) {
-                                    //console.log("Hora: " + hora);
+                                    console.log("Hora: " + hora);
                                     horas.push(hora.trim())
                                 });
                             });
@@ -743,13 +735,14 @@ module.exports = function (app) {
         }
     };
 
+
 };
 
 //Saca de mongo datos a partir de un id de IMDb
 function getIMDbIdFromMongo(sess, callback) {
     console.log('Llamada a getIMDbIdFromMongo: ');
     console.log(sess);
-    modelos.Pelicula.findOne({"imdbId": sess.peliculaIMDbId}).exec(function (err, peli) {
+    Pelicula.findOne({"imdbId": sess.peliculaIMDbId}).exec(function (err, peli) {
         if (err) {
             console.log('Error al encontrar la parcial: ' + sess.peliculaIMDbId + ' en mongo.');
             callback(err);
@@ -757,7 +750,7 @@ function getIMDbIdFromMongo(sess, callback) {
             if (peli !== null) {
                 //peli = peli[0];
                 console.log('Encontré la parcial ' + sess.peliculaIMDbId + ' en mongo.');
-                //console.log(peli);
+                console.log(peli);
                 callback(null, {
                     _idPelicula: peli._id,
                     peliculaId: peli.peliculaId,
@@ -857,7 +850,7 @@ function mergeObj(sesion, pelicula) {
     };
 
     console.log('      ++ Mergeado');
-    //console.log(merged);
+    console.log(merged);
     return merged;
 }
 
@@ -909,3 +902,11 @@ function convertIMDbHours(horas) {
 }
 
 //thumb: http://www.ecartelera.com/carteles/9500/9546/001_p.jpg -> http://www.ecartelera.com/carteles/9500/9546/001-th.jpg
+
+function dbCineDisconnect() {
+    mongoose.disconnect();
+}
+
+process.on('exit', dbCineDisconnect);
+process.on('SIGINT', dbCineDisconnect);
+process.on('SIGTERM', dbCineDisconnect);

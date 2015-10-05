@@ -6,6 +6,8 @@ var DEBUG = false,
 var request = require('request'),
     cheerio = require('cheerio'),
     async = require('async'),
+    mongoose = require('mongoose'),
+    modelos = require('./models/trex-models.js'),
     md5 = require('md5'),
     events = require('events'),
     fs = require('fs');
@@ -24,6 +26,23 @@ var urls = {
 
 //Gestor de eventos
 var eventEmitter = new events.EventEmitter();
+
+mongoose.set('debug', true);
+
+//Inicio conexión de mongo
+var dbTrex = mongoose.createConnection(process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME || 'mongodb://localhost/trex', {
+    db: {safe: true}
+});
+
+//Modo debug
+dbTrex.on('error', console.error.bind(console, 'Error conectando a MongoDB:'));
+dbTrex.on("connected", console.log.bind(console, 'Conectado a MongoDB: Trex'));
+
+//Modelos
+var Serie = dbTrex.model('Serie', modelos.serieDetailSchema),
+    SerieExtract = dbTrex.model('SerieExtract', modelos.serieExtractSchema),
+    SeriesT = dbTrex.model('SeriesT', modelos.seriesTSchema),
+    SeriesN = dbTrex.model('SeriesN', modelos.seriesNSchema);
 
 console.log('Comienzo proceso');
 
@@ -99,7 +118,8 @@ eventEmitter.on('nextActionNewpct', function (type) {
         case 'vo':
             console.log('    Encontradas ' + series_newpct.vo.length + ' series');
             //Ya he obtenido las VO así que finalizo
-            eventEmitter.emit('saveJSONSeries', series_newpct, series_newpct_short);
+            //eventEmitter.emit('saveJSONSeries', series_newpct, series_newpct_short);
+            eventEmitter.emit('saveMongoSeries', series_newpct, series_newpct_short);
             break;
     }
 });
@@ -142,6 +162,83 @@ eventEmitter.on('saveJSONSeries', function (data, data_short) {
 });
 
 
+eventEmitter.on('saveMongoSeries', function (data, data_short) {
+    var cuantos = data['sd'].length, cuenta = 0;
+
+    SeriesN.update({"_id": "1234"}, data_short, {upsert: true}, function (err) {
+        if (err) {
+            console.error(err);
+        }
+
+        console.log('    Mongo - He guardado la parte corta de las series N');
+        console.log('Guardo Mongo de N-1');
+
+        data['sd'].forEach(function (element) {
+            Serie.update({"_id": element._id}, element, {upsert: true}, function (err) {
+                if (err) {
+                    console.error(err);
+                }
+
+                cuenta++;
+                console.log("metido: " + element._id);
+
+                if (cuenta >= cuantos) {
+                    eventEmitter.emit('saveMongoSeries2', data);
+                }
+            });
+        });
+    });
+});
+
+eventEmitter.on('saveMongoSeries2', function (data) {
+    console.log('Guardo Mongo de N-2');
+
+    var cuantos = data['hd'].length, cuenta = 0;
+
+    data['hd'].forEach(function (element2) {
+        Serie.update({"_id": element2._id}, element2, {upsert: true}, function (err) {
+            if (err) {
+                console.error(err);
+            }
+            cuenta++;
+            console.log("metido: " + element2._id);
+
+            if (cuenta >= cuantos) {
+                eventEmitter.emit('saveMongoSeries3', data);
+            }
+        });
+    });
+});
+
+eventEmitter.on('saveMongoSeries3', function (data) {
+    console.log('Guardo Mongo de N-3');
+    var cuantos = data['vo'].length, cuenta = 0;
+
+    data['vo'].forEach(function (element3) {
+        Serie.update({"_id": element3._id}, element3, {upsert: true}, function (err) {
+            if (err) {
+                console.error(err);
+            }
+            cuenta++;
+            console.log("metido: " + element3._id);
+
+            if (cuenta >= cuantos) {
+                eventEmitter.emit('finalize', data);
+            }
+        });
+    });
+});
+
+//Listener del evento de terminar
+eventEmitter.on('finalize', function () {
+    mongoose.disconnect();
+    console.log('Finalizado');
+
+    //Finalizo
+    process.exit();
+});
+
+
 /*************** MAIN ******************/
 
 //Obtengo las series de Txbit y luego las de newpct
@@ -177,6 +274,7 @@ function extractNewcptSeries(enlace, callback) {
                     $id = md5('N' + enlace.type + urlEncoded);
 
                     series_newpct.sd.push({
+                        //_id: $id,
                         id: $id,
                         name: extractNewpctTitle(title),
                         url: urlEncoded,
@@ -195,6 +293,7 @@ function extractNewcptSeries(enlace, callback) {
                     $id = md5('N' + enlace.type + urlEncoded);
 
                     series_newpct.hd.push({
+                        //_id: $id,
                         id: $id,
                         name: extractNewpctTitle(title),
                         url: urlEncoded,
@@ -213,6 +312,7 @@ function extractNewcptSeries(enlace, callback) {
                     $id = md5('N' + enlace.type + urlEncoded);
 
                     series_newpct.vo.push({
+                        //_id: $id,
                         id: $id,
                         name: extractNewpctTitle(title),
                         url: urlEncoded,

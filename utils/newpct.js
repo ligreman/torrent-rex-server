@@ -1,7 +1,7 @@
 var extractNewcptChapters = function extractNewcptChapters(pagina, callback) {
     //innerElements.push({name: $(this).text(), url: urlEncoded});
     console.log("Pido pagina");
-    //console.log(pagina);
+    console.log(pagina);
     pagina.request(pagina.url, function (err, resp, body) {
         console.log("Paginita");
         if (err) {
@@ -19,7 +19,7 @@ var extractNewcptChapters = function extractNewcptChapters(pagina, callback) {
             var h2 = $(this).find('h2').text();
             var urlEncoded;
 
-            //console.log(title);
+            console.log(title);
             urlEncoded = encodeURI(href);
 
             if (cabecera !== '') {
@@ -101,6 +101,9 @@ var extractNewpctMetadata = function extractNewpctMetadata(txt) {
 
     if (res !== null) {
         response.title = res[1].replace('Serie', '').trim();
+        if (response.title) {
+            response.title = response.title.replace('�', 'ñ');
+        }
     }
 
     //Saco la temporada
@@ -148,6 +151,9 @@ var extractNewpctMetadata = function extractNewpctMetadata(txt) {
 
     if (res !== null) {
         num = res[1].replace('Calidad', '').trim();
+        if (num) {
+            num = num.replace('�', 'ñ');
+        }
         response.language = num;
     }
 
