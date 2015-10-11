@@ -35,7 +35,7 @@ var dbCine = mongoose.createConnection(process.env.OPENSHIFT_MONGODB_DB_URL + pr
 
 //Modo debug
 dbCine.on('error', console.error.bind(console, 'Error conectando a MongoDB:'));
-dbCine.on("connected", console.log.bind(console, 'Conectado a MongoDB: Cine'));
+dbCine.on("connected", //console.log.bind(console, 'Conectado a MongoDB: Cine'));
 
 //Modelos
 var Pelicula = dbCine.model('Pelicula', modelos.peliculaSchema),
@@ -56,7 +56,7 @@ module.exports = function (app) {
             provincias: null,
             error: ''
         };
-        console.log('Hola ciudades');
+        //console.log('Hola ciudades');
 
         //Consulto a mongo
         mongo.getProvincias(function (error, provincias) {
@@ -72,7 +72,7 @@ module.exports = function (app) {
 
             //Respuesta
             res.json(response);
-            console.log("He respondido pero sigo haciendo cosas");
+            //console.log("He respondido pero sigo haciendo cosas");
         });
     };
 
@@ -88,11 +88,11 @@ module.exports = function (app) {
                 error: ''
             };
 
-        console.log('Hola cinesCiudad');
+        //console.log('Hola cinesCiudad');
 
         //Obtengo los datos de la ciudad primero
         mongo.getCiudad(ciudadMD5, function (error, provincia) {
-            console.log(provincia);
+            //console.log(provincia);
 
             //Si no encontré la ciudad
             if (error) {
@@ -102,10 +102,10 @@ module.exports = function (app) {
                 response.error = 'No se ha encontrado la ciudad';
                 res.status(404).json(response);
             } else {
-                console.log('Voy a por los cines de la ciudad');
+                //console.log('Voy a por los cines de la ciudad');
                 //Si encontré la ciudad, saco sus cines
                 mongo.getCinesCiudad(ciudadMD5, function (error, cines) {
-                    console.log(cines);
+                    //console.log(cines);
                     if (error) {
                         response.error = 'Se produjo un error buscando los cines';
                         res.status(500);
@@ -114,7 +114,7 @@ module.exports = function (app) {
                         res.status(404);
                     } else {
                         response.cines = cines;
-                        console.log(response);
+                        //console.log(response);
                     }
 
                     //respondo
@@ -137,7 +137,7 @@ module.exports = function (app) {
                 error: ''
             };
 
-        console.log('Hola cine');
+        //console.log('Hola cine');
 
         mongo.getCine(cineMD5, function (err, cine) {
             if (err) {
@@ -150,14 +150,14 @@ module.exports = function (app) {
                 //Miro si se actualizó el cine hace menos de 10 horas
                 var now = new Date().getTime();
                 if (now <= (cine.actualizado + tiemposActualizacion.sesionesCine)) {
-                    console.log('No tengo que actualizar el cine');
+                    //console.log('No tengo que actualizar el cine');
                     //Está actualizado Voy a sacar las películas asociadas a cada sesión del cine
                     async.mapSeries(cine.sesiones, mongo.getPeliculaSesion,
                         function (err, sesiones) {
                             if (err) {
                                 res.status(500).json(response);
                             } else {
-                                console.log('Termino y respondo');
+                                //console.log('Termino y respondo');
 
                                 //Miro si envío fotos o no
                                 if (!returnPhotos) {
@@ -174,11 +174,11 @@ module.exports = function (app) {
                     //response.cine = cine;
                     //res.json(response);
                 } else {
-                    console.log('Tengo que actualizar el cine');
+                    //console.log('Tengo que actualizar el cine');
                     //actualizo el cine antes de enviar la respuesta
                     mongo.updateCine(cine, function (error, cineUpdated) {
-                        console.log('Cine updateao');
-                        console.log(cineUpdated);
+                        //console.log('Cine updateao');
+                        //console.log(cineUpdated);
                         if (error) {
                             response.error = 'Se produjo un error al actualizar la información del cine';
                             res.status(500).json(response);
@@ -189,7 +189,7 @@ module.exports = function (app) {
                                     if (err) {
                                         res.status(500).json(response);
                                     } else {
-                                        console.log('Termino y respondo');
+                                        //console.log('Termino y respondo');
 
                                         //Miro si envío fotos o no
                                         if (!returnPhotos) {
@@ -223,7 +223,7 @@ module.exports = function (app) {
 
         //Cojo las pelis
         mongo.getPeliculas(function (error, peliculas) {
-            console.log(peliculas);
+            //console.log(peliculas);
             if (error) {
                 response.error = 'Se produjo un error al buscar las películas';
                 res.status(500).json(response);
@@ -253,11 +253,11 @@ module.exports = function (app) {
                 error: ''
             };
 
-        console.log('Hola pelicula');
+        //console.log('Hola pelicula');
 
         //Cojo la peli
         mongo.getPelicula(peliculaMD5, function (error, pelicula) {
-            console.log(pelicula);
+            //console.log(pelicula);
             if (error) {
                 response.error = 'Se produjo un error al buscar la película';
                 res.status(500).json(response);
@@ -312,7 +312,7 @@ module.exports = function (app) {
                         console.error(err);
                         callback(err);
                     } else {
-                        console.log('Encontré las provincias');
+                        //console.log('Encontré las provincias');
                         callback(null, provincias);
                     }
                 });
@@ -332,7 +332,7 @@ module.exports = function (app) {
                         console.error(err);
                         callback(err);
                     } else {
-                        console.log('Encontré la ciudad');
+                        //console.log('Encontré la ciudad');
                         callback(null, provinciaCiudad);
                     }
                 });
@@ -347,7 +347,7 @@ module.exports = function (app) {
                         console.error(err);
                         callback(err);
                     } else {
-                        console.log('Encontré el cine');
+                        //console.log('Encontré el cine');
                         callback(null, cine);
                     }
                 });
@@ -364,7 +364,7 @@ module.exports = function (app) {
                         console.error(err);
                         callback(err);
                     } else {
-                        console.log('Encontré las pelis');
+                        //console.log('Encontré las pelis');
                         callback(null, peliculas);
                     }
                 });
@@ -372,7 +372,7 @@ module.exports = function (app) {
 
         //Obtengo la película
         getPelicula: function (idPelicula, callback) {
-            console.log(idPelicula);
+            //console.log(idPelicula);
             Pelicula
                 .findOne({_id: idPelicula})
                 .exec(function (err, pelicula) {
@@ -380,7 +380,7 @@ module.exports = function (app) {
                         console.error(err);
                         callback(err);
                     } else {
-                        console.log('Devuelvo la peli de Mongo');
+                        //console.log('Devuelvo la peli de Mongo');
                         callback(null, pelicula);
                     }
                 });
@@ -388,14 +388,14 @@ module.exports = function (app) {
 
         //Actualizo una pelicula
         updatePelicula: function (movie, callback) {
-            console.log('    Actualizando la peli');
+            //console.log('    Actualizando la peli');
             //Pido la pelicula
             request(urls.pelicula + movie.peliculaId, function (err, response, body) {
                 if (err) {
                     console.error(err);
                     callback(err);
                 } else {
-                    console.log('    Vamos a coger el body');
+                    //console.log('    Vamos a coger el body');
                     var $ = cheerio.load(body),
                         texto = '',
                         patrones = {
@@ -441,7 +441,7 @@ module.exports = function (app) {
                             movie.estudio = toTrimArray(aux);
                         }
                     });
-                    console.log('    Estreno');
+                    //console.log('    Estreno');
                     //Estreno
                     $('div.cnt-dob p').each(function () {
                         texto = $(this).text();
@@ -451,7 +451,7 @@ module.exports = function (app) {
                         }
                     });
 
-                    console.log('    Sinopsis');
+                    //console.log('    Sinopsis');
                     //Sinopsis
                     var sinopsis = $('p[itemprop="description"]').text();
                     sinopsis = sinopsis.replace(/["]/g, "'");
@@ -466,7 +466,7 @@ module.exports = function (app) {
                         movie.director.push($(this).text().trim());
                     });
 
-                    console.log('    Reparto');
+                    //console.log('    Reparto');
                     //Reparto
                     movie.reparto = [];
                     movie.repartoExtendido = [];
@@ -493,7 +493,7 @@ module.exports = function (app) {
                             var peli = new Pelicula(movie);
                             peli.save();
 
-                            console.log('    Ya tengo todo de la peli, callback');
+                            //console.log('    Ya tengo todo de la peli, callback');
                             //Devuelvo
                             callback(null, movie);
                         }
@@ -504,19 +504,19 @@ module.exports = function (app) {
 
         //Obtiene la información de la peli de una sesión de cine
         getPeliculaSesion: function (sesion, callback) {
-            console.log('Cojo la peli de una de las sesiones: ' + sesion.peliculaId);
+            //console.log('Cojo la peli de una de las sesiones: ' + sesion.peliculaId);
             //Miro si está en mongo y si no la tengo que descargar
             mongo.getPelicula(sesion._idPelicula, function (error, pelicula) {
                 if (error) {
                     callback(error);
                 } else if (pelicula === null) {
-                    console.log('...pero resulta que no tengo la peli, la buscare');
+                    //console.log('...pero resulta que no tengo la peli, la buscare');
                     //No tengo la peli en mongo así que la pido
                     mongo.updatePelicula({_id: sesion._idPelicula, peliculaId: sesion.peliculaId},
                         function (error, updatedMovie) {
-                            console.log('    Ya he actualizado la peli de la sesión');
-                            console.log(sesion);
-                            console.log(updatedMovie);
+                            //console.log('    Ya he actualizado la peli de la sesión');
+                            //console.log(sesion);
+                            //console.log(updatedMovie);
                             if (error) {
                                 callback(error);
                             } else if (updatedMovie === null) {
@@ -543,7 +543,7 @@ module.exports = function (app) {
                         console.error(err);
                         callback(err);
                     } else {
-                        console.log('Encontré los cines de la ciudad');
+                        //console.log('Encontré los cines de la ciudad');
                         callback(null, cinesCiudad);
                     }
                 });
@@ -551,7 +551,7 @@ module.exports = function (app) {
 
         //Actualizo un cine y devuelve su información actualizada
         updateCine: function (cine, callback) {
-            console.log(cine);
+            //console.log(cine);
 
             //Pido los datos del cine a la web
             request(urls.cine + cine.cineId, function (err, response, body) {
@@ -595,7 +595,7 @@ module.exports = function (app) {
 
                     //Si tengo la dirección del cine de IMDB lo saco de ahí
                     if (cine.imdbId !== null) {
-                        console.log('Saco la sesión de IMDb');
+                        //console.log('Saco la sesión de IMDb');
                         request(urls.cineIMDb + cine.imdbId + '/ES/' + codigoPostal, function (err2, response2, body2) {
                             if (err2) {
                                 console.error(err2);
@@ -604,20 +604,20 @@ module.exports = function (app) {
                                 var $2 = cheerio.load(body2),
                                     sesionesPartial = [];
 
-                                console.log('Consulto: ' + urls.cineIMDb + cine.imdbId + '/ES/' + cine.codigoPostal);
-                                console.log(body2);
+                                //console.log('Consulto: ' + urls.cineIMDb + cine.imdbId + '/ES/' + cine.codigoPostal);
+                                //console.log(body2);
 
                                 //Saco las sesiones de la web de IMDB
                                 $2('div[itemtype="http://schema.org/Movie"]').each(function (indx, sesionIMDB) {
-                                    console.log('Una sesión.');
-                                    console.log($(sesionIMDB).html());
+                                    //console.log('Una sesión.');
+                                    //console.log($(sesionIMDB).html());
 
                                     var showtime = $2(sesionIMDB).find('div.info').find('div.showtimes'),
                                         titIMDb = $2(sesionIMDB).find('div.info').find('h3').find('a[itemprop="url"]'),
                                         horas = [];
 
                                     showtime.each(function (ix, elem) {
-                                        console.log('elemento: ' + $2(elem).text());
+                                        //console.log('elemento: ' + $2(elem).text());
                                         var auxHoras = $2(elem).text();
                                         auxHoras = auxHoras.split('|');
 
@@ -626,9 +626,9 @@ module.exports = function (app) {
                                         });
                                     });
 
-                                    console.log('Extraigo id: ' + extractIMDBId(titIMDb.attr('href')));
-                                    console.log('Horas: ');
-                                    console.log(horas);
+                                    //console.log('Extraigo id: ' + extractIMDBId(titIMDb.attr('href')));
+                                    //console.log('Horas: ');
+                                    //console.log(horas);
 
                                     sesionesPartial.push({
                                         peliculaIMDbId: extractIMDBId(titIMDb.attr('href')),
@@ -636,15 +636,15 @@ module.exports = function (app) {
                                     });
                                 });
 
-                                console.log('Tengo estas parciales: ');
-                                console.log(sesionesPartial);
+                                //console.log('Tengo estas parciales: ');
+                                //console.log(sesionesPartial);
 
                                 //Por cada sesiones Partial tengo que encontrar el id de la peli en mi Mongo
                                 async.map(sesionesPartial, getIMDbIdFromMongo, function (err, results) {
                                     if (err) {
-                                        console.log('Error al obtener el imdb de una peli en mongo: ' + err);
+                                        //console.log('Error al obtener el imdb de una peli en mongo: ' + err);
                                     } else {
-                                        console.log('No error así que guardo sesion de peli: ' + cine.nombre);
+                                        //console.log('No error así que guardo sesion de peli: ' + cine.nombre);
                                         results.forEach(function (elemento) {
                                             if (elemento !== null) {
                                                 sesiones.push({
@@ -672,7 +672,7 @@ module.exports = function (app) {
                             }
                         });
                     } else {
-                        console.log('Saco la sesión de eCartelera');
+                        //console.log('Saco la sesión de eCartelera');
                         //En otro caso, lo saco de ecartelera
                         $('div.lfilmbc').each(function () {
                             var idPeli = $(this).find('h4').find('a').attr('href');
@@ -682,17 +682,17 @@ module.exports = function (app) {
                             var multiplesessions = $(this).find('p[itemprop="startDate"]'),
                                 horas = [];
 
-                            console.log("Sesiones que hay: " + multiplesessions.length);
-                            console.log(multiplesessions);
+                            //console.log("Sesiones que hay: " + multiplesessions.length);
+                            //console.log(multiplesessions);
                             multiplesessions.each(function (index, element) {
-                                console.log("Una sesion " + index);
+                                //console.log("Una sesion " + index);
                                 var hors = $(element).text();
 
 
                                 hors = hors.split('|');
 
                                 hors.forEach(function (hora) {
-                                    console.log("Hora: " + hora);
+                                    //console.log("Hora: " + hora);
                                     horas.push(hora.trim())
                                 });
                             });
@@ -701,8 +701,8 @@ module.exports = function (app) {
                             //    horas = [];
 
                             /*console.warn('Sesiones....');
-                             console.log(sess);
-                             console.log($(this).find('p[itemprop="startDate"]'));
+                             //console.log(sess);
+                             //console.log($(this).find('p[itemprop="startDate"]'));
 
                              sess = sess.split('|');
 
@@ -740,24 +740,24 @@ module.exports = function (app) {
 
 //Saca de mongo datos a partir de un id de IMDb
 function getIMDbIdFromMongo(sess, callback) {
-    console.log('Llamada a getIMDbIdFromMongo: ');
-    console.log(sess);
+    //console.log('Llamada a getIMDbIdFromMongo: ');
+    //console.log(sess);
     Pelicula.findOne({"imdbId": sess.peliculaIMDbId}).exec(function (err, peli) {
         if (err) {
-            console.log('Error al encontrar la parcial: ' + sess.peliculaIMDbId + ' en mongo.');
+            //console.log('Error al encontrar la parcial: ' + sess.peliculaIMDbId + ' en mongo.');
             callback(err);
         } else {
             if (peli !== null) {
                 //peli = peli[0];
-                console.log('Encontré la parcial ' + sess.peliculaIMDbId + ' en mongo.');
-                console.log(peli);
+                //console.log('Encontré la parcial ' + sess.peliculaIMDbId + ' en mongo.');
+                //console.log(peli);
                 callback(null, {
                     _idPelicula: peli._id,
                     peliculaId: peli.peliculaId,
                     horarios: sess.horarios
                 });
             } else {
-                console.log('No encontré la parcial: ' + sess.peliculaIMDbId + ' en mongo.');
+                //console.log('No encontré la parcial: ' + sess.peliculaIMDbId + ' en mongo.');
                 callback(null, null);
             }
         }
@@ -792,7 +792,7 @@ function extractIMDBId(href) {
 
 //Descarga una imagen como base64
 var downloadImageAsBase64 = function (movie, callback) {
-    console.log("Descargo thumb");
+    //console.log("Descargo thumb");
     request(
         {url: movie.imagen, encoding: 'binary'},
         function onImageResponse(error, imageResponse, imageBody) {
@@ -849,8 +849,8 @@ function mergeObj(sesion, pelicula) {
         imagen: pelicula.imagen
     };
 
-    console.log('      ++ Mergeado');
-    console.log(merged);
+    //console.log('      ++ Mergeado');
+    //console.log(merged);
     return merged;
 }
 
@@ -884,7 +884,7 @@ function convertIMDbHours(horas) {
         if (!doce) {
             hora = hora.replace(' pm', '');
             hora = hora.split(':');
-            console.log(hora);
+            //console.log(hora);
             //A ver si la siguiente hora se pasaría de las doce
             if (num == 0 || num == 11) {
                 doce = true;

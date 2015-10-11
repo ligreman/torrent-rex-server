@@ -2,10 +2,10 @@
 
 var extractTxibitChapters = function (pagina, callback) {
     //innerElements.push({name: $(this).text(), url: urlEncoded});
-    console.log("Pido pagina");
-    console.log(pagina);
+    //console.log("Pido pagina");
+    //console.log(pagina);
     pagina.request(pagina.url, function (err, resp, body) {
-        console.log("Paginita");
+        //console.log("Paginita");
         if (err) {
             callback(err);
         }
@@ -54,15 +54,15 @@ var extractTxibitChapters = function (pagina, callback) {
 
 var parseTorrentsTxibitsoft = function (torrentList, md5) {
     var temporadas = walkTorrentList(torrentList, 1, md5);
-    console.log("TEMPS1");
-    console.log(temporadas);
+    //console.log("TEMPS1");
+    //console.log(temporadas);
 
     //Si no he sacado datos, intento sacarlos con otro formato: 1992 1x03
     if (temporadas.length === 0) {
         temporadas = walkTorrentList(torrentList, 2, md5);
     }
-    console.log("TEMPS2");
-    console.log(temporadas);
+    //console.log("TEMPS2");
+    //console.log(temporadas);
 
     return temporadas;
 };
@@ -71,32 +71,32 @@ var walkTorrentList = function (list, method, md5) {
     var metadata, temporadas = {};
 
     list.forEach(function (torrent) {
-        console.log("*********** Miro " + torrent.title);
+        //console.log("*********** Miro " + torrent.title);
         //Saco los metadatos del título
         if (method === 1) {
-            console.log("metodo 1");
+            //console.log("metodo 1");
             metadata = extractTxibitsoftMetadata(torrent.title);
         } else if (method === 2) {
-            console.log("metodo 2");
+            //console.log("metodo 2");
             metadata = extractTxibitsoftMetadata2(torrent.title);
         }
 
-        console.log("*********** META");
-        console.log(metadata);
+        //console.log("*********** META");
+        //console.log(metadata);
         if (metadata !== null) {
             var mTemporada = metadata.temporada;
 
-            console.log("M1 " + mTemporada);
+            //console.log("M1 " + mTemporada);
             if (temporadas[mTemporada] === undefined) {
-                console.log("M1B");
+                //console.log("M1B");
 
                 temporadas[mTemporada] = [];
             }
-            console.log("*********** Temporadas");
-            console.log(temporadas);
+            //console.log("*********** Temporadas");
+            //console.log(temporadas);
 
-            console.log("*********** TORRENT:");
-            console.log(torrent);
+            //console.log("*********** TORRENT:");
+            //console.log(torrent);
 
             //Creo la entrada del torrent con los datos de metadatos y los que venian de la lista de torrents
             temporadas[mTemporada].push({
@@ -121,8 +121,8 @@ var extractTxibitsoftMetadata = function (torrentTitle) {
 
     //La temporada
     var aux = torrentTitle.match(/(Temporada|Temp.) [0-9]{1,2}/gi);
-    console.log("A");
-    console.log(aux);
+    //console.log("A");
+    //console.log(aux);
     if (aux !== undefined && aux !== null && aux !== '') {
         aux = aux[0];
         aux = aux.split(' ');
@@ -136,8 +136,8 @@ var extractTxibitsoftMetadata = function (torrentTitle) {
 
     //El capitulo
     aux = torrentTitle.match(/Cap\.[0-9]{3,4}/gi);
-    console.log("B");
-    console.log(aux);
+    //console.log("B");
+    //console.log(aux);
     if (aux !== undefined && aux !== null && aux !== '') {
         aux = aux[0];
         aux = aux.replace('Cap.', '');
@@ -168,15 +168,15 @@ var extractTxibitsoftMetadata = function (torrentTitle) {
 
     //El idioma
     aux = torrentTitle.match(/V\.O\.Sub\.([A-Za-zñáéíóúÁÉÍÓÚ ])*/gi);
-    console.log("C");
-    console.log(aux);
+    //console.log("C");
+    //console.log(aux);
     if (aux !== undefined && aux !== null && aux !== '') {
         aux = aux[0];
         idioma = aux;
     } else {
         aux = torrentTitle.match(/Espa.ol([A-Za-zñáéíóúÁÉÍÓÚ ])*/gi);
-        console.log("C2");
-        console.log(aux);
+        //console.log("C2");
+        //console.log(aux);
         if (aux !== undefined && aux !== null && aux !== '') {
             aux = aux[0];
             idioma = aux;
@@ -186,8 +186,8 @@ var extractTxibitsoftMetadata = function (torrentTitle) {
 
     //El formato
     aux = torrentTitle.match(/HDTV([A-Za-z0-9 ])*/gi);
-    console.log("D");
-    console.log(aux);
+    //console.log("D");
+    //console.log(aux);
     if (aux !== undefined && aux !== null && aux !== '') {
         aux = aux[0];
         formato = aux;
@@ -197,7 +197,7 @@ var extractTxibitsoftMetadata = function (torrentTitle) {
     var tt = torrentTitle.split('-');
     tt = tt[0].trim();
 
-    console.log({temporada: temporada, capitulo: capitulo, idioma: idioma, titulo: tt, formato: formato});
+    //console.log({temporada: temporada, capitulo: capitulo, idioma: idioma, titulo: tt, formato: formato});
 
     if (temporada === null || capitulo === null) {
         return null;
