@@ -34,9 +34,7 @@ app.use(function (req, res, next) {
 });
 
 //Cargo rutas
-require('./routes/tx')(app);
 var tt = require('./routes/trex')(app);
-require('./routes/cine')(app);
 
 mongoose.set('debug', false);
 

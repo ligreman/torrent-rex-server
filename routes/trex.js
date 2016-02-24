@@ -486,9 +486,9 @@ module.exports = function (app) {
         //Tengo que actualizar los datos
         $url = urls[content.source] + content.url;
         //console.log($url);
-//http://trex-lovehinaesp.rhcloud.com/api/trex/torrents/dG9ycmVudHMucGhwP3Byb2Nlc2FyPTEmY2F0ZWdvcmlhcz0nU2VyaWVzJyZzdWJjYXRlZ29yaWE9MTg2NA==/T
-//http://trex-lovehinaesp.rhcloud.com/api/trex/torrents/torrents.php?procesar=1&categorias='Series'&subcategoria=1864/T
-//series-hd/american-horror-story/
+        //http://trex-lovehinaesp.rhcloud.com/api/trex/torrents/dG9ycmVudHMucGhwP3Byb2Nlc2FyPTEmY2F0ZWdvcmlhcz0nU2VyaWVzJyZzdWJjYXRlZ29yaWE9MTg2NA==/T
+        //http://trex-lovehinaesp.rhcloud.com/api/trex/torrents/torrents.php?procesar=1&categorias='Series'&subcategoria=1864/T
+        //series-hd/american-horror-story/
 
         request($url, function (err, resp, body) {
             if (err) {
@@ -682,7 +682,7 @@ module.exports = function (app) {
                      });*/
                 });
             }
-//�
+            //�
             //NewPCT
             if (content.source === 'SN') {
                 //console.log("Página de newp original");
@@ -981,3 +981,203 @@ function dbTrexDisconnect() {
 process.on('exit', dbTrexDisconnect);
 process.on('SIGINT', dbTrexDisconnect);
 process.on('SIGTERM', dbTrexDisconnect);
+
+
+/*
+ "__v" : 0,
+ "_id" : "halt-and-catch-fire",
+ "id" : "halt-and-catch-fire",
+ "lastUpdate" : 1445102603717,
+ "name" : "Halt And Catch Fire",
+ "seasons" : {
+ "1" : [
+ {
+ "id" : "7d4ddf7bebb77038c2fa0d210f1e462c",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-110/",
+ "title" : "Halt and Catch Fire - Temporada 1  - Temporada[ 1 ]Capitulo[ 10 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 10,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "b9acc6a3ef9ef9df244c0fdd63eb9552",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-109/",
+ "title" : "Halt and Catch Fire - Temporada 1  - Temporada[ 1 ]Capitulo[ 09 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 9,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "b94d8a9468a4230cd02063c2e814e66d",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-108/",
+ "title" : "Halt and Catch Fire - Temporada 1  - Temporada[ 1 ]Capitulo[ 08 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 8,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "0000d52125218ebdff74e05cf9a99628",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-107/",
+ "title" : "Halt and Catch Fire - Temporada 1  - Temporada[ 1 ]Capitulo[ 07 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 7,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "7f3f406d16a78ac5123aeba633354138",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-106/",
+ "title" : "Halt and Catch Fire - Temporada 1  - Temporada[ 1 ]Capitulo[ 06 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 6,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ }
+ ],
+ "2" : [
+ {
+ "id" : "e4f89d3be8de24d030524f88bb7f9f62",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-210/",
+ "title" : "Halt and Catch Fire - Temporada 2  - Temporada[ 2 ]Capitulo[ 10 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 10,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "6cf522a16b3fb4a79f906ad36d7c0478",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-209/",
+ "title" : "Halt and Catch Fire - Temporada 2  - Temporada[ 2 ]Capitulo[ 09 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 9,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "3be2579c62e5ceb1ae511d42f7b6d6b8",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-208/",
+ "title" : "Halt and Catch Fire - Temporada 2  - Temporada[ 2 ]Capitulo[ 08 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 8,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "8c09e6e396583b8df124f66fa5195db5",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-207/",
+ "title" : "Halt and Catch Fire - Temporada 2  - Temporada[ 2 ]Capitulo[ 07 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 7,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "fbdc7cad4799257fe026fa559406799c",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-206/",
+ "title" : "Halt and Catch Fire - Temporada 2  - Temporada[ 2 ]Capitulo[ 06 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 6,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "e93b134e2c1739bcc50fdaff9d694760",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-205/",
+ "title" : "Halt and Catch Fire - Temporada 2  - Temporada[ 2 ]Capitulo[ 05 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 5,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "82b911c9a5f9fa76b37c2f9643e4d632",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-204/",
+ "title" : "Halt and Catch Fire - Temporada 2  - Temporada[ 2 ]Capitulo[ 04 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 4,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "07e33a6f96bfe93457796da572ccf582",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-203/",
+ "title" : "Halt and Catch Fire - Temporada 2  - Temporada[ 2 ]Capitulo[ 03 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 3,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "78ce36b6963c99802b8a78e666ca2917",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-202/",
+ "title" : "Halt and Catch Fire - Temporada 2  - Temporada[ 2 ]Capitulo[ 02 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 2,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "450 MB"
+ },
+ {
+ "id" : "d03b9bd122c45f3972dad2a92c97209d",
+ "torrentId" : null,
+ "url" : "serie/halt-and-catch-fire/capitulo-201/",
+ "title" : "Halt and Catch Fire - Temporada 2  - Temporada[ 2 ]Capitulo[ 01 ]Espa�ol Castellano Calidad [ HDTV ]",
+ "titleSmall" : "Halt and Catch Fire",
+ "chapter" : 1,
+ "language" : null,
+ "format" : "HDTV",
+ "source" : "N",
+ "size" : "490 MB"
+ }
+ ]
+ },
+ "source" : "SN1",
+ "url" : "series/halt-and-catch-fire/"
+ }
+ {
+
+ */

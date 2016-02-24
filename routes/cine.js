@@ -35,7 +35,7 @@ var dbCine = mongoose.createConnection(process.env.OPENSHIFT_MONGODB_DB_URL + pr
 
 //Modo debug
 dbCine.on('error', console.error.bind(console, 'Error conectando a MongoDB:'));
-dbCine.on("connected", //console.log.bind(console, 'Conectado a MongoDB: Cine'));
+dbCine.on("connected", console.info.bind(console, 'Conectado a MongoDB: Cine'));
 
 //Modelos
 var Pelicula = dbCine.model('Pelicula', modelos.peliculaSchema),
